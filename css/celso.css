@@ -238,8 +238,7 @@ a.homepagelink.fade-in {
 
 
 #websitesheader {
-    /* background: #27445F; */
-    background: #000000;
+    background: #27445F;
     font-family: 'avenir', Arial, sans-serif;
     position: relative;
 }
