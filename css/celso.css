@@ -1,23 +1,19 @@
-/*=== COLORS ===*/
 @font-face {
-  font-family: 'dosis';
-  src: url("../Fonts/Dosis/dosis-regular-webfont-webfont.eot");
-  src: url("../Fonts/Dosis/dosis-regular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/Dosis/dosis-regular-webfont-webfont.woff") format("woff"), url("../Fonts/Dosis/dosis-regular-webfont-webfont.ttf") format("truetype"), url("../Fonts/Dosis/dosis-regular-webfont-webfont.svg#dosisregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "avenir";
+  src: url('../fonts/Avenir/avenir.eot?&1403313470');
+  src: url('../fonts/Avenir/avenir.eot??&1403313470#iefix') format('embedded-opentype'), url('../fonts/Avenir/avenir.woff?1403313470') format('woff'), url('../fonts/Avenir/avenir.ttf?1403313470') format('truetype'), url('../fonts/Avenir/avenir.svg?1403313470#AvenirNextLTPro-Regular') format('svg');
 }
 @font-face {
-  font-family: 'quicksandregular';
-  src: url("../Fonts/quicksand/quicksand-regular-webfont.eot");
-  src: url("../Fonts/quicksand/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/quicksand/quicksand-regular-webfont.woff") format("woff"), url("../Fonts/quicksand/quicksand-regular-webfont.ttf") format("truetype"), url("../Fonts/quicksand/quicksand-regular-webfont.svg#quicksandregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "quicksandregular";
+  src: url('../fonts/quicksand/quicksand-regular-webfont.eot?1394800916');
+  src: url('../fonts/quicksand/quicksand-regular-webfont.eot?&1394800916#iefix') format('embedded-opentype'), url('../fonts/quicksand/quicksand-regular-webfont.woff?1394800916') format('woff'), url('../fonts/quicksand/quicksand-regular-webfont.ttf?1394800916') format('truetype'), url('../fonts/quicksand/quicksand-regular-webfont.svg?1394800916') format('svg');
 }
-@font-face {
+/* @font-face {
   font-family: 'avenir';
-  src: url("../Fonts/Avenir/avenir.eot?") format("eot"), url("../Fonts/Avenir/avenir.otf") format("opentype"), url("../Fonts/Avenir/avenir.woff") format("woff"), url("../Fonts/Avenir/avenir.ttf") format("truetype"), url("../Fonts/Avenir/avenir.svg#AvenirNextLTPro-Regular") format("svg");
-}
-/* line 21, ../scss/celso.scss */
+  src: url("../Fonts/Avenir/avenir.eot?") format("eot"), url("../Fonts/Avenir/avenir.otf") format("opentype"), url("../Fonts/Avenir/avenir.woff") format("woff"), url("../Fonts/Avenir/avenir.ttf") format("truetype"), url("../Fonts/Avenir/avenir.svg#AvenirNextLTPro-Regular") format("svg"); 
+
+} */
+/* line 17, ../scss/celso.scss */
 body {
   margin: 0;
   font-size: 14px;
@@ -27,26 +23,26 @@ body {
   font-family: 'dosis', Arial, sans-serif;
 }
 
-/* line 29, ../scss/celso.scss */
+/* line 25, ../scss/celso.scss */
 #mainwrapper {
   background: none repeat scroll 0 0 #EEEEEE;
   height: 100vh;
   font-family: 'avenir', Arial, sans-serif;
 }
 
-/* line 34, ../scss/celso.scss */
+/* line 30, ../scss/celso.scss */
 a {
   color: #989898;
   text-decoration: none;
 }
 
-/* line 38, ../scss/celso.scss */
+/* line 34, ../scss/celso.scss */
 a:hover {
   color: #3d3d3d;
 }
 
 /* Header */
-/* line 42, ../scss/celso.scss */
+/* line 38, ../scss/celso.scss */
 #header {
   background: #eeeeee;
   height: 170px;
@@ -58,7 +54,7 @@ a:hover {
   z-index: 2000;
 }
 
-/* line 52, ../scss/celso.scss */
+/* line 48, ../scss/celso.scss */
 .logo {
   font-size: 40px;
   font-family: 'quicksandregular', sans-serif;
@@ -66,13 +62,13 @@ a:hover {
   margin-top: -10px;
 }
 
-/* line 58, ../scss/celso.scss */
+/* line 54, ../scss/celso.scss */
 .logo a {
   color: #3d3d3d;
   text-decoration: none;
 }
 
-/* line 62, ../scss/celso.scss */
+/* line 58, ../scss/celso.scss */
 .logo span {
   transition: .5s;
   -webkit-transition: .5s;
@@ -80,52 +76,52 @@ a:hover {
   -o-transition: .5s;
 }
 
-/* line 68, ../scss/celso.scss */
+/* line 64, ../scss/celso.scss */
 .logo:hover span {
   color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 72, ../scss/celso.scss */
+  /* line 68, ../scss/celso.scss */
   .logo {
     font-size: 30px;
   }
 }
-/* line 74, ../scss/celso.scss */
+/* line 70, ../scss/celso.scss */
 .x {
   font-size: 20px;
   font-family: 'quicksandregular', sans-serif;
 }
 
 /* Navigation */
-/* line 79, ../scss/celso.scss */
+/* line 75, ../scss/celso.scss */
 #menu {
   margin-top: 20px;
 }
 
-/* line 82, ../scss/celso.scss */
+/* line 78, ../scss/celso.scss */
 #menu li {
   display: inline-block;
   padding: 0 12.5px 12.5px;
 }
 
-/* line 86, ../scss/celso.scss */
+/* line 82, ../scss/celso.scss */
 #menu a {
   color: #989898;
 }
 
-/* line 89, ../scss/celso.scss */
+/* line 85, ../scss/celso.scss */
 #menu a:hover {
   color: #3d3d3d;
 }
 
-/* line 92, ../scss/celso.scss */
+/* line 88, ../scss/celso.scss */
 #menu a.active {
   color: #3d3d3d;
 }
 
 /* Homepage */
-/* line 96, ../scss/celso.scss */
+/* line 92, ../scss/celso.scss */
 #homepageheader {
   background: #87BA9E;
   position: relative;
@@ -133,12 +129,12 @@ a:hover {
   z-index: 3000;
 }
 
-/* line 102, ../scss/celso.scss */
+/* line 98, ../scss/celso.scss */
 .homepagewrapper {
   margin: 0;
 }
 
-/* line 105, ../scss/celso.scss */
+/* line 101, ../scss/celso.scss */
 .homepageleft {
   background-color: #000000;
   display: inline-block;
@@ -148,7 +144,7 @@ a:hover {
   width: 50%;
 }
 
-/* line 113, ../scss/celso.scss */
+/* line 109, ../scss/celso.scss */
 .homepageright {
   background-color: #3d3d3d;
   float: left;
@@ -156,7 +152,7 @@ a:hover {
   width: 50%;
 }
 
-/* line 119, ../scss/celso.scss */
+/* line 115, ../scss/celso.scss */
 #homepagepic {
   background: url("../images/nyc.jpg") no-repeat scroll 0 0/cover transparent;
   bottom: 0;
@@ -167,19 +163,19 @@ a:hover {
   z-index: 1000;
 }
 
-/* line 128, ../scss/celso.scss */
+/* line 124, ../scss/celso.scss */
 .homepagelink {
   color: #ffffff;
   text-align: center;
 }
 
-/* line 132, ../scss/celso.scss */
+/* line 128, ../scss/celso.scss */
 .homepagetext {
   font-size: 23px;
   margin-top: 20px;
 }
 
-/* line 136, ../scss/celso.scss */
+/* line 132, ../scss/celso.scss */
 .homepanel1 {
   background: none repeat scroll 0 0 #7DB4B1;
   color: #ffffff;
@@ -187,7 +183,7 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 142, ../scss/celso.scss */
+/* line 138, ../scss/celso.scss */
 .homepanel2 {
   background: none repeat scroll 0 0 #7DB4B1;
   height: 230px;
@@ -217,7 +213,7 @@ a:hover {
     opacity: 1;
   }
 }
-/* line 161, ../scss/celso.scss */
+/* line 157, ../scss/celso.scss */
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */
@@ -234,7 +230,7 @@ a:hover {
   animation-duration: 2s;
 }
 
-/* line 176, ../scss/celso.scss */
+/* line 172, ../scss/celso.scss */
 nav a {
   position: relative;
   display: inline-block;
@@ -249,13 +245,13 @@ nav a {
   font-size: 1.35em;
 }
 
-/* line 189, ../scss/celso.scss */
+/* line 185, ../scss/celso.scss */
 nav a:hover,
 nav a:focus {
   outline: none;
 }
 
-/* line 193, ../scss/celso.scss */
+/* line 189, ../scss/celso.scss */
 a.homepagelink.fade-in {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px 40px;
@@ -264,22 +260,22 @@ a.homepagelink.fade-in {
 }
 
 /* Websites */
-/* line 200, ../scss/celso.scss */
+/* line 196, ../scss/celso.scss */
 #websitesheader {
   background: #27445F;
   font-family: 'avenir', Arial, sans-serif;
   position: relative;
 }
 
-/* line 205, ../scss/celso.scss */
+/* line 201, ../scss/celso.scss */
 .portfolio {
-  background: none repeat scroll 0 0 #FFFFFF;
+  background: none repeat scroll 0 0 #ffffff;
   display: inline-block;
   height: auto;
   margin: 40px 0;
 }
 
-/* line 211, ../scss/celso.scss */
+/* line 207, ../scss/celso.scss */
 .portfolio img {
   width: 100%;
   -webkit-transition: opacity .5s ease-in-out;
@@ -289,24 +285,24 @@ a.homepagelink.fade-in {
   backface-visibility: hidden;
 }
 
-/* line 219, ../scss/celso.scss */
+/* line 215, ../scss/celso.scss */
 .portfolio img:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
 
-/* line 223, ../scss/celso.scss */
+/* line 219, ../scss/celso.scss */
 .portfolio-description {
   margin: 15px;
 }
 
-/* line 226, ../scss/celso.scss */
+/* line 222, ../scss/celso.scss */
 .title {
   padding: 10px 0 0 10px;
   font-size: 18px;
 }
 
-/* line 230, ../scss/celso.scss */
+/* line 226, ../scss/celso.scss */
 .pageheader {
   font-family: 'avenir',Arial,sans-serif;
   padding: 30px 0 20px;
@@ -314,13 +310,13 @@ a.homepagelink.fade-in {
   color: #ffffff;
 }
 
-/* line 236, ../scss/celso.scss */
+/* line 232, ../scss/celso.scss */
 .descriptor {
   color: rgba(0, 0, 0, 0.4);
 }
 
 /* Projects */
-/* line 240, ../scss/celso.scss */
+/* line 236, ../scss/celso.scss */
 .project {
   color: #3d3d3d;
   float: left;
@@ -330,21 +326,21 @@ a.homepagelink.fade-in {
   width: 100%;
 }
 
-/* line 248, ../scss/celso.scss */
+/* line 244, ../scss/celso.scss */
 #projectsheader {
   background: #e37f54;
   font-family: 'dosis', Arial, sans-serif;
   position: relative;
 }
 
-/* line 253, ../scss/celso.scss */
+/* line 249, ../scss/celso.scss */
 .project-container {
   margin: 40px 0;
   background: #ffffff;
   height: auto;
 }
 
-/* line 258, ../scss/celso.scss */
+/* line 254, ../scss/celso.scss */
 .projecttest {
   color: #3d3d3d;
   float: left;
@@ -354,40 +350,40 @@ a.homepagelink.fade-in {
   width: 100%;
 }
 
-/* line 266, ../scss/celso.scss */
+/* line 262, ../scss/celso.scss */
 .project img {
   display: inline-block;
   float: left;
   width: 50%;
 }
 
-/* line 271, ../scss/celso.scss */
+/* line 267, ../scss/celso.scss */
 .project-description {
   display: inline-block;
   margin: 15px;
 }
 
-/* line 275, ../scss/celso.scss */
+/* line 271, ../scss/celso.scss */
 .container1 {
   display: inline-block;
   float: left;
   width: 50%;
 }
 
-/* line 280, ../scss/celso.scss */
+/* line 276, ../scss/celso.scss */
 .container2 {
   display: inline-block;
   float: left;
   width: 50%;
 }
 
-/* line 285, ../scss/celso.scss */
+/* line 281, ../scss/celso.scss */
 #gal {
   margin: 0 auto;
   position: relative;
 }
 
-/* line 289, ../scss/celso.scss */
+/* line 285, ../scss/celso.scss */
 #gal div {
   position: absolute;
   width: 100%;
@@ -461,7 +457,7 @@ a.homepagelink.fade-in {
     opacity: 1;
   }
 }
-/* line 337, ../scss/celso.scss */
+/* line 333, ../scss/celso.scss */
 #gal div {
   -webkit-animation-name: cf4FadeInOut;
   -webkit-animation-timing-function: ease-in-out;
@@ -481,7 +477,7 @@ a.homepagelink.fade-in {
   animation-duration: 15s;
 }
 
-/* line 355, ../scss/celso.scss */
+/* line 351, ../scss/celso.scss */
 #gal div:nth-of-type(1) {
   -webkit-animation-delay: 10s;
   -moz-animation-delay: 10s;
@@ -489,7 +485,7 @@ a.homepagelink.fade-in {
   animation-delay: 10s;
 }
 
-/* line 361, ../scss/celso.scss */
+/* line 357, ../scss/celso.scss */
 #gal div:nth-of-type(2) {
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
@@ -497,7 +493,7 @@ a.homepagelink.fade-in {
   animation-delay: 5s;
 }
 
-/* line 367, ../scss/celso.scss */
+/* line 363, ../scss/celso.scss */
 #gal div:nth-of-type(3) {
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
@@ -506,32 +502,32 @@ a.homepagelink.fade-in {
 }
 
 /* User Experience */
-/* line 374, ../scss/celso.scss */
+/* line 370, ../scss/celso.scss */
 #uxheader {
   background: #87BA9E;
   position: relative;
   font-family: 'dosis', Arial, sans-serif;
 }
 
-/* line 379, ../scss/celso.scss */
+/* line 375, ../scss/celso.scss */
 .uximage {
   opacity: .7;
 }
 
 /* About */
-/* line 383, ../scss/celso.scss */
+/* line 379, ../scss/celso.scss */
 .aboutcontent {
   margin-top: 40px;
 }
 
-/* line 386, ../scss/celso.scss */
+/* line 382, ../scss/celso.scss */
 #aboutheader {
   background: #7DB4B1;
   position: relative;
   font-family: 'dosis', Arial, sans-serif;
 }
 
-/* line 391, ../scss/celso.scss */
+/* line 387, ../scss/celso.scss */
 .contact_button {
   color: #fff;
   padding: 20px 50px;
@@ -542,14 +538,14 @@ a.homepagelink.fade-in {
   text-align: center;
 }
 
-/* line 400, ../scss/celso.scss */
+/* line 396, ../scss/celso.scss */
 .contact_button:hover {
   background: none repeat scroll 0 0 rgba(125, 180, 177, 0.3);
   color: #ffffff;
 }
 
 /* Footer */
-/* line 405, ../scss/celso.scss */
+/* line 401, ../scss/celso.scss */
 .homepagefooter {
   bottom: 0;
   padding-top: 50px;
@@ -558,33 +554,33 @@ a.homepagelink.fade-in {
   width: 100%;
 }
 
-/* line 412, ../scss/celso.scss */
+/* line 408, ../scss/celso.scss */
 .footertext {
   font-size: 13px;
 }
 
-/* line 415, ../scss/celso.scss */
+/* line 411, ../scss/celso.scss */
 .social {
   font-size: 13px;
 }
 
-/* line 418, ../scss/celso.scss */
+/* line 414, ../scss/celso.scss */
 .homepageme {
   font-size: 20px;
 }
 
-/* line 421, ../scss/celso.scss */
+/* line 417, ../scss/celso.scss */
 .footertext a {
   color: #989898;
 }
 
-/* line 424, ../scss/celso.scss */
+/* line 420, ../scss/celso.scss */
 .footertext a:hover {
   color: #7DB4B1;
 }
 
 /*=== Laptop Slider ===*/
-/* line 428, ../scss/celso.scss */
+/* line 424, ../scss/celso.scss */
 #slider-in-laptop {
   width: 102%;
   height: 200px;
@@ -593,7 +589,7 @@ a.homepagelink.fade-in {
   margin-left: -4px;
 }
 
-/* line 435, ../scss/celso.scss */
+/* line 431, ../scss/celso.scss */
 #slider-in-laptop .rsOverflow,
 #slider-in-laptop .rsSlide,
 #slider-in-laptop .rsVideoFrameHolder,
@@ -601,7 +597,7 @@ a.homepagelink.fade-in {
   background: #transparent;
 }
 
-/* line 441, ../scss/celso.scss */
+/* line 437, ../scss/celso.scss */
 .imgBg {
   position: absolute;
   left: 0;
@@ -611,25 +607,25 @@ a.homepagelink.fade-in {
   margin-top: 5px;
 }
 
-/* line 449, ../scss/celso.scss */
+/* line 445, ../scss/celso.scss */
 #slider-in-laptop .rsBullets {
   bottom: -25px;
 }
 
-/* line 452, ../scss/celso.scss */
+/* line 448, ../scss/celso.scss */
 .laptopBg {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-/* line 457, ../scss/celso.scss */
+/* line 453, ../scss/celso.scss */
 #slider-in-laptop .rsBullets {
   bottom: -30px;
 }
 
 /*=== Homepage Background ===*/
-/* line 461, ../scss/celso.scss */
+/* line 457, ../scss/celso.scss */
 .full {
   display: block;
   width: 100%;
@@ -645,7 +641,7 @@ a.homepagelink.fade-in {
   transition: opacity .5s;
 }
 
-/* line 475, ../scss/celso.scss */
+/* line 471, ../scss/celso.scss */
 .gradient {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(transparent));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), transparent);
@@ -654,49 +650,49 @@ a.homepagelink.fade-in {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
 }
 
-/* line 482, ../scss/celso.scss */
+/* line 478, ../scss/celso.scss */
 .slide1 {
   background-color: #3887be;
 }
 
-/* line 485, ../scss/celso.scss */
+/* line 481, ../scss/celso.scss */
 .slide2 {
   background-color: #f6ac33;
 }
 
-/* line 488, ../scss/celso.scss */
+/* line 484, ../scss/celso.scss */
 .slide3 {
   background-color: #87BA9E;
 }
 
-/* line 491, ../scss/celso.scss */
+/* line 487, ../scss/celso.scss */
 .slide4 {
   background-color: #7da361;
 }
 
-/* line 494, ../scss/celso.scss */
+/* line 490, ../scss/celso.scss */
 .active1 .full:nth-child(1), .active2 .full:nth-child(2), .active3 .full:nth-child(3), .active4 .full:nth-child(4) {
   opacity: 1;
 }
 
 /*=== WORD CHANGE ===*/
-/* line 498, ../scss/celso.scss */
+/* line 494, ../scss/celso.scss */
 #change_word {
   color: #ffffff !important;
 }
 
-/* line 501, ../scss/celso.scss */
+/* line 497, ../scss/celso.scss */
 .row.homecontent {
   margin: 80px auto;
 }
 
 @media all and (max-width: 768px) {
-  /* line 505, ../scss/celso.scss */
+  /* line 501, ../scss/celso.scss */
   .row.homecontent {
     margin: 20px auto;
   }
 
-  /* line 508, ../scss/celso.scss */
+  /* line 504, ../scss/celso.scss */
   .homepagetext {
     font-size: 18px;
   }

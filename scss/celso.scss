@@ -1,23 +1,19 @@
 // Import Compass
 
 @import "compass/css3";
+@import "compass/css3/font-face";
 @import "modules/_base.scss";
 
-@font-face {
-  font-family: 'dosis';
-  src: url("../Fonts/Dosis/dosis-regular-webfont-webfont.eot");
-  src: url("../Fonts/Dosis/dosis-regular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/Dosis/dosis-regular-webfont-webfont.woff") format("woff"), url("../Fonts/Dosis/dosis-regular-webfont-webfont.ttf") format("truetype"), url("../Fonts/Dosis/dosis-regular-webfont-webfont.svg#dosisregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'quicksandregular';
-  src: url("../Fonts/quicksand/quicksand-regular-webfont.eot");
-  src: url("../Fonts/quicksand/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/quicksand/quicksand-regular-webfont.woff") format("woff"), url("../Fonts/quicksand/quicksand-regular-webfont.ttf") format("truetype"), url("../Fonts/quicksand/quicksand-regular-webfont.svg#quicksandregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
+@include font-face("avenir", font-files("Avenir/avenir.woff", "Avenir/avenir.ttf", "Avenir/avenir.svg#AvenirNextLTPro-Regular"), "Avenir/avenir.eot?");
+
+@include font-face("quicksandregular", font-files("quicksand/quicksand-regular-webfont.woff", "quicksand/quicksand-regular-webfont.ttf", "quicksand/quicksand-regular-webfont.svg"), "quicksand/quicksand-regular-webfont.eot");
+
+/* @font-face {
   font-family: 'avenir';
-  src: url("../Fonts/Avenir/avenir.eot?") format("eot"), url("../Fonts/Avenir/avenir.otf") format("opentype"), url("../Fonts/Avenir/avenir.woff") format("woff"), url("../Fonts/Avenir/avenir.ttf") format("truetype"), url("../Fonts/Avenir/avenir.svg#AvenirNextLTPro-Regular") format("svg"); }
+  src: url("../Fonts/Avenir/avenir.eot?") format("eot"), url("../Fonts/Avenir/avenir.otf") format("opentype"), url("../Fonts/Avenir/avenir.woff") format("woff"), url("../Fonts/Avenir/avenir.ttf") format("truetype"), url("../Fonts/Avenir/avenir.svg#AvenirNextLTPro-Regular") format("svg"); 
+
+} */
+
 body {
   margin: 0;
   font-size: 14px;
@@ -66,7 +62,7 @@ a:hover {
   -o-transition: .5s; }
 
 .logo:hover span {
-  color: #ffffff; }
+  color: $white; }
 
 @media screen and (max-width: 480px) {
   .logo {
@@ -103,7 +99,7 @@ a:hover {
   margin: 0; }
 
 .homepageleft {
-  background-color: #000000;
+  background-color: $black;
   display: inline-block;
   float: left;
   height: 100%;
@@ -126,7 +122,7 @@ a:hover {
   z-index: 1000; }
 
 .homepagelink {
-  color: #ffffff;
+  color: $white;
   text-align: center; }
 
 .homepagetext {
@@ -135,7 +131,7 @@ a:hover {
 
 .homepanel1 {
   background: none repeat scroll 0 0 #7DB4B1;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   padding-bottom: 20px; }
 
@@ -203,7 +199,7 @@ a.homepagelink.fade-in {
   position: relative; }
 
 .portfolio {
-  background: none repeat scroll 0 0 #FFFFFF;
+  background: none repeat scroll 0 0 $white;
   display: inline-block;
   height: auto;
   margin: 40px 0; }
@@ -231,7 +227,7 @@ a.homepagelink.fade-in {
   font-family: 'avenir',Arial,sans-serif;
   padding: 30px 0 20px;
   text-align: center;
-  color: #ffffff; }
+  color: $white; }
 
 .descriptor {
   color: rgba(0, 0, 0, 0.4); }
@@ -252,7 +248,7 @@ a.homepagelink.fade-in {
 
 .project-container {
   margin: 40px 0;
-  background: #ffffff;
+  background: $white;
   height: auto; }
 
 .projecttest {
@@ -399,7 +395,7 @@ a.homepagelink.fade-in {
 
 .contact_button:hover {
   background: none repeat scroll 0 0 rgba(125, 180, 177, 0.3);
-  color: #ffffff; }
+  color: $white; }
 
 /* Footer */
 .homepagefooter {
@@ -496,7 +492,7 @@ a.homepagelink.fade-in {
 
 /*=== WORD CHANGE ===*/
 #change_word {
-  color: #ffffff !important; }
+  color: $white !important; }
 
 .row.homecontent {
   margin: 80px auto; }
