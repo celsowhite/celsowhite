@@ -1,19 +1,15 @@
+/*=== IMPORTS ===*/
+/*=== FONTS ===*/
 @font-face {
   font-family: "avenir";
-  src: url('../fonts/Avenir/avenir.eot?&1403313470');
-  src: url('../fonts/Avenir/avenir.eot??&1403313470#iefix') format('embedded-opentype'), url('../fonts/Avenir/avenir.woff?1403313470') format('woff'), url('../fonts/Avenir/avenir.ttf?1403313470') format('truetype'), url('../fonts/Avenir/avenir.svg?1403313470#AvenirNextLTPro-Regular') format('svg');
+  src: url('../Fonts/Avenir/avenir.eot?&1403313470');
+  src: url('../Fonts/Avenir/avenir.eot??&1403313470#iefix') format('embedded-opentype'), url('../Fonts/Avenir/avenir.woff?1403313470') format('woff'), url('../Fonts/Avenir/avenir.ttf?1403313470') format('truetype'), url('../Fonts/Avenir/avenir.svg?1403313470#AvenirNextLTPro-Regular') format('svg');
 }
 @font-face {
   font-family: "quicksandregular";
-  src: url('../fonts/quicksand/quicksand-regular-webfont.eot?1394800916');
-  src: url('../fonts/quicksand/quicksand-regular-webfont.eot?&1394800916#iefix') format('embedded-opentype'), url('../fonts/quicksand/quicksand-regular-webfont.woff?1394800916') format('woff'), url('../fonts/quicksand/quicksand-regular-webfont.ttf?1394800916') format('truetype'), url('../fonts/quicksand/quicksand-regular-webfont.svg?1394800916') format('svg');
+  src: url('../Fonts/quicksand/quicksand-regular-webfont.eot?1394800916');
+  src: url('../Fonts/quicksand/quicksand-regular-webfont.eot?&1394800916#iefix') format('embedded-opentype'), url('../Fonts/quicksand/quicksand-regular-webfont.woff?1394800916') format('woff'), url('../Fonts/quicksand/quicksand-regular-webfont.ttf?1394800916') format('truetype'), url('../Fonts/quicksand/quicksand-regular-webfont.svg?1394800916') format('svg');
 }
-/* @font-face {
-  font-family: 'avenir';
-  src: url("../Fonts/Avenir/avenir.eot?") format("eot"), url("../Fonts/Avenir/avenir.otf") format("opentype"), url("../Fonts/Avenir/avenir.woff") format("woff"), url("../Fonts/Avenir/avenir.ttf") format("truetype"), url("../Fonts/Avenir/avenir.svg#AvenirNextLTPro-Regular") format("svg"); 
-
-} */
-/* line 17, ../scss/celso.scss */
 body {
   margin: 0;
   font-size: 14px;
@@ -23,26 +19,24 @@ body {
   font-family: 'dosis', Arial, sans-serif;
 }
 
-/* line 25, ../scss/celso.scss */
 #mainwrapper {
   background: none repeat scroll 0 0 #EEEEEE;
   height: 100vh;
   font-family: 'avenir', Arial, sans-serif;
 }
 
-/* line 30, ../scss/celso.scss */
 a {
   color: #989898;
   text-decoration: none;
 }
 
-/* line 34, ../scss/celso.scss */
 a:hover {
   color: #3d3d3d;
 }
 
-/* Header */
-/* line 38, ../scss/celso.scss */
+/*===================== 
+HEADER
+=====================*/
 #header {
   background: #eeeeee;
   height: 170px;
@@ -54,7 +48,6 @@ a:hover {
   z-index: 2000;
 }
 
-/* line 48, ../scss/celso.scss */
 .logo {
   font-size: 40px;
   font-family: 'quicksandregular', sans-serif;
@@ -62,66 +55,57 @@ a:hover {
   margin-top: -10px;
 }
 
-/* line 54, ../scss/celso.scss */
 .logo a {
   color: #3d3d3d;
   text-decoration: none;
 }
 
-/* line 58, ../scss/celso.scss */
 .logo span {
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
-/* line 64, ../scss/celso.scss */
 .logo:hover span {
   color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 68, ../scss/celso.scss */
   .logo {
     font-size: 30px;
   }
 }
-/* line 70, ../scss/celso.scss */
 .x {
   font-size: 20px;
   font-family: 'quicksandregular', sans-serif;
 }
 
-/* Navigation */
-/* line 75, ../scss/celso.scss */
+/*=== Navigation ===*/
 #menu {
   margin-top: 20px;
 }
 
-/* line 78, ../scss/celso.scss */
 #menu li {
   display: inline-block;
   padding: 0 12.5px 12.5px;
 }
 
-/* line 82, ../scss/celso.scss */
 #menu a {
   color: #989898;
 }
 
-/* line 85, ../scss/celso.scss */
 #menu a:hover {
   color: #3d3d3d;
 }
 
-/* line 88, ../scss/celso.scss */
 #menu a.active {
   color: #3d3d3d;
 }
 
-/* Homepage */
-/* line 92, ../scss/celso.scss */
+/*===================== 
+HOMEPAGE
+=====================*/
 #homepageheader {
   background: #87BA9E;
   position: relative;
@@ -129,12 +113,10 @@ a:hover {
   z-index: 3000;
 }
 
-/* line 98, ../scss/celso.scss */
 .homepagewrapper {
   margin: 0;
 }
 
-/* line 101, ../scss/celso.scss */
 .homepageleft {
   background-color: #000000;
   display: inline-block;
@@ -144,7 +126,6 @@ a:hover {
   width: 50%;
 }
 
-/* line 109, ../scss/celso.scss */
 .homepageright {
   background-color: #3d3d3d;
   float: left;
@@ -152,7 +133,6 @@ a:hover {
   width: 50%;
 }
 
-/* line 115, ../scss/celso.scss */
 #homepagepic {
   background: url("../images/nyc.jpg") no-repeat scroll 0 0/cover transparent;
   bottom: 0;
@@ -163,19 +143,16 @@ a:hover {
   z-index: 1000;
 }
 
-/* line 124, ../scss/celso.scss */
 .homepagelink {
   color: #ffffff;
   text-align: center;
 }
 
-/* line 128, ../scss/celso.scss */
 .homepagetext {
   font-size: 23px;
   margin-top: 20px;
 }
 
-/* line 132, ../scss/celso.scss */
 .homepanel1 {
   background: none repeat scroll 0 0 #7DB4B1;
   color: #ffffff;
@@ -183,7 +160,6 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 138, ../scss/celso.scss */
 .homepanel2 {
   background: none repeat scroll 0 0 #7DB4B1;
   height: 230px;
@@ -191,46 +167,52 @@ a:hover {
 
 @-webkit-keyframes fadeIn {
   from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
   to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 }
 @-moz-keyframes fadeIn {
   from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
   to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 }
 @keyframes fadeIn {
   from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
   to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 }
-/* line 157, ../scss/celso.scss */
 .fade-in {
   opacity: 0;
-  /* make things invisible upon start */
-  -webkit-animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation: fadeIn 2s ease-in forwards;
+  -moz-animation: fadeIn 2s ease-in forwards;
+  -o-animation: fadeIn 2s ease-in forwards;
+  animation: fadeIn 2s ease-in forwards;
 }
 
-/* line 172, ../scss/celso.scss */
 nav a {
   position: relative;
   display: inline-block;
@@ -245,13 +227,11 @@ nav a {
   font-size: 1.35em;
 }
 
-/* line 185, ../scss/celso.scss */
 nav a:hover,
 nav a:focus {
   outline: none;
 }
 
-/* line 189, ../scss/celso.scss */
 a.homepagelink.fade-in {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px 40px;
@@ -259,328 +239,7 @@ a.homepagelink.fade-in {
   display: block;
 }
 
-/* Websites */
-/* line 196, ../scss/celso.scss */
-#websitesheader {
-  background: #27445F;
-  font-family: 'avenir', Arial, sans-serif;
-  position: relative;
-}
-
-/* line 201, ../scss/celso.scss */
-.portfolio {
-  background: none repeat scroll 0 0 #ffffff;
-  display: inline-block;
-  height: auto;
-  margin: 40px 0;
-}
-
-/* line 207, ../scss/celso.scss */
-.portfolio img {
-  width: 100%;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-/* line 215, ../scss/celso.scss */
-.portfolio img:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-
-/* line 219, ../scss/celso.scss */
-.portfolio-description {
-  margin: 15px;
-}
-
-/* line 222, ../scss/celso.scss */
-.title {
-  padding: 10px 0 0 10px;
-  font-size: 18px;
-}
-
-/* line 226, ../scss/celso.scss */
-.pageheader {
-  font-family: 'avenir',Arial,sans-serif;
-  padding: 30px 0 20px;
-  text-align: center;
-  color: #ffffff;
-}
-
-/* line 232, ../scss/celso.scss */
-.descriptor {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-/* Projects */
-/* line 236, ../scss/celso.scss */
-.project {
-  color: #3d3d3d;
-  float: left;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  height: auto;
-  width: 100%;
-}
-
-/* line 244, ../scss/celso.scss */
-#projectsheader {
-  background: #e37f54;
-  font-family: 'dosis', Arial, sans-serif;
-  position: relative;
-}
-
-/* line 249, ../scss/celso.scss */
-.project-container {
-  margin: 40px 0;
-  background: #ffffff;
-  height: auto;
-}
-
-/* line 254, ../scss/celso.scss */
-.projecttest {
-  color: #3d3d3d;
-  float: left;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  height: auto;
-  width: 100%;
-}
-
-/* line 262, ../scss/celso.scss */
-.project img {
-  display: inline-block;
-  float: left;
-  width: 50%;
-}
-
-/* line 267, ../scss/celso.scss */
-.project-description {
-  display: inline-block;
-  margin: 15px;
-}
-
-/* line 271, ../scss/celso.scss */
-.container1 {
-  display: inline-block;
-  float: left;
-  width: 50%;
-}
-
-/* line 276, ../scss/celso.scss */
-.container2 {
-  display: inline-block;
-  float: left;
-  width: 50%;
-}
-
-/* line 281, ../scss/celso.scss */
-#gal {
-  margin: 0 auto;
-  position: relative;
-}
-
-/* line 285, ../scss/celso.scss */
-#gal div {
-  position: absolute;
-  width: 100%;
-}
-
-@-webkit-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  87% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  87% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  87% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  87% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* line 333, ../scss/celso.scss */
-#gal div {
-  -webkit-animation-name: cf4FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 15s;
-  -moz-animation-name: cf4FadeInOut;
-  -moz-animation-timing-function: ease-in-out;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 15s;
-  -o-animation-name: cf4FadeInOut;
-  -o-animation-timing-function: ease-in-out;
-  -o-animation-iteration-count: infinite;
-  -o-animation-duration: 15s;
-  animation-name: cf4FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 15s;
-}
-
-/* line 351, ../scss/celso.scss */
-#gal div:nth-of-type(1) {
-  -webkit-animation-delay: 10s;
-  -moz-animation-delay: 10s;
-  -o-animation-delay: 10s;
-  animation-delay: 10s;
-}
-
-/* line 357, ../scss/celso.scss */
-#gal div:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-/* line 363, ../scss/celso.scss */
-#gal div:nth-of-type(3) {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
-/* User Experience */
-/* line 370, ../scss/celso.scss */
-#uxheader {
-  background: #87BA9E;
-  position: relative;
-  font-family: 'dosis', Arial, sans-serif;
-}
-
-/* line 375, ../scss/celso.scss */
-.uximage {
-  opacity: .7;
-}
-
-/* About */
-/* line 379, ../scss/celso.scss */
-.aboutcontent {
-  margin-top: 40px;
-}
-
-/* line 382, ../scss/celso.scss */
-#aboutheader {
-  background: #7DB4B1;
-  position: relative;
-  font-family: 'dosis', Arial, sans-serif;
-}
-
-/* line 387, ../scss/celso.scss */
-.contact_button {
-  color: #fff;
-  padding: 20px 50px;
-  transition: all .5s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  background: rgba(125, 180, 177, 0.8);
-  display: block;
-  text-align: center;
-}
-
-/* line 396, ../scss/celso.scss */
-.contact_button:hover {
-  background: none repeat scroll 0 0 rgba(125, 180, 177, 0.3);
-  color: #ffffff;
-}
-
-/* Footer */
-/* line 401, ../scss/celso.scss */
-.homepagefooter {
-  bottom: 0;
-  padding-top: 50px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-/* line 408, ../scss/celso.scss */
-.footertext {
-  font-size: 13px;
-}
-
-/* line 411, ../scss/celso.scss */
-.social {
-  font-size: 13px;
-}
-
-/* line 414, ../scss/celso.scss */
-.homepageme {
-  font-size: 20px;
-}
-
-/* line 417, ../scss/celso.scss */
-.footertext a {
-  color: #989898;
-}
-
-/* line 420, ../scss/celso.scss */
-.footertext a:hover {
-  color: #7DB4B1;
-}
-
 /*=== Laptop Slider ===*/
-/* line 424, ../scss/celso.scss */
 #slider-in-laptop {
   width: 102%;
   height: 200px;
@@ -589,7 +248,6 @@ a.homepagelink.fade-in {
   margin-left: -4px;
 }
 
-/* line 431, ../scss/celso.scss */
 #slider-in-laptop .rsOverflow,
 #slider-in-laptop .rsSlide,
 #slider-in-laptop .rsVideoFrameHolder,
@@ -597,7 +255,6 @@ a.homepagelink.fade-in {
   background: #transparent;
 }
 
-/* line 437, ../scss/celso.scss */
 .imgBg {
   position: absolute;
   left: 0;
@@ -607,25 +264,21 @@ a.homepagelink.fade-in {
   margin-top: 5px;
 }
 
-/* line 445, ../scss/celso.scss */
 #slider-in-laptop .rsBullets {
   bottom: -25px;
 }
 
-/* line 448, ../scss/celso.scss */
 .laptopBg {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-/* line 453, ../scss/celso.scss */
 #slider-in-laptop .rsBullets {
   bottom: -30px;
 }
 
 /*=== Homepage Background ===*/
-/* line 457, ../scss/celso.scss */
 .full {
   display: block;
   width: 100%;
@@ -641,7 +294,6 @@ a.homepagelink.fade-in {
   transition: opacity .5s;
 }
 
-/* line 471, ../scss/celso.scss */
 .gradient {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(transparent));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), transparent);
@@ -650,51 +302,350 @@ a.homepagelink.fade-in {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
 }
 
-/* line 478, ../scss/celso.scss */
 .slide1 {
   background-color: #3887be;
 }
 
-/* line 481, ../scss/celso.scss */
 .slide2 {
   background-color: #f6ac33;
 }
 
-/* line 484, ../scss/celso.scss */
 .slide3 {
   background-color: #87BA9E;
 }
 
-/* line 487, ../scss/celso.scss */
 .slide4 {
   background-color: #7da361;
 }
 
-/* line 490, ../scss/celso.scss */
 .active1 .full:nth-child(1), .active2 .full:nth-child(2), .active3 .full:nth-child(3), .active4 .full:nth-child(4) {
   opacity: 1;
 }
 
 /*=== WORD CHANGE ===*/
-/* line 494, ../scss/celso.scss */
 #change_word {
   color: #ffffff !important;
 }
 
-/* line 497, ../scss/celso.scss */
 .row.homecontent {
   margin: 80px auto;
 }
 
 @media all and (max-width: 768px) {
-  /* line 501, ../scss/celso.scss */
   .row.homecontent {
     margin: 20px auto;
   }
 
-  /* line 504, ../scss/celso.scss */
   .homepagetext {
     font-size: 18px;
   }
 }
+/*===================== 
+WEBSITES
+=====================*/
+#websitesheader {
+  background: #27445F;
+  font-family: 'avenir', Arial, sans-serif;
+  position: relative;
+}
+
+.portfolio {
+  background: none repeat scroll 0 0 #ffffff;
+  display: inline-block;
+  height: auto;
+  margin: 40px 0;
+}
+
+.portfolio img {
+  width: 100%;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.portfolio img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+.portfolio-description {
+  margin: 15px;
+}
+
+.title {
+  padding: 10px 0 0 10px;
+  font-size: 18px;
+}
+
+.pageheader {
+  font-family: 'avenir',Arial,sans-serif;
+  padding: 30px 0 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.descriptor {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*===================== 
+PROJECTS
+=====================*/
+.project {
+  color: #3d3d3d;
+  float: left;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  height: auto;
+  width: 100%;
+}
+
+#projectsheader {
+  background: #e37f54;
+  font-family: 'dosis', Arial, sans-serif;
+  position: relative;
+}
+
+.project-container {
+  margin: 40px 0;
+  background: #ffffff;
+  height: auto;
+}
+
+.projecttest {
+  color: #3d3d3d;
+  float: left;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  height: auto;
+  width: 100%;
+}
+
+.project img {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.project-description {
+  display: inline-block;
+  margin: 15px;
+}
+
+.container1 {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.container2 {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+#gal {
+  margin: 0 auto;
+  position: relative;
+}
+
+#gal div {
+  position: absolute;
+  width: 100%;
+}
+
+@-webkit-keyframes cf4FadeInOut {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  20% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  33% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  87% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cf4FadeInOut {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  20% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  33% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  87% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-ms-keyframes cf4FadeInOut {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  20% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  33% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  87% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes cf4FadeInOut {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  20% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  33% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  87% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+#gal div {
+  -webkit-animation: cf4FadeInOut 15s ease-in-out infinite;
+  -moz-animation: cf4FadeInOut 15s ease-in-out infinite;
+  -o-animation: cf4FadeInOut 15s ease-in-out infinite;
+  animation: cf4FadeInOut 15s ease-in-out infinite;
+}
+
+#gal div:nth-of-type(1) {
+  -moz-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+#gal div:nth-of-type(2) {
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+#gal div:nth-of-type(3) {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/*===================== 
+USEREXPERIENCE
+=====================*/
+#uxheader {
+  background: #87BA9E;
+  position: relative;
+  font-family: 'dosis', Arial, sans-serif;
+}
+
+.uximage {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/*===================== 
+ABOUT
+=====================*/
+.aboutcontent {
+  margin-top: 40px;
+}
+
+#aboutheader {
+  background: #7DB4B1;
+  position: relative;
+  font-family: 'dosis', Arial, sans-serif;
+}
+
+.contact_button {
+  color: #fff;
+  padding: 20px 50px;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: rgba(125, 180, 177, 0.8);
+  display: block;
+  text-align: center;
+}
+
+.contact_button:hover {
+  background: none repeat scroll 0 0 rgba(125, 180, 177, 0.3);
+  color: #ffffff;
+}
+
+/*===================== 
+FOOTER
+=====================*/
+.homepagefooter {
+  bottom: 0;
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.footertext {
+  font-size: 13px;
+}
+
+.social {
+  font-size: 13px;
+}
+
+.homepageme {
+  font-size: 20px;
+}
+
+.footertext a {
+  color: #989898;
+}
+
+.footertext a:hover {
+  color: #7DB4B1;
+}
+
 /*# sourceMappingURL=celso.css.map */

@@ -10,7 +10,7 @@ fonts_dir = "Fonts"
 javascripts_dir = "js" 
 output_style = :expanded 
 relative_assets = true 
-line_comments = true
+line_comments = false
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

@@ -1,18 +1,15 @@
-// Import Compass
+/*=== IMPORTS ===*/
 
 @import "compass/css3";
 @import "compass/css3/font-face";
-@import "modules/_base.scss";
+@import "modules/_variables.scss";
+@import "modules/_mixins.scss";
+
+/*=== FONTS ===*/
 
 @include font-face("avenir", font-files("Avenir/avenir.woff", "Avenir/avenir.ttf", "Avenir/avenir.svg#AvenirNextLTPro-Regular"), "Avenir/avenir.eot?");
 
 @include font-face("quicksandregular", font-files("quicksand/quicksand-regular-webfont.woff", "quicksand/quicksand-regular-webfont.ttf", "quicksand/quicksand-regular-webfont.svg"), "quicksand/quicksand-regular-webfont.eot");
-
-/* @font-face {
-  font-family: 'avenir';
-  src: url("../Fonts/Avenir/avenir.eot?") format("eot"), url("../Fonts/Avenir/avenir.otf") format("opentype"), url("../Fonts/Avenir/avenir.woff") format("woff"), url("../Fonts/Avenir/avenir.ttf") format("truetype"), url("../Fonts/Avenir/avenir.svg#AvenirNextLTPro-Regular") format("svg"); 
-
-} */
 
 body {
   margin: 0;
@@ -34,7 +31,10 @@ a {
 a:hover {
   color: $dark_grey; }
 
-/* Header */
+/*===================== 
+HEADER
+=====================*/
+
 #header {
   background: #eeeeee;
   height: 170px;
@@ -56,10 +56,8 @@ a:hover {
   text-decoration: none; }
 
 .logo span {
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s; }
+  @include transition-duration(.5s);
+}
 
 .logo:hover span {
   color: $white; }
@@ -71,7 +69,8 @@ a:hover {
   font-size: 20px;
   font-family: 'quicksandregular', sans-serif; }
 
-/* Navigation */
+/*=== Navigation ===*/
+
 #menu {
   margin-top: 20px; }
 
@@ -88,7 +87,10 @@ a:hover {
 #menu a.active {
   color: $dark_grey; }
 
-/* Homepage */
+/*===================== 
+HOMEPAGE
+=====================*/
+
 #homepageheader {
   background: #87BA9E;
   position: relative;
@@ -139,35 +141,15 @@ a:hover {
   background: none repeat scroll 0 0 #7DB4B1;
   height: 230px; }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+@include keyframes(fadeIn) {
+  from {@include transparent();}
+  to {@include opaque();}
+}
+
 .fade-in {
   opacity: 0;
-  /* make things invisible upon start */
-  -webkit-animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s; }
+  @include animation(fadeIn 2s ease-in forwards);
+}
 
 nav a {
   position: relative;
@@ -192,235 +174,7 @@ a.homepagelink.fade-in {
   margin-top: 20px;
   display: block; }
 
-/* Websites */
-#websitesheader {
-  background: #27445F;
-  font-family: 'avenir', Arial, sans-serif;
-  position: relative; }
-
-.portfolio {
-  background: none repeat scroll 0 0 $white;
-  display: inline-block;
-  height: auto;
-  margin: 40px 0; }
-
-.portfolio img {
-  width: 100%;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.portfolio img:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80); }
-
-.portfolio-description {
-  margin: 15px; }
-
-.title {
-  padding: 10px 0 0 10px;
-  font-size: 18px; }
-
-.pageheader {
-  font-family: 'avenir',Arial,sans-serif;
-  padding: 30px 0 20px;
-  text-align: center;
-  color: $white; }
-
-.descriptor {
-  color: rgba(0, 0, 0, 0.4); }
-
-/* Projects */
-.project {
-  color: $dark_grey;
-  float: left;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  height: auto;
-  width: 100%; }
-
-#projectsheader {
-  background: #e37f54;
-  font-family: 'dosis', Arial, sans-serif;
-  position: relative; }
-
-.project-container {
-  margin: 40px 0;
-  background: $white;
-  height: auto; }
-
-.projecttest {
-  color: $dark_grey;
-  float: left;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  height: auto;
-  width: 100%; }
-
-.project img {
-  display: inline-block;
-  float: left;
-  width: 50%; }
-
-.project-description {
-  display: inline-block;
-  margin: 15px; }
-
-.container1 {
-  display: inline-block;
-  float: left;
-  width: 50%; }
-
-.container2 {
-  display: inline-block;
-  float: left;
-  width: 50%; }
-
-#gal {
-  margin: 0 auto;
-  position: relative; }
-
-#gal div {
-  position: absolute;
-  width: 100%; }
-
-@-webkit-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1; }
-  20% {
-    opacity: 1; }
-  33% {
-    opacity: 0; }
-  87% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1; }
-  20% {
-    opacity: 1; }
-  33% {
-    opacity: 0; }
-  87% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-o-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1; }
-  20% {
-    opacity: 1; }
-  33% {
-    opacity: 0; }
-  87% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes cf4FadeInOut {
-  0% {
-    opacity: 1; }
-  20% {
-    opacity: 1; }
-  33% {
-    opacity: 0; }
-  87% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-#gal div {
-  -webkit-animation-name: cf4FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 15s;
-  -moz-animation-name: cf4FadeInOut;
-  -moz-animation-timing-function: ease-in-out;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 15s;
-  -o-animation-name: cf4FadeInOut;
-  -o-animation-timing-function: ease-in-out;
-  -o-animation-iteration-count: infinite;
-  -o-animation-duration: 15s;
-  animation-name: cf4FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 15s; }
-
-#gal div:nth-of-type(1) {
-  -webkit-animation-delay: 10s;
-  -moz-animation-delay: 10s;
-  -o-animation-delay: 10s;
-  animation-delay: 10s; }
-
-#gal div:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s; }
-
-#gal div:nth-of-type(3) {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  animation-delay: 0s; }
-
-/* User Experience */
-#uxheader {
-  background: #87BA9E;
-  position: relative;
-  font-family: 'dosis', Arial, sans-serif; }
-
-.uximage {
-  opacity: .7; }
-
-/* About */
-.aboutcontent {
-  margin-top: 40px; }
-
-#aboutheader {
-  background: #7DB4B1;
-  position: relative;
-  font-family: 'dosis', Arial, sans-serif; }
-
-.contact_button {
-  color: #fff;
-  padding: 20px 50px;
-  transition: all .5s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  background: rgba(125, 180, 177, 0.8);
-  display: block;
-  text-align: center; }
-
-.contact_button:hover {
-  background: none repeat scroll 0 0 rgba(125, 180, 177, 0.3);
-  color: $white; }
-
-/* Footer */
-.homepagefooter {
-  bottom: 0;
-  padding-top: 50px;
-  position: relative;
-  text-align: center;
-  width: 100%; }
-
-.footertext {
-  font-size: 13px; }
-
-.social {
-  font-size: 13px; }
-
-.homepageme {
-  font-size: 20px; }
-
-.footertext a {
-  color: $light_grey; }
-
-.footertext a:hover {
-  color: #7DB4B1; }
-
-/*=== Laptop Slider ===*/
+  /*=== Laptop Slider ===*/
 #slider-in-laptop {
   width: 102%;
   height: 200px;
@@ -491,6 +245,7 @@ a.homepagelink.fade-in {
   opacity: 1; }
 
 /*=== WORD CHANGE ===*/
+
 #change_word {
   color: $white !important; }
 
@@ -502,6 +257,192 @@ a.homepagelink.fade-in {
     margin: 20px auto; }
 
   .homepagetext {
-    font-size: 18px; } }
+    font-size: 18px; } 
+}
+
+/*===================== 
+WEBSITES
+=====================*/
+
+#websitesheader {
+  background: #27445F;
+  font-family: 'avenir', Arial, sans-serif;
+  position: relative; }
+
+.portfolio {
+  background: none repeat scroll 0 0 $white;
+  display: inline-block;
+  height: auto;
+  margin: 40px 0; }
+
+.portfolio img {
+  width: 100%;
+  @include single-transition(opacity, .5s, ease-in-out);
+  @include backface-visibility(hidden); 
+}
+
+.portfolio img:hover {
+  @include opacity(.8); 
+}
+
+.portfolio-description {
+  margin: 15px; }
+
+.title {
+  padding: 10px 0 0 10px;
+  font-size: 18px; }
+
+.pageheader {
+  font-family: 'avenir',Arial,sans-serif;
+  padding: 30px 0 20px;
+  text-align: center;
+  color: $white; }
+
+.descriptor {
+  color: rgba(0, 0, 0, 0.4); }
+
+/*===================== 
+PROJECTS
+=====================*/
+
+.project {
+  color: $dark_grey;
+  float: left;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  height: auto;
+  width: 100%; }
+
+#projectsheader {
+  background: #e37f54;
+  font-family: 'dosis', Arial, sans-serif;
+  position: relative; }
+
+.project-container {
+  margin: 40px 0;
+  background: $white;
+  height: auto; }
+
+.projecttest {
+  color: $dark_grey;
+  float: left;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  height: auto;
+  width: 100%; }
+
+.project img {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+
+.project-description {
+  display: inline-block;
+  margin: 15px; }
+
+.container1 {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+
+.container2 {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+
+#gal {
+  margin: 0 auto;
+  position: relative; }
+
+#gal div {
+  position: absolute;
+  width: 100%; }
+
+@include keyframes(cf4FadeInOut) {
+  0% { @include opaque(); }
+  20% { @include opaque(); }
+  33% { @include transparent(); }
+  87% { @include transparent(); }
+  100% { @include opaque(); }
+}
+
+#gal div {
+  @include animation(cf4FadeInOut 15s ease-in-out infinite);
+}
+
+#gal div:nth-of-type(1) {
+  @include animation-delay(10s);
+}
+
+#gal div:nth-of-type(2) {
+  @include animation-delay(5s);
+}
+
+#gal div:nth-of-type(3) {
+  @include animation-delay(0s);
+}
+
+/*===================== 
+USEREXPERIENCE
+=====================*/
+
+#uxheader {
+  background: #87BA9E;
+  position: relative;
+  font-family: 'dosis', Arial, sans-serif; }
+
+.uximage {
+  @include opacity(.7); 
+}
+
+/*===================== 
+ABOUT
+=====================*/
+
+.aboutcontent {
+  margin-top: 40px; }
+
+#aboutheader {
+  background: #7DB4B1;
+  position: relative;
+  font-family: 'dosis', Arial, sans-serif; }
+
+.contact_button {
+  color: #fff;
+  padding: 20px 50px;
+  @include single-transition(all, .5s, ease-in-out);
+  background: rgba(125, 180, 177, 0.8);
+  display: block;
+  text-align: center; }
+
+.contact_button:hover {
+  background: none repeat scroll 0 0 rgba(125, 180, 177, 0.3);
+  color: $white; }
+
+/*===================== 
+FOOTER
+=====================*/
+
+.homepagefooter {
+  bottom: 0;
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+.footertext {
+  font-size: 13px; }
+
+.social {
+  font-size: 13px; }
+
+.homepageme {
+  font-size: 20px; }
+
+.footertext a {
+  color: $light_grey; }
+
+.footertext a:hover {
+  color: #7DB4B1; }
 
 /*# sourceMappingURL=celso.css.map */
