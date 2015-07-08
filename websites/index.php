@@ -148,6 +148,35 @@
 
     <div class="six columns">
       <div class="portfolio">
+       <p class="title">Sylvio | <span class="descriptor">Fashion</span></p>
+       <a href="http://sylvio.nyc/" target="_blank"><img src="../images/sylvio.png"></a>
+       <p class="portfolio-description">Sylvio designs specialty womens wear. I created a site to showcase his collections to the world. The site matches his elegant and edgy approach to design.
+       </br> 
+       </br>
+       </br> 
+       <a href="http://sylvio.nyc/" target="_blank">View Sylvio</a>
+       </p>
+      </div>
+    </div>
+
+    <div class="six columns">
+      <div class="portfolio">
+       <p class="title">Ian Moubayed | <span class="descriptor">Portfolio</span></p>
+       <a href="http://ianmoubayed.com/" target="_blank"><img src="../images/Ian.jpg"></a>
+       <p class="portfolio-description">Ian Moubayed's is a filmmaker whose work is intimate and moving. I designed and built his site to match the clear, emotional impact of his films.</br>
+       </br> 
+       </br> 
+       <a href="http://ianmoubayed.com/" target="_blank">View Ian Moubayed</a>
+       </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="six columns">
+      <div class="portfolio">
        <p class="title">Project 2x1 | <span class="descriptor">Media</span></p>
        <a href="http://project2x1.com/" target="_blank"><img src="../images/project2x1new.jpg"></a>
        <p class="portfolio-description">Project 2x1 is a documentary film that needed an interactive website to complement its launch. I designed and built a site that allowed the film’s viewers to truly immerse themselves in the experience and environement of the film’s subject.  
@@ -174,71 +203,11 @@
 
   </div>
 
-   <div class="row">
-
-    <div class="six columns">
-      <div class="portfolio">
-       <p class="title">Ian Moubayed | <span class="descriptor">Portfolio</span></p>
-       <a href="http://ianmoubayed.com/" target="_blank"><img src="../images/Ian.jpg"></a>
-       <p class="portfolio-description">Ian Moubayed's is a filmmaker whose work is intimate and moving. I designed and built his site to match the clear, emotional impact of his films.</br>
-       </br> 
-       </br>
-       </br>  
-       <a href="http://ianmoubayed.com/" target="_blank">View Ian Moubayed</a>
-       </p>
-      </div>
-    </div>
-
-    <div class="six columns">
-      <div class="portfolio">
-       <p class="title">J-Michael's Designs | <span class="descriptor">E-commerce</span></p>
-       <a href="http://j-michaelsdesigns.com/" target="_blank"><img src="../images/jasonmichael.png"></a>
-       <p class="portfolio-description">Jason Michael creates unique handbags and accesories. I created an online store to launch the e-commerce component of his business and to help attract a larger audience.
-       </br> 
-       </br> 
-       </br> 
-       <a href="http://j-michaelsdesigns.com/" target="_blank">View J-Michael's Designs</a>
-       </p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="homepagefooter">
-    <div class="row">
-      <div class="five columns centered">
-      <p class="footertext">
-      EXPLORING & CREATING
-      </br>
-      CELSO@CELSOWHITE.COM • © <script type="text/javascript">document.write(new Date().getFullYear());</script> CELSO WHITE LLC
-      </br>
-      </br>
-      <a href="https://github.com/celsowhite/" target="_blank">GITHUB</a> • <a href="http://lnkd.in/dBnhhYk" target="_blank">LINKEDIN</a> • <a href="http://www.instagram.com/celsostories" target="_blank">INSTAGRAM</a> • <a href="http://www.celsostories.com/" target="_blank">CELSO STORIES</a>
-      </div>
-    </div>
-  </div>
-
 </div>
 
+<!-- FOOTER -->
   
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="../js/jquery.easing.1.3.js"></script>
-<script src="../js/jquery.animate-enhanced.min.js"></script>
-<script src="../js/modernizr.custom.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-36564362-1', 'celsowhite.com');
-  ga('send', 'pageview');
-
-</script>
-
-
+<?php include('../includes/footer.php'); ?>
  
 </body>
 </html>

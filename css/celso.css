@@ -1,4 +1,5 @@
 /*=== IMPORTS ===*/
+/*=== COLORS ===*/
 /*=== FONTS ===*/
 @font-face {
   font-family: "avenir";
@@ -21,6 +22,12 @@ body {
 
 #mainwrapper {
   background: none repeat scroll 0 0 #EEEEEE;
+  font-family: 'avenir', Arial, sans-serif;
+  position: relative;
+}
+
+.homepage#mainwrapper {
+  background: none repeat scroll 0 0 #EEEEEE;
   height: 100vh;
   font-family: 'avenir', Arial, sans-serif;
 }
@@ -28,6 +35,10 @@ body {
 a {
   color: #989898;
   text-decoration: none;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 a:hover {
@@ -71,7 +82,7 @@ HEADER
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
   .logo {
     font-size: 30px;
   }
@@ -93,6 +104,10 @@ HEADER
 
 #menu a {
   color: #989898;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 #menu a:hover {
@@ -593,6 +608,9 @@ ABOUT
 .aboutcontent {
   margin-top: 40px;
 }
+.aboutcontent img {
+  margin-bottom: 50px;
+}
 
 #aboutheader {
   background: #7DB4B1;
@@ -622,7 +640,7 @@ FOOTER
 =====================*/
 .homepagefooter {
   bottom: 0;
-  padding-top: 50px;
+  padding: 50px 0px;
   position: relative;
   text-align: center;
   width: 100%;
@@ -630,6 +648,7 @@ FOOTER
 
 .footertext {
   font-size: 13px;
+  font-family: 'avenir', sans-serif;
 }
 
 .social {
@@ -645,7 +664,7 @@ FOOTER
 }
 
 .footertext a:hover {
-  color: #7DB4B1;
+  color: #3d3d3d;
 }
 
 /*# sourceMappingURL=celso.css.map */

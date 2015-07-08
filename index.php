@@ -31,7 +31,7 @@
 
 <body>
 
-<div id="mainwrapper">
+<div class="homepage" id="mainwrapper">
 
   <div id="header">
     <p class="logo"><a href="http://celsowhite.com">CELSO <span class="lastname">WHITE</span></a></p>
@@ -73,12 +73,6 @@
   
 </div>
 
-
-
-
-
- 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
 <script src="js/scripts.js"></script>
@@ -94,9 +88,6 @@
   ga('send', 'pageview');
 
 </script>
-  
 
-
- 
 </body>
 </html>

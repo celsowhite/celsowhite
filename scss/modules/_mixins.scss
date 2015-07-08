@@ -32,3 +32,17 @@
 	-o-animation: #{$animation_properties};
 	animation: #{$animation_properties};
 }
+
+// Media Queries
+
+@mixin mobile() {
+	@media all and (max-width: 480px){
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media all and (max-width: 768px){
+		@content;
+	}
+}

@@ -21,15 +21,25 @@ body {
 
 #mainwrapper {
   background: none repeat scroll 0 0 #EEEEEE;
+  font-family: 'avenir', Arial, sans-serif;
+  position: relative; 
+}
+
+.homepage#mainwrapper {
+  background: none repeat scroll 0 0 #EEEEEE;
   height: 100vh;
-  font-family: 'avenir', Arial, sans-serif; }
+  font-family: 'avenir', Arial, sans-serif; 
+}
 
 a {
   color: $light_grey;
-  text-decoration: none; }
+  text-decoration: none; 
+  @include single-transition(ease-in-out, .5s)
+}
 
 a:hover {
-  color: $dark_grey; }
+  color: $dark_grey; 
+}
 
 /*===================== 
 HEADER
@@ -62,9 +72,11 @@ HEADER
 .logo:hover span {
   color: $white; }
 
-@media screen and (max-width: 480px) {
+@include mobile() {
   .logo {
-    font-size: 30px; } }
+    font-size: 30px; } 
+  }
+
 .x {
   font-size: 20px;
   font-family: 'quicksandregular', sans-serif; }
@@ -79,10 +91,13 @@ HEADER
   padding: 0 12.5px 12.5px; }
 
 #menu a {
-  color: $light_grey; }
+  color: $light_grey; 
+  @include single-transition(.5s, ease-in-out);
+}
 
 #menu a:hover {
-  color: $dark_grey; }
+  color: $dark_grey; 
+}
 
 #menu a.active {
   color: $dark_grey; }
@@ -252,12 +267,14 @@ a.homepagelink.fade-in {
 .row.homecontent {
   margin: 80px auto; }
 
-@media all and (max-width: 768px) {
+@include tablet() {
   .row.homecontent {
-    margin: 20px auto; }
+    margin: 20px auto; 
+  }
 
   .homepagetext {
-    font-size: 18px; } 
+    font-size: 18px; 
+  } 
 }
 
 /*===================== 
@@ -400,7 +417,14 @@ ABOUT
 =====================*/
 
 .aboutcontent {
-  margin-top: 40px; }
+
+  margin-top: 40px; 
+
+  img {
+    margin-bottom: 50px;
+  }
+
+}
 
 #aboutheader {
   background: #7DB4B1;
@@ -425,13 +449,15 @@ FOOTER
 
 .homepagefooter {
   bottom: 0;
-  padding-top: 50px;
+  padding: 50px 0px;
   position: relative;
   text-align: center;
   width: 100%; }
 
 .footertext {
-  font-size: 13px; }
+  font-size: 13px; 
+  font-family: 'avenir', sans-serif;
+}
 
 .social {
   font-size: 13px; }
@@ -443,6 +469,6 @@ FOOTER
   color: $light_grey; }
 
 .footertext a:hover {
-  color: #7DB4B1; }
+  color: $dark_grey; }
 
 /*# sourceMappingURL=celso.css.map */
