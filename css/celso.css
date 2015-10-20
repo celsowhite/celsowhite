@@ -695,6 +695,46 @@ USEREXPERIENCE
   opacity: 0.7;
 }
 
+/*=== Flexbox Adjustments ===*/
+ul.ux_blocks {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  width: 90%;
+  margin: 50px auto 0;
+}
+ul.ux_blocks li {
+  width: 50%;
+  padding: 0px 10px;
+  margin-bottom: 50px;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+ul.ux_blocks li .title {
+  padding: 10px;
+  font-size: 18px;
+  background: #fff;
+  margin-bottom: 0px;
+}
+ul.ux_blocks li img {
+  display: block;
+}
+ul.ux_blocks li .portfolio-description {
+  padding: 20px;
+  background: #fff;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+@media all and (max-width: 768px) {
+  ul.ux_blocks li {
+    width: 100%;
+  }
+}
+
 /*===================== 
 ABOUT
 =====================*/
