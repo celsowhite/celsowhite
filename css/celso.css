@@ -389,15 +389,6 @@ WEBSITES
   opacity: 0.8;
 }
 
-.portfolio-description {
-  margin: 15px;
-}
-
-.title {
-  padding: 10px 0 0 10px;
-  font-size: 18px;
-}
-
 .pageheader {
   font-family: 'avenir',Arial,sans-serif;
   padding: 30px 0 20px;
@@ -407,6 +398,46 @@ WEBSITES
 
 .descriptor {
   color: rgba(0, 0, 0, 0.4);
+}
+
+/*=== Flexbox Adjustments ===*/
+ul.website_blocks {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  width: 90%;
+  margin: 50px auto 0;
+}
+ul.website_blocks li {
+  width: 50%;
+  padding: 0px 10px;
+  margin-bottom: 50px;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+ul.website_blocks li .title {
+  padding: 10px;
+  font-size: 18px;
+  background: #fff;
+  margin-bottom: 0px;
+}
+ul.website_blocks li img {
+  display: block;
+}
+ul.website_blocks li .portfolio-description {
+  padding: 20px;
+  background: #fff;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+@media all and (max-width: 768px) {
+  ul.website_blocks li {
+    width: 100%;
+  }
 }
 
 /*===================== 
@@ -431,6 +462,11 @@ PROJECTS
   margin: 40px 0;
   background: #ffffff;
   height: auto;
+}
+.project-container p.title {
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 20px;
 }
 
 .projecttest {
