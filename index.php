@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/royalslider.css">
-    <link href="css/skins/default-inverted/rs-default-inverted.css" rel="stylesheet">
+    <!-- <link href="css/skins/default-inverted/rs-default-inverted.css" rel="stylesheet"> -->
        
 </head>
 
@@ -55,7 +55,7 @@
 
   <div class="row homecontent">
     <div class="five columns">
-       <p class="homepagetext fade-in">Hello, I'm Celso, a web developer and user experience designer. I create websites that help <span id="change_word">non-profits</span></br>effectively tell their story and grow their business.</p>
+       <p class="homepagetext fade-in">Hello, I'm Celso, a web developer and user experience designer. I create websites that help <span class="element"></span></br>effectively tell their story and grow their business.</p>
         <a href="websites" class="homepagelink fade-in">View my work</a>   
     </div>
     <div class="seven columns centered">
@@ -76,6 +76,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/typed.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
 <script>

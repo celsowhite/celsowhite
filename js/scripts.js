@@ -58,6 +58,17 @@ function changeClass(){
 }
 setInterval(changeClass, 3000);
 
+/*=== TYPED JS ===*/
+
+$(function(){
+      $(".element").typed({
+        strings: ["non-profits", "media companies", "creators", "start-ups"],
+        typeSpeed: 0,
+        backDelay: 2000,
+        loop: true
+      });
+  });
+
 /*=== DYNAMICALLY CHANGE WORDS ON HOMEPAGE ===*/
 
 (function() {
