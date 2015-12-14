@@ -60,6 +60,15 @@
   <ul class="website_blocks">
 
     <li>
+        <p class="title">NPR's Latino USA | <span class="descriptor">Journalism</span></p>
+        <a href="http://latinousa.org/" target="_blank"><img src="../images/latinousa.png"></a>
+        <div class="portfolio-description">
+          <p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs. Project design by <a href="http://thomascalabre.se/" target="_blank">Thomas Calabrese.</a></p>
+          <a href="http://latinousa.org" target="_blank">View Latino USA</a>
+        </div>
+    </li>
+
+    <li>
         <p class="title">Welcome.US | <span class="descriptor">Non-Profit</span></p>
         <a href="http://welcome.us/" target="_blank"><img src="../images/welcomeus.png"></a>
         <div class="portfolio-description">
@@ -96,11 +105,11 @@
     </li>
 
     <li>
-       <p class="title">Work Shoes | <span class="descriptor">E-commerce</span></p>
-       <a href="http://workshoes.com/" target="_blank"><img src="../images/workshoes.png"></a>
+       <p class="title">Social Go To | <span class="descriptor">Business</span></p>
+       <a href="http://socialgoto.com/" target="_blank"><img src="../images/socialgoto.png"></a>
        <div class="portfolio-description">
-          <p>Work Shoes is an online shop for specialty shoes. Along with a team, I was in charge of improving their e-commerce experience. This included migrating their content to Shopify, improving the sites navigation, reorganizing products within a filter system and creating a more action driven landing page. I lead the user experience and Shopify development for the project.</p>
-          <a href="http://workshoes.com/" target="_blank">View Work Shoes</a>
+          <p>Social Go To helps businesses improve their social media strategies and approach. They needed a clear, unique and action driven website to capture key audiences. Project design by <a href="http://www.alexander-szpakowski.com/" target="_blank">Alexander Szpakowski.</a></p>
+          <a href="http://socialgoto.com/" target="_blank">View Social Go To</a>
        </div>
     </li>
 
@@ -119,15 +128,6 @@
        <div class="portfolio-description">
           <p>Sylvio designs specialty womens wear. I created a site to showcase his collections to the world. The site matches his elegant and edgy approach to design.</p>
           <a href="http://sylvio.nyc/" target="_blank">View Sylvio</a>
-       </div>
-    </li>
-
-    <li>
-       <p class="title">Ian Moubayed | <span class="descriptor">Portfolio</span></p>
-       <a href="http://ianmoubayed.com/" target="_blank"><img src="../images/Ian.jpg"></a>
-       <div class="portfolio-description">
-          <p>Ian Moubayed's is a filmmaker whose work is intimate and moving. I designed and built his site to match the clear, emotional impact of his films.</p>
-          <a href="http://ianmoubayed.com/" target="_blank">View Ian Moubayed</a>
        </div>
     </li>
 

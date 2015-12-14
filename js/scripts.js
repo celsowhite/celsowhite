@@ -62,7 +62,7 @@ setInterval(changeClass, 3000);
 
 $(function(){
       $(".element").typed({
-        strings: ["non-profits", "media companies", "creators", "start-ups"],
+        strings: ["media companies", "non-profits", "creators", "agencies"],
         typeSpeed: 0,
         backDelay: 2000,
         loop: true
@@ -72,7 +72,7 @@ $(function(){
 /*=== DYNAMICALLY CHANGE WORDS ON HOMEPAGE ===*/
 
 (function() {
-  var words = ['non-profits', 'media companies', 'creators', 'start-ups'], i=0;
+  var words = ['news ', 'media companies', 'creators', 'start-ups'], i=0;
   
   setInterval(function() {
     $('#change_word').fadeOut(function(){

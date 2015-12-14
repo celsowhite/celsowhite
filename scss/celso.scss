@@ -245,16 +245,16 @@ a.homepagelink.fade-in {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent); }
 
 .slide1 {
-  background-color: #3887be; }
+  background-color: #386EBE; }
 
 .slide2 {
-  background-color: #f6ac33; }
-
-.slide3 {
   background-color: #87BA9E; }
 
+.slide3 {
+  background-color: #f6ac33; }
+
 .slide4 {
-  background-color: #7da361; }
+  background-color: #87BA9E; }
 
 .active1 .full:nth-child(1), .active2 .full:nth-child(2), .active3 .full:nth-child(3), .active4 .full:nth-child(4) {
   opacity: 1; }
@@ -302,7 +302,7 @@ WEBSITES
 =====================*/
 
 #websitesheader {
-  background: #27445F;
+  background: #386EBE;
   font-family: 'avenir', Arial, sans-serif;
   position: relative; }
 

@@ -62,10 +62,10 @@
       <div class="laptopBg">
         <img src="images/imac.png" class="imgBg" width="707" height="400">
         <div id="slider-in-laptop" class="royalSlider rsDefaultInv">
+        <img src="images/latinousa_home.png">
         <img src="images/welcomeus_home.png">
         <img src="images/abtn_home.png">
         <img src="images/HUMAN_home.png">
-        <img src="images/bold.png">
         </div>
       </div>
     </div>
