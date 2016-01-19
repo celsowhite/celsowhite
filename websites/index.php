@@ -50,7 +50,7 @@
 
       <div class="eight columns centered">
         <div class="pageheader" data-40-top="opacity:1;" data-20-top="opacity:0;">
-        <p class="pagedescription">I work with individuals and brands to plan, design and develop websites. I also serve as a strategic partner for your brand. Working with you to create new ideas that engage audiences and push your brand forward. If you need a website please contact me at celso@celsowhite.com.</p>
+        <p class="pagedescription">I work with individuals and brands to plan, design and develop websites. I also serve as a strategic partner for your brand. Working with you to create new ideas that engage audiences and push your brand forward.<br><br>Let's work together: celso@celsowhite.com</p>
         </div>
       </div>  
 

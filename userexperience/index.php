@@ -49,7 +49,7 @@
 
     <div class="eight columns centered">
       <div class="pageheader">
-      <p class="pagedescription">I am a professional user experience designer. I focus on researching, planning and testing digital experiences to ensure that they solve user needs and meet business objectives.</p> 
+      <p class="pagedescription">Your audience is the number one focus when creating a website. At the core of each of my projects is understanding audience needs and motivations so we create informed experiences that drive action.</p> 
       </div>
     </div>  
 
