@@ -367,6 +367,8 @@ ul.website_blocks {
             padding: 20px;
             background: #fff;
             @include flexbox ((
+              display: flex,
+              flex-direction: column,
               flex: 1 0 auto,
             ));
         }
@@ -498,7 +500,8 @@ ul.ux_blocks {
         margin-bottom: 50px;
         @include flexbox((
           display: flex,
-          flex-direction: column
+          flex-direction: column,
+          flex: 1 0 auto
         ));
 
         .title {
@@ -515,9 +518,19 @@ ul.ux_blocks {
         .portfolio-description {
             padding: 20px;
             background: #fff;
-            @include flexbox ((
-              flex: 1 0 auto,
+            @include flexbox((
+              display: flex,
+              flex-direction: column,
+              flex: 1 0 auto
             ));
+
+            p {
+              @include flexbox((
+                display: flex,
+                flex-direction: column,
+                flex: 1 0 auto
+              ));
+            }
         }
 
         @media all and (max-width: 768px) {

@@ -488,7 +488,11 @@ ul.website_blocks li img {
 ul.website_blocks li .portfolio-description {
   padding: 20px;
   background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
   -webkit-flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
 }
 @media all and (max-width: 768px) {
@@ -711,8 +715,10 @@ ul.ux_blocks li {
   margin-bottom: 50px;
   display: -webkit-flex;
   -webkit-flex-direction: column;
+  -webkit-flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
 }
 ul.ux_blocks li .title {
   padding: 10px;
@@ -726,7 +732,19 @@ ul.ux_blocks li img {
 ul.ux_blocks li .portfolio-description {
   padding: 20px;
   background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
   -webkit-flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+ul.ux_blocks li .portfolio-description p {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
 }
 @media all and (max-width: 768px) {

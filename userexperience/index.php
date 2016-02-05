@@ -60,19 +60,23 @@
 
     <li>
         <p class="title">Adoptive | <span class="descriptor">User Experience Designer</span></p>
-        <img class="uximage" src="../images/adoptive.jpg">
+        <div class="uximage_container">
+          <img class="uximage" src="../images/adoptive.jpg">
+        </div>
         <div class="portfolio-description">
             <p>At Adoptive I led user experience for all projects. My job was to translate the requirements and objectives illuminated by strategic research into impactful and intuitive user experiences. I was involved in user research and persona development, and created information architectures, wireframes, responsive proportypes and detailed functional specifications. </p>
-            <span style="color:#989898">2012-2014</span>  •  <a href="http://www.adoptive.co/" target="_blank">Learn more at Adoptive.co</a>
+            <div class="more_info"><span style="color:#989898">2012-2014</span>  •  <a href="http://www.adoptive.co/" target="_blank">Learn more at Adoptive.co</a></div>
         </div>
     </li>
 
     <li>
-         <p class="title">Huge | <span class="descriptor">Interaction Design School</span></p>
-         <img class="uximage" src="../images/huge.jpg">
+        <p class="title">Huge | <span class="descriptor">Interaction Design School</span></p>
+        <div class="uximage_container">
+          <img class="uximage" src="../images/huge.jpg">
+        </div>
         <div class="portfolio-description">
           <p>I trained in a program for international design talent at Huge. During the program I learned the fundamentals of user experience and interaction design. I conducted user interviews, stakeholder interviews, competitive analysis, feature prioritization and usability tests. I also created and led client meetings with top management at Huge.</p>
-          <span style="color:#989898">Summer 2012</span>  •  <a href="http://www.hugeinc.com/" target="_blank">Learn more at Hugeinc.com</a>
+          <div class="more_info"><span style="color:#989898">Summer 2012</span>  •  <a href="http://www.hugeinc.com/" target="_blank">Learn more at Hugeinc.com</a></div>
         </div>
     </li>
 
