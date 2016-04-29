@@ -72,7 +72,7 @@
         <p class="title">Full Moon Festival | <span class="descriptor">Event</span></p>
         <a href="http://fullmoonfest.com/" target="_blank"><img src="../images/fullmoon2016.png"></a>
         <div class="portfolio-description">
-          <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices.</p>
+          <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
           <a href="http://fullmoonfest.com" target="_blank">View Full Moon Festival</a>
         </div>
     </li>
