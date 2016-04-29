@@ -69,6 +69,33 @@
     </li>
 
     <li>
+        <p class="title">Full Moon Festival | <span class="descriptor">Event</span></p>
+        <a href="http://fullmoonfest.com/" target="_blank"><img src="../images/fullmoon2016.png"></a>
+        <div class="portfolio-description">
+          <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices.</p>
+          <a href="http://fullmoonfest.com" target="_blank">View Full Moon Festival</a>
+        </div>
+    </li>
+
+    <li>
+        <p class="title">Terez Lookbook | <span class="descriptor">Fashion</span></p>
+        <a href="http://terez.com/pages/lookbook" target="_blank"><img src="../images/terez.png"></a>
+        <div class="portfolio-description">
+          <p>Terez creates a fun line of clothing for women and girls. They wanted to showcase their products in a new way that brings a storytelling experience to choosing an outfit. I was in charge of developing the lookbook within Shopify. The lookbook is coded so the Terez team can update and easily add products as the seasons and styles change.</p>
+          <a href="http://terez.com/pages/lookbook" target="_blank">View Terez</a>
+        </div>
+    </li>
+
+    <li>
+       <p class="title">PBS | <span class="descriptor">Media</span></p>
+       <a href="http://americabythenumbers.org/" target="_blank"><img src="../images/abtn.png"></a>
+       <div class="portfolio-description">
+          <p>America by The Numbers is a new PBS documentary series. I helped create an online experience to share stories and facts from the show. The new website also reflects the unique character the series brings to PBS.</p>
+          <a href="http://americabythenumbers.org/" target="_blank">View America By The Numbers</a>
+       </div>
+    </li>
+
+    <li>
         <p class="title">Welcome.US | <span class="descriptor">Non-Profit</span></p>
         <a href="http://welcome.us/" target="_blank"><img src="../images/welcomeus.png"></a>
         <div class="portfolio-description">
@@ -87,15 +114,6 @@
     </li>
 
     <li>
-       <p class="title">PBS | <span class="descriptor">Media</span></p>
-       <a href="http://americabythenumbers.org/" target="_blank"><img src="../images/abtn.png"></a>
-       <div class="portfolio-description">
-          <p>America by The Numbers is a new PBS documentary series. I helped create an online experience to share stories and facts from the show. The new website also reflects the unique character the series brings to PBS.</p>
-          <a href="http://americabythenumbers.org/" target="_blank">View America By The Numbers</a>
-       </div>
-    </li>
-
-    <li>
        <p class="title">HUMAN | <span class="descriptor">Agency</span></p>
        <a href="http://agency.thehumanstory.com/" target="_blank"><img src="../images/HUMAN.png"></a>
        <div class="portfolio-description">
@@ -105,11 +123,11 @@
     </li>
 
     <li>
-       <p class="title">Social Go To | <span class="descriptor">Business</span></p>
-       <a href="http://socialgoto.com/" target="_blank"><img src="../images/socialgoto.png"></a>
+       <p class="title">Aquifi | <span class="descriptor">Technology</span></p>
+       <a href="http://aquifi.com/" target="_blank"><img src="../images/aquifi.png"></a>
        <div class="portfolio-description">
-          <p>Social Go To helps businesses improve their social media strategies and approach. They needed a clear, unique and action driven website to capture key audiences. Project design by <a href="http://www.alexander-szpakowski.com/" target="_blank">Alexander Szpakowski.</a></p>
-          <a href="http://socialgoto.com/" target="_blank">View Social Go To</a>
+          <p>Aquifi is one of the leading creators of 3D vision software. They needed a site overhaul to showcase their product and its use cases to their core audiences. The challenge was to clearly show the products capabilities and express the 'wow' factor while also explaining the in-depth technical details for their more tech savvy audiences. I led the user experience and development of the new website. Project led by <a href="http://agency.thehumanstory.com/" target="_blank">HUMAN</a>.</p>
+          <a href="http://aquifi.com/" target="_blank">View Aquifi</a>
        </div>
     </li>
 
@@ -123,11 +141,11 @@
     </li>
 
     <li>
-       <p class="title">Sylvio | <span class="descriptor">Fashion</span></p>
-       <a href="http://sylvio.nyc/" target="_blank"><img src="../images/sylvio.png"></a>
+       <p class="title">Social Go To | <span class="descriptor">Business</span></p>
+       <a href="http://socialgoto.com/" target="_blank"><img src="../images/socialgoto.png"></a>
        <div class="portfolio-description">
-          <p>Sylvio designs specialty womens wear. I created a site to showcase his collections to the world. The site matches his elegant and edgy approach to design.</p>
-          <a href="http://sylvio.nyc/" target="_blank">View Sylvio</a>
+          <p>Social Go To helps businesses improve their social media strategies and approach. They needed a clear, unique and action driven website to capture key audiences. Project design by <a href="http://www.alexander-szpakowski.com/" target="_blank">Alexander Szpakowski.</a></p>
+          <a href="http://socialgoto.com/" target="_blank">View Social Go To</a>
        </div>
     </li>
 
