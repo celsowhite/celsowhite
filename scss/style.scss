@@ -1,0 +1,377 @@
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+
+/*==================================
+FONTS
+==================================*/
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, p {
+	font-family: 'avenir', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+h1, h2 {
+    font-family: 'georgia', serif;
+}
+
+p {
+	font-size: 14px;
+    line-height: 28px;
+    margin: 0px 0px 20px;
+    font-weight: 400;
+
+    @include mobile {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+h1 {
+	font-size: 50px;
+    font-weight: 300;
+    font-family: baskerville;
+    font-style: italic;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 35px;
+    font-family: serif;
+
+    @include mobile_landscape {
+        font-size: 25px;
+    }
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+p, h1, h2, h3 {
+    margin: 0px 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    transition: color .3s ease-in-out;
+}
+
+strong, b {
+    font-family: 'centurygothic_bold', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*==================================
+STRUCTURE  
+==================================*/
+
+body {
+    display: flex;
+    margin: 0px;
+    flex-flow: row;
+}
+
+main.page_container {
+    background: $white;
+    width: 90%;
+    overflow-y: scroll;
+    height: 100vh;
+
+    &.flexed {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.page_header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*==================================
+HELPERS 
+==================================*/
+
+.center {
+    text-align: center;
+}
+
+/*==================================
+COMPONENTS
+==================================*/
+
+/*=== Overlay ===*/
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    background: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: .3s all ease-in-out;
+}
+
+.overlay p {
+    color: white;
+    font-family: baskerville;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*==================================
+SIDEBAR MENU  
+==================================*/
+
+header.sidebar_menu {
+    width: 10%;
+    height: 100vh;
+    border-right: 1px solid #949494;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=== Logo ===*/
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: avenir, sans-serif;
+    letter-spacing: 1px;
+    background: black;
+    height: 80px;
+    width: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background: white;
+        color: #000;
+    }
+}
+
+/*=== Navigation ===*/
+
+nav.main_navigation {
+    transform: rotate(-90deg);
+    font-size: 16px;
+    font-family: 'baskerville', serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.main_navigation a {
+    margin: 0px 10px;
+    color: $black;
+}
+
+/*==================================
+WEBSITES
+==================================*/
+
+/*=== Names ===*/
+
+section.website_names {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.website_names li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.website_names li a {
+    color: $grey;
+
+    &:hover, &.active {
+        color: $black;
+    }
+}
+
+/*=== Images ===*/
+
+section.website_images {
+    width: 70%;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.website_container {
+    position: relative;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.website_container:hover .overlay {
+    opacity: 1;
+}
+
+.website_image {
+    width: 50%;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.fullmoon_collage1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    z-index: 9;
+}
+
+.fullmoon_collage2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    z-index: 9;
+}
+
+/*==================================
+PROJECTS
+==================================*/
+
+.projects_container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    width: 50%;
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.project:hover {
+    .overlay {
+        opacity: 1;
+    }
+}
+
+/*==================================
+GRID
+==================================*/
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    margin: 0px -7.5px;
+}
+
+.column_1, .column_1_2, .column_1_3, .column_2_3, .column_1_4, .column_3_4 {
+    position: relative;
+    margin: 0px 0px 15px;
+    padding: 0px 7.5px;
+    float: left;
+    display: inline-block;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+/*=== Columns ===*/
+
+.column_1 {
+    width: 100%;
+}
+
+.column_1_2 {
+    width: 50%;
+
+    @include mobile_landscape {
+        width: 100%;
+    }
+}
+
+.column_1_3 {
+    width: 33.33%;
+
+    @include mobile_landscape {
+        width: 100%;
+    }
+}
+
+.column_2_3 {
+    width: 66.66%;
+
+    @include mobile_landscape {
+        width: 100%;
+    }
+}
+
+.column_1_4 {
+    width: 25%;
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include mobile_landscape {
+        width: 100%;
+    }
+}
+
+.column_3_4 {
+    width: 75%;
+
+    @include mobile_landscape {
+        width: 100%;
+    }
+}
