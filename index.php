@@ -3,31 +3,45 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Celso White: Web Design & Development</title>
+        <meta name="description" content="Website developer and digital agency. Celso works with individuals and brands to plan, design and develop websites.">
+        <meta name="keywords" content="celso white, celso, web, design, developer, css, html, javascript, photography, web designer, brooklyn, web development, wordpress development, shopify, entreprenuer, front-end designer, front-end developer, front-end, celsostories, Celso Stories">
+        <meta name="author" content="Celso White | www.celsowhite.com">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Facebook Meta -->
-        <meta property="og:title" content=""/>
-        <meta property="og:image" content=""/>
-        <meta property="og:site_name" content=""/>
-        <meta property="og:description" content="" />
+        <meta property="og:title" content="Websites"/>
+        <meta property="og:image" content="img/celso.jpg"/>
+        <meta property="og:site_name" content="Celso White: Web Design & Development"/>
+        <meta property="og:description" content="Website developer and digital agency. Celso works with individuals and brands to plan, design and develop websites." />
         <!-- Twitter Meta -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="">
-        <meta name="twitter:image" content="">
+        <meta name="twitter:url" content="http://celsowhite.com">
+        <meta name="twitter:title" content="Celso White: Web Design & Development">
+        <meta name="twitter:description" content="Website developer and digital agency. Celso works with individuals and brands to plan, design and develop websites.">
+        <meta name="twitter:image" content="img/celso.jpg">
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-        <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
 
-        <header class="sidebar_menu">
-            <div class="logo">CW</div>
+        <header class="mobile_header">
+            <a href="." class="logo">
+                <span class="initials">CW</span>
+                <span class="circle"></span>
+            </a>
             <nav class="main_navigation">
-                <a href="">Websites</a><a href="">Projects</a><a href="about">About</a>
+                <a href="websites" class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a>
+            </nav>
+        </header>
+
+        <header class="sidebar_menu">
+            <a href="." class="logo">
+                <span class="initials">CW</span>
+                <span class="circle"></span>
+            </a>
+            <nav class="main_navigation">
+                <a href="websites" class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a>
             </nav>
         </header>
 
@@ -40,15 +54,15 @@
                     <li><a href="#abtn" class="abtn">PBS America By The Numbers</a></li>
                     <li><a href="#twt" class="twt">The Water Trust</a></li>
                     <li><a href="#terez" class="terez">Terez</a></li>
-                    <li><a href="#welcomeus" class="welcomeus">Welcome US</a></li>
                     <li><a href="#mattexsnapchat" class="mattexsnapchat">MATTE x Snapchat</a></li>
+                    <li><a href="#welcomeus" class="welcomeus">Immigrant Heritage Month</a></li>
                 </ul>
             </section>
 
             <section class="website_images">
                 <a class="website_container" id="latinousa" href="http://latinousa.org" target="_blank" style="background-color: #2E3A96;">
                     <div class="website_image">
-                        <img src="img/latino_usa.png" />
+                        <img src="img/websites/latino_usa.png" />
                     </div>
                     <div class="overlay">
                         <p>Strategy • Design • Development</p>
@@ -56,25 +70,25 @@
                 </a>
                 <a class="website_container" id="fullmoonfest" href="http://fullmoonfest.com" target="_blank" style="background-color: #E1E1E1;">
                     <div class="website_image">
-                        <img src="img/fullmoon_festival.png" />
+                        <img src="img/websites/fullmoon_festival.png" />
                     </div>
                     <div class="overlay">
                         <p>Development</p>
                     </div>
-                    <img src="img/fullmoon_collage1.png" class="fullmoon_collage1" />
-                    <img src="img/fullmoon_collage2.png" class="fullmoon_collage2" />
+                    <img src="img/websites/fullmoon_collage1.png" class="fullmoon_collage1" />
+                    <img src="img/websites/fullmoon_collage2.png" class="fullmoon_collage2" />
                 </a>
-                <a class="website_container" id="abtn" href="http://americabythenumbers.org" target="_blank" style="background-color: #F6AC33;">
+                <a class="website_container" id="abtn" href="http://www.americabythenumbers.org/episodes/" target="_blank" style="background-color: #F6AC33;">
                     <div class="website_image">
-                        <img src="img/america_by_the_numbers.png" />
+                        <img src="img/websites/america_by_the_numbers.png" />
                     </div>
                     <div class="overlay">
                         <p>Strategy • Design • Development</p>
                     </div>
                 </a>
-                <a class="website_container" id="twt" href="http://thewatertrust.org" target="_blank" style="background-color: #378BCA;">
+                <a class="website_container" id="twt" href="https://watertrust.org/" target="_blank" style="background-color: #378BCA;">
                     <div class="website_image">
-                        <img src="img/the_water_trust.png" />
+                        <img src="img/websites/the_water_trust.png" />
                     </div>
                     <div class="overlay">
                         <p>Strategy • Design • Development</p>
@@ -82,20 +96,23 @@
                 </a>
                 <a class="website_container" id="terez" href="http://www.terez.com/pages/lookbook" target="_blank" style="background-color: #AECFDC;">
                     <div class="website_image">
-                        <img src="img/terez.png" />
+                        <img src="img/websites/terez.png" />
                     </div>
                     <div class="overlay">
                         <p>Shopify Lookbook App</p>
                     </div>
                 </a>
-                <a class="website_container" id="welcomeus" href="http://welcome.us" target="_blank" style="background-color: #F6AC33;">
-                    <div class="website_image">
-                        <img src="img/welcome_us.png" />
-                    </div>
-                </a>
                 <a class="website_container" id="mattexsnapchat" href="http://matteprojects.com/snapchat" target="_blank" style="background-color: #8E3945;">
                     <div class="website_image">
-                        <img src="img/matte_x_snapchat.png" />
+                        <img src="img/websites/matte_x_snapchat.png" />
+                    </div>
+                    <div class="overlay">
+                        <p>Development</p>
+                    </div>
+                </a>
+                <a class="website_container" id="welcomeus" href="http://welcome.us" target="_blank" style="background-color: #F6AC33;">
+                    <div class="website_image">
+                        <img src="img/websites/welcome_us.png" />
                     </div>
                     <div class="overlay">
                         <p>Development</p>
@@ -104,24 +121,22 @@
             </section>
 
         </main>
-        
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/vendor/fitvids.min.js"></script>
-        <script src="js/vendor/froogaloop.min.js"></script>
-        <script src="js/vendor/smoothscroll.min.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics -->
+
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-36564362-1','auto');ga('send','pageview');
         </script>
+        
     </body>
 </html>

@@ -35,6 +35,21 @@ gulp.task('js-minify', function(){
 
 });
 
+/*=== Image Optimization ===*/
+
+gulp.task('imageoptimize', function() {
+
+    gulp.src('./nonoptimizedimg/**/*')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      optimizationLevel: 6,
+      use: [pngquant({quality: '65-80', speed: 2})]
+    }))
+    .pipe(gulp.dest('./img'))
+
+});
+
 /*=== Watch Styles and Scripts ===*/
 
 gulp.task('watch', function() {

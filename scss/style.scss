@@ -5,6 +5,29 @@
 FONTS
 ==================================*/
 
+@font-face {
+  font-family: 'avenir';
+  src: url('../fonts/avenir/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/avenir/AvenirNextLTPro-Regular.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirNextLTPro-Regular.woff') format('woff'), url('../fonts/avenir/AvenirNextLTPro-Regular.ttf')  format('truetype'), url('../fonts/avenir/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir-bold';
+  src: url('../fonts/avenir/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/avenir/AvenirNextLTPro-Bold.woff') format('woff'), url('../fonts/avenir/AvenirNextLTPro-Bold.ttf')  format('truetype'), url('../fonts/avenir/AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'baskerville';
+  src: url('../fonts/baskerville/Baskerville-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/baskerville/Baskerville-Italic.woff') format('woff'), url('../fonts/baskerville/Baskerville-Italic.ttf')  format('truetype'), url('../fonts/baskerville/Baskerville-Italic.svg#Baskerville-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -13,51 +36,29 @@ FONTS
 
 body, p {
 	font-family: 'avenir', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
     color: #000000;
-}
-
-h1, h2 {
-    font-family: 'georgia', serif;
 }
 
 p {
 	font-size: 14px;
     line-height: 28px;
     margin: 0px 0px 20px;
-    font-weight: 400;
-
-    @include mobile {
-        font-size: 12px;
-        line-height: 20px;
-    }
 }
 
 h1 {
 	font-size: 50px;
+    line-height: 50px;
     font-weight: 300;
-    font-family: baskerville;
+    font-family: 'baskerville', serif;
     font-style: italic;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 35px;
-    font-family: serif;
 
     @include mobile_landscape {
-        font-size: 25px;
+        font-size: 30px;
+        line-height: 35px;
     }
 }
 
-h3 {
-	font-size: 25px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-p, h1, h2, h3 {
+p, h1 {
     margin: 0px 0px 20px;
 }
 
@@ -68,7 +69,7 @@ a {
 }
 
 strong, b {
-    font-family: 'centurygothic_bold', sans-serif;
+    font-family: 'avenir-bold', sans-serif;
 }
 
 ul {
@@ -78,13 +79,49 @@ ul {
 }
 
 /*==================================
+GRID
+==================================*/
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    margin: 0px -20px;
+
+    @include tablet {
+        margin: 0px;
+    }
+}
+
+/*=== Columns ===*/
+
+.column_1_2 {
+    position: relative;
+    width: 50%;
+    margin: 0px 0px 20px;
+    padding: 0px 20px;
+    float: left;
+    display: inline-block;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+/*==================================
 STRUCTURE  
 ==================================*/
 
 body {
     display: flex;
     margin: 0px;
-    flex-flow: row;
+    flex-flow: row wrap;
 }
 
 main.page_container {
@@ -92,22 +129,38 @@ main.page_container {
     width: 90%;
     overflow-y: scroll;
     height: 100vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 
     &.flexed {
         display: flex;
         flex-flow: row wrap;
     }
+
+    &.loaded {
+        margin-top: 0px;
+        opacity: 1;
+    }
+
+    @include tablet_landscape {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .container {
-    max-width: 900px;
+    max-width: 940px;
     width: 90%;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 
 .page_header {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0px;
+
+    @include tablet_landscape {
+        margin: 30px 0px 50px;
+    }
 }
 
 /*==================================
@@ -144,6 +197,8 @@ COMPONENTS
     font-family: baskerville;
     font-style: italic;
     font-size: 20px;
+    padding: 0px 10px;
+    text-align: center;
 }
 
 /*==================================
@@ -158,23 +213,24 @@ header.sidebar_menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet_landscape {
+        display: none;
+    }
 }
 
 /*=== Logo ===*/
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     border-radius: 50%;
     font-weight: bold;
-    font-family: avenir, sans-serif;
+    font-family: 'avenir-bold', sans-serif;
     letter-spacing: 1px;
-    background: black;
+    background: $black;
+    position: relative;
     height: 80px;
     width: 80px;
+    margin: 0 auto;
     color: white;
     display: flex;
     align-items: center;
@@ -187,19 +243,78 @@ header.sidebar_menu {
     }
 }
 
+.sidebar_menu .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+span.initials {
+    display: none;
+    letter-spacing: 2px;
+}
+
+span.circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -10px;
+    animation: lighten 1s infinite ease-in-out;
+}
+
+@keyframes lighten {
+  0%   { opacity: .3; }
+  100% { opacity: 1; }
+}
+
 /*=== Navigation ===*/
 
-nav.main_navigation {
+.sidebar_menu nav.main_navigation {
     transform: rotate(-90deg);
-    font-size: 16px;
-    font-family: 'baskerville', serif;
+    transform-origin: center;
+}
+
+nav.main_navigation {
     font-size: 18px;
+    font-family: 'baskerville', serif;
     font-style: italic;
+    // display: none;
 }
 
 .main_navigation a {
     margin: 0px 10px;
-    color: $black;
+    color: $grey;
+
+    &.active {
+        color: $black;
+    }
+}
+
+/*==================================
+MOBILE HEADER
+==================================*/
+
+header.mobile_header {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    display: none;
+
+    @include tablet_landscape {
+        display: block;
+    }
+}
+
+.mobile_header .logo {
+    margin-bottom: 10px;
 }
 
 /*==================================
@@ -213,6 +328,10 @@ section.website_names {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet_landscape {
+        display: none;
+    }
 }
 
 .website_names li {
@@ -234,6 +353,11 @@ section.website_images {
     width: 70%;
     overflow: scroll;
     height: 100vh;
+
+    @include tablet_landscape {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .website_container {
@@ -253,7 +377,7 @@ section.website_images {
 }
 
 .website_image {
-    width: 50%;
+    width: 45%;
 
     img {
         display: block;
@@ -294,6 +418,10 @@ PROJECTS
         display: block;
         width: 100%;
     }
+
+    @include mobile_landscape {
+        width: 100%;
+    }
 }
 
 .project:hover {
@@ -303,75 +431,28 @@ PROJECTS
 }
 
 /*==================================
-GRID
+ABOUT
 ==================================*/
 
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    width: auto;
-    margin: 0px -7.5px;
+/*=== Social ===*/
+
+ul.social_list {
+    text-align: center;
+    border-top: 1px solid $grey;
+    padding-top: 20px;
 }
 
-.column_1, .column_1_2, .column_1_3, .column_2_3, .column_1_4, .column_3_4 {
-    position: relative;
-    margin: 0px 0px 15px;
-    padding: 0px 7.5px;
-    float: left;
+ul.social_list li {
     display: inline-block;
-
-    img {
-        display: block;
-        width: 100%;
-    }
+    font-family: 'baskerville';
+    font-style: italic;
+    margin: 0px 10px;
 }
 
-/*=== Columns ===*/
+ul.social_list li a {
+    color: $black;
 
-.column_1 {
-    width: 100%;
-}
-
-.column_1_2 {
-    width: 50%;
-
-    @include mobile_landscape {
-        width: 100%;
-    }
-}
-
-.column_1_3 {
-    width: 33.33%;
-
-    @include mobile_landscape {
-        width: 100%;
-    }
-}
-
-.column_2_3 {
-    width: 66.66%;
-
-    @include mobile_landscape {
-        width: 100%;
-    }
-}
-
-.column_1_4 {
-    width: 25%;
-
-    @include tablet {
-        width: 50%;
-    }
-
-    @include mobile_landscape {
-        width: 100%;
-    }
-}
-
-.column_3_4 {
-    width: 75%;
-
-    @include mobile_landscape {
-        width: 100%;
+    &:hover {
+        color: $grey;
     }
 }

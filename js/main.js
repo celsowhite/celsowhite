@@ -1,6 +1,24 @@
 $(document).ready(function(){
 
  /*===================
+ PAGE FADEIN & LOGO ANIMATION
+ ===================*/
+
+ setTimeout(function(){
+
+ 	// Fade out the circle animation and fadin the initials
+
+ 	$('span.circle').fadeOut('fast', function(){
+ 		$('span.initials').fadeIn('slow');
+ 	});
+
+ 	// Fade in the page
+
+ 	$('.page_container').addClass('loaded');
+
+ }, 1000);
+
+ /*===================
  SMOOTH SCROLL
  ===================*/
 
@@ -18,7 +36,7 @@ $('.website_names a').on('click',function (e) {
     var websiteDistance = -firstWebsitePosition + $target.offset().top;
 
     $('.website_images').animate({
-        'scrollTop': websiteDistance,
+        'scrollTop': websiteDistance + 10,
     }, 900, 'swing');
 });
 
