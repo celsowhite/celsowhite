@@ -61,7 +61,7 @@
                     </div>
                 </a>
                 <a class="project" href="http://www.celsostories.com/?gallery=companhia-bate-palmas" target="_blank">
-                    <img src="../img/projects/bate_palmas.jpg" />
+                    <img src="../img/projects/batepalmas.jpg" />
                     <div class="overlay">
                         <p>Photodocumentary of travels with a Brazilian drum band.</p>
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </a>
                 <a class="project" href="http://www.kuumba.tv/" target="_blank">
-                    <img src="../img/projects/kuumba.jpg" />
+                    <img src="../img/projects/kuumbatv.jpg" />
                     <div class="overlay">
                         <p>Creative video network on college campuses.</p>
                     </div>
