@@ -41,7 +41,7 @@
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
-                <a href="websites" class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a>
+                <a href="mailto:celso@celsowhite.com">Email</a><a href="about">About</a><a href="projects">Projects</a><a href="websites" class="active">Websites</a>
             </nav>
         </header>
 
@@ -94,7 +94,7 @@
                         <p>Strategy • Design • Development</p>
                     </div>
                 </a>
-                <a class="website_container" id="terez" href="http://www.terez.com/pages/lookbook" target="_blank" style="background-color: #AECFDC;">
+                <a class="website_container" id="terez" href="http://www.terez.com/pages/womens-lookbook" target="_blank" style="background-color: #AECFDC;">
                     <div class="website_image">
                         <img src="img/websites/terez.png" />
                     </div>
@@ -125,7 +125,7 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
 
         <!-- Google Analytics -->
 

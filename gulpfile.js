@@ -56,7 +56,7 @@ gulp.task('watch', function() {
 
   	gulp.watch('./scss/**/*.scss', ['styles']);
 
-  	gulp.watch('./js/scripts.js', ['js-minify']);
+  	gulp.watch('./js/main.js', ['js-minify']);
 
 });
 
