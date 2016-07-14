@@ -49,7 +49,7 @@
 
             <section class="website_names">
                 <ul>
-                    <li><a href="#tribeca" class="active tribec">Tribeca Film Festival</a></li>
+                    <li><a href="#tribeca" class="active tribeca">Tribeca Film Festival</a></li>
                     <li><a href="#latinousa" class="latinousa">NPR's Latino USA</a></li>
                     <li><a href="#fullmoonfest" class="fullmoonfest">Full Moon Festival</a></li>
                     <li><a href="#abtn" class="abtn">PBS America By The Numbers</a></li>
