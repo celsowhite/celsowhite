@@ -31,7 +31,7 @@
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
-                <a href="websites" class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a><a href="mailto:celso@celsowhite.com">Email</a>
+                <a href="." class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a><a href="mailto:celso@celsowhite.com">Email</a>
             </nav>
         </header>
 
@@ -41,7 +41,7 @@
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
-                <a href="mailto:celso@celsowhite.com">Email</a><a href="about">About</a><a href="projects">Projects</a><a href="websites" class="active">Websites</a>
+                <a href="mailto:celso@celsowhite.com">Email</a><a href="about">About</a><a href="projects">Projects</a><a href="." class="active">Websites</a>
             </nav>
         </header>
 
