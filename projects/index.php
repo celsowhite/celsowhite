@@ -31,7 +31,7 @@
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
-                <a href="mailto:celso@celsowhite.com">Email</a><a class="active"  href="../about">About</a><a href="../projects">Projects</a><a href="../">Websites</a>
+                <a href="../">Websites</a><a href="../projects" class="active">Projects</a><a href="../about">About</a><a href="mailto:celso@celsowhite.com">Email</a>
             </nav>
         </header>
 

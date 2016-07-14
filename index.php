@@ -31,7 +31,7 @@
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
-                <a href="websites" class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a>
+                <a href="websites" class="active">Websites</a><a href="projects">Projects</a><a href="about">About</a><a href="mailto:celso@celsowhite.com">Email</a>
             </nav>
         </header>
 
@@ -49,7 +49,8 @@
 
             <section class="website_names">
                 <ul>
-                    <li><a href="#latinousa" class="active latinousa">NPR's Latino USA</a></li>
+                    <li><a href="#tribeca" class="active tribec">Tribeca Film Festival</a></li>
+                    <li><a href="#latinousa" class="latinousa">NPR's Latino USA</a></li>
                     <li><a href="#fullmoonfest" class="fullmoonfest">Full Moon Festival</a></li>
                     <li><a href="#abtn" class="abtn">PBS America By The Numbers</a></li>
                     <li><a href="#twt" class="twt">The Water Trust</a></li>
@@ -60,6 +61,14 @@
             </section>
 
             <section class="website_images">
+                <a class="website_container" id="tribeca" href="http://tribecafilm.com" target="_blank" style="background-color: #FBCD6B;">
+                    <div class="website_image">
+                        <img src="img/websites/tribeca.png" />
+                    </div>
+                    <div class="overlay">
+                        <p>Homepage Redesign</p>
+                    </div>
+                </a>
                 <a class="website_container" id="latinousa" href="http://latinousa.org" target="_blank" style="background-color: #2E3A96;">
                     <div class="website_image">
                         <img src="img/websites/latino_usa.png" />
