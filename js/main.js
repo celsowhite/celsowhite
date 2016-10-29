@@ -66,4 +66,13 @@ $('.website_images').scroll(function(){
 	});
 });
 
+/*===================
+NEW HOMEPAGE
+===================*/
+
+$('.website_images_carousel').slick({
+	centerMode: true,
+	slidesToShow: 1
+});
+
 });

@@ -3,10 +3,11 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var cssnano      = require('gulp-cssnano');
+var cssmin       = require('gulp-cssmin');
 var rename       = require('gulp-rename');
 var watch        = require('gulp-watch');
-var minify       = require('gulp-minify');
+var uglify       = require('gulp-uglify');
+var gutil        = require('gulp-util');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 
@@ -16,8 +17,8 @@ gulp.task('styles', function () {
 
     gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-    .pipe(cssnano())
+    .pipe(autoprefixer({ browsers: ['last 3 versions'] }))
+    .pipe(cssmin())
     .pipe(rename( {suffix: '.min'} ))
     .pipe(gulp.dest('./css'))
 
@@ -28,9 +29,8 @@ gulp.task('styles', function () {
 gulp.task('js-minify', function(){
 
 	gulp.src('./js/main.js')
-	.pipe(minify({ 
-		ext: { min:'.min.js'}
-	}))
+  .pipe(uglify().on('error', gutil.log))
+  .pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./js'))
 
 });

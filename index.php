@@ -22,6 +22,7 @@
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/slick.css">
     </head>
     <body>
 
@@ -61,7 +62,8 @@
             </section>
 
             <section class="website_images">
-                <a class="website_container" id="tribeca" href="http://tribecafilm.com" target="_blank" style="background-color: #FBCD6B;">
+                <a class="website_container" id="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(223,77,47,.3);"></div>
                     <div class="website_image">
                         <img src="img/websites/tribeca.png" />
                     </div>
@@ -69,7 +71,8 @@
                         <p>Homepage Redesign</p>
                     </div>
                 </a>
-                <a class="website_container" id="latinousa" href="http://latinousa.org" target="_blank" style="background-color: #2E3A96;">
+                <a class="website_container" id="latinousa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(223,77,47,.3);"></div>
                     <div class="website_image">
                         <img src="img/websites/latino_usa.png" />
                     </div>
@@ -77,15 +80,14 @@
                         <p>Strategy • Design • Development</p>
                     </div>
                 </a>
-                <a class="website_container" id="fullmoonfest" href="http://fullmoonfest.com" target="_blank" style="background-color: #E1E1E1;">
+                <a class="website_container" id="fullmoonfest" href="http://fullmoonfest.com" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
                     <div class="website_image">
                         <img src="img/websites/fullmoon_festival.png" />
                     </div>
                     <div class="overlay">
                         <p>Development</p>
                     </div>
-                    <img src="img/websites/fullmoon_collage1.png" class="fullmoon_collage1" />
-                    <img src="img/websites/fullmoon_collage2.png" class="fullmoon_collage2" />
                 </a>
                 <a class="website_container" id="abtn" href="http://www.americabythenumbers.org/episodes/" target="_blank" style="background-color: #F6AC33;">
                     <div class="website_image">
@@ -95,7 +97,8 @@
                         <p>Strategy • Design • Development</p>
                     </div>
                 </a>
-                <a class="website_container" id="twt" href="https://watertrust.org/" target="_blank" style="background-color: #378BCA;">
+                <a class="website_container" id="twt" href="https://watertrust.org/" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.5);"></div>
                     <div class="website_image">
                         <img src="img/websites/the_water_trust.png" />
                     </div>
@@ -132,6 +135,7 @@
         </main>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/main.min.js"></script>
