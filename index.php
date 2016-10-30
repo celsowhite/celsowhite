@@ -46,95 +46,114 @@
             </nav>
         </header>
 
-        <main class="page_container flexed">
+        <main class="page_container">
 
-            <section class="website_names">
-                <ul>
-                    <li><a href="#tribeca" class="active tribeca">Tribeca Film Festival</a></li>
-                    <li><a href="#latinousa" class="latinousa">NPR's Latino USA</a></li>
-                    <li><a href="#fullmoonfest" class="fullmoonfest">Full Moon Festival</a></li>
-                    <li><a href="#abtn" class="abtn">PBS America By The Numbers</a></li>
-                    <li><a href="#twt" class="twt">The Water Trust</a></li>
-                    <li><a href="#terez" class="terez">Terez</a></li>
-                    <li><a href="#mattexsnapchat" class="mattexsnapchat">MATTE x Snapchat</a></li>
-                    <li><a href="#welcomeus" class="welcomeus">Immigrant Heritage Month</a></li>
-                </ul>
-            </section>
-
-            <section class="website_images">
-                <a class="website_container" id="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(223,77,47,.3);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/tribeca.png" />
-                    </div>
-                    <div class="overlay">
-                        <p>Homepage Redesign</p>
-                    </div>
-                </a>
-                <a class="website_container" id="latinousa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(223,77,47,.3);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/latino_usa.png" />
-                    </div>
-                    <div class="overlay">
-                        <p>Strategy • Design • Development</p>
-                    </div>
-                </a>
-                <a class="website_container" id="fullmoonfest" href="http://fullmoonfest.com" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
+            <section class="website_images_carousel">
+                <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(1,33,74,.6);"></div>
                     <div class="website_image">
                         <img src="img/websites/fullmoon_festival.png" />
                     </div>
-                    <div class="overlay">
-                        <p>Development</p>
-                    </div>
                 </a>
-                <a class="website_container" id="abtn" href="http://www.americabythenumbers.org/episodes/" target="_blank" style="background-color: #F6AC33;">
+                <a class="website_container" data-website="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
                     <div class="website_image">
-                        <img src="img/websites/america_by_the_numbers.png" />
-                    </div>
-                    <div class="overlay">
-                        <p>Strategy • Design • Development</p>
+                        <img src="img/websites/tribeca.png" />
                     </div>
                 </a>
-                <a class="website_container" id="twt" href="https://watertrust.org/" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.5);"></div>
+                <a class="website_container" data-website="lusa" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
+                    <div class="website_image">
+                        <img src="img/websites/latino_usa.png" />
+                    </div>
+                </a>
+                <a class="website_container" data-website="matte" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
+                    <div class="website_image">
+                        <img src="img/websites/matte.png" />
+                    </div>
+                </a>
+                <a class="website_container" data-website="twt" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(37,30,94,.3);"></div>
                     <div class="website_image">
                         <img src="img/websites/the_water_trust.png" />
                     </div>
-                    <div class="overlay">
-                        <p>Strategy • Design • Development</p>
+                </a>
+                <a class="website_container" data-website="trago" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
+                    <div class="website_image">
+                        <img src="img/websites/trago.png" />
                     </div>
                 </a>
-                <a class="website_container" id="terez" href="http://www.terez.com/pages/womens-lookbook" target="_blank" style="background-color: #AECFDC;">
+                <a class="website_container" data-website="abtn" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/abtn_header.png'); background-position: right;">
+                    <div class="color_overlay" style="background-color: rgba(249,182,61,.2);"></div>
                     <div class="website_image">
-                        <img src="img/websites/terez.png" />
-                    </div>
-                    <div class="overlay">
-                        <p>Shopify Lookbook App</p>
-                    </div>
-                </a>
-                <a class="website_container" id="mattexsnapchat" href="http://matteprojects.com/snapchat" target="_blank" style="background-color: #8E3945;">
-                    <div class="website_image">
-                        <img src="img/websites/matte_x_snapchat.png" />
-                    </div>
-                    <div class="overlay">
-                        <p>Development</p>
-                    </div>
-                </a>
-                <a class="website_container" id="welcomeus" href="http://welcome.us" target="_blank" style="background-color: #F6AC33;">
-                    <div class="website_image">
-                        <img src="img/websites/welcome_us.png" />
-                    </div>
-                    <div class="overlay">
-                        <p>Development</p>
+                        <img src="img/websites/america_by_the_numbers.png" />
                     </div>
                 </a>
             </section>
+
+            <section class="website_mobile_filter">
+                <span id="filter_selected_website">Fullmoon Festival</span>
+            </section>
+
+            <div class="website_content_container">
+                <ul class="tab_items website_nav">
+                    <li data-title="fullmoon">
+                        <span>Fullmoon Festival</span>
+                    </li>
+                    <li data-title="tribeca">
+                        <span>Tribeca Fillm</span>
+                    </li>
+                    <li data-title="lusa">
+                        <span>NPR's Latino USA</span>
+                    </li>
+                    <li data-title="matte">
+                        <span>MATTE</span>
+                    </li>
+                    <li data-title="twt">
+                        <span>The Water Trust</span>
+                    </li>
+                    <li data-title="trago">
+                        <span>Trago</span>
+                    </li>
+                    <li data-title="abtn">
+                        <span>PBS's America By The Numbers</span>
+                    </li>
+                </ul>
+                <div class="tab_content website_content">
+                    <div id="fullmoon">
+                        <p>MATTE Projects designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
+                        <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
+                    </div>
+                    <div id="tribeca">
+                        <p>Tribeca Film was in need of a new homepage to better surface featured content and showcase the past years festival. I brought a team together to strategize, design and develop the new homepage.</p>
+                        <a href="http://tribecafilm.com" target="_blank">View Website</a>
+                    </div>
+                    <div id="lusa">
+                        <p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>
+                        <a href="http://latinousa.org" target="_blank">View Website</a>
+                    </div>
+                    <div id="matte">Hello.</div>
+                    <div id="twt">
+                        <p>The Water Trust is a non-profit that creates water, sanitation and hygiene systems in East Africa. I designed and developed a website that helps the orginzation better connect with donors, shares real-time updates for their projects, and gives a vivid lens into the lives of the communities they effect.</p>
+                        <a href="http://watertrust.org" target="_blank">View Website</a>
+                    </div>
+                    <div id="trago">
+                        <p>Trago was preparing to launch their innovative Water Cap. In preparation for the launch of their product, Trago needed a custom ecommerce shop to promote and sell the Water Cap. I developed the site in Shopify.</p>
+                        <a href="http://trago.co" target="_blank">View Website</a>
+                    </div>
+                    <div id="abtn">
+                        <p>America by The Numbers is a new PBS documentary series. I created an online experience to share stories and facts from the show. The new website also reflects the unique character the series brings to PBS.</p>
+                        <a href="http://americabythenumbers.com" target="_blank">View Website</a>
+                    </div>
+                </div>
+            </div>
 
         </main>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery-tabs.js"></script>
         <script src="js/vendor/slick.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

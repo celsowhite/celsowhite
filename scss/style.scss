@@ -286,7 +286,6 @@ nav.main_navigation {
     font-size: 18px;
     font-family: 'baskerville', serif;
     font-style: italic;
-    // display: none;
 }
 
 .main_navigation a {
@@ -483,20 +482,10 @@ NEW HOMEPAGE
 
 section.website_images_carousel {
     width: 100%;
-    // height: 100vh;
-    // overflow: hidden;
-}
-
-section.website_images_carousel .website_container {
-    height: 450px;
 }
 
 section.website_images_carousel .website_container img {
     width: 100%;
-}
-
-.slick-list {
-    // height: 100% !important;
 }
 
 button.slick-prev.slick-arrow, 
@@ -504,4 +493,94 @@ button.slick-next.slick-arrow {
     position: absolute;
     z-index: 20;
     top: 0;
+}
+
+// Website Nav 
+
+.website_nav {
+    text-align: center;
+    padding: 20px 0px;
+    background: black;
+    color: white;
+    transition: all .5s ease-in-out;
+
+    @include tablet_landscape {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0px;
+    }
+}
+
+.website_nav.mobile_open {
+    max-height: 500px;
+    padding: 20px 0px;
+}
+
+.website_nav li {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+    color: $white;
+    cursor: pointer;
+
+    @include tablet_landscape {
+        display: block;
+        padding: 5px 0px;
+    }
+}
+
+.website_nav li span {
+    position: relative;
+}
+
+.website_nav li span:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 1px;
+    background: $white;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.website_nav li.active span:after {
+    transform: scaleX(1);
+}
+
+.website_nav li:hover span:after {
+    transform: scaleX(1);
+}
+
+// Mobile Filter
+
+section.website_mobile_filter {
+    display: none;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px 0px;
+
+    @include tablet_landscape {
+        display: block;
+    }
+}
+
+// Website Content
+
+.website_content {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0px;
+
+    @include tablet_landscape {
+        padding: 30px 0px;
+    }
+}
+
+.website_content a {
+    font-family: baskerville;
 }
