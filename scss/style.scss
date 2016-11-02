@@ -37,11 +37,11 @@ FONTS
 body, p {
 	font-family: 'avenir', sans-serif;
     color: #000000;
+    font-size: 14px;
+    line-height: 28px;
 }
 
 p {
-	font-size: 14px;
-    line-height: 28px;
     margin: 0px 0px 20px;
 }
 
@@ -320,44 +320,15 @@ header.mobile_header {
 WEBSITES
 ==================================*/
 
-/*=== Names ===*/
-
-section.website_names {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include tablet_landscape {
-        display: none;
-    }
+section.website_images_carousel {
+    width: 100%;
 }
 
-.website_names li {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.website_names li a {
-    color: $grey;
-
-    &:hover, &.active {
-        color: $black;
-    }
+section.website_images_carousel .website_container img {
+    width: 100%;
 }
 
 /*=== Images ===*/
-
-section.website_images {
-    width: 70%;
-    overflow: scroll;
-    height: 100vh;
-
-    @include tablet_landscape {
-        width: 100%;
-        height: auto;
-    }
-}
 
 .website_container {
     position: relative;
@@ -394,105 +365,6 @@ section.website_images {
         display: block;
         width: 100%;
     }
-}
-
-.fullmoon_collage1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 150px;
-    z-index: 9;
-
-    @include mobile_landscape {
-        width: 50px;
-    }
-}
-
-.fullmoon_collage2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 250px;
-    z-index: 9;
-
-    @include mobile_landscape {
-        width: 100px;
-    }
-}
-
-/*==================================
-PROJECTS
-==================================*/
-
-.projects_container {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.project {
-    width: 50%;
-    position: relative;
-
-    img {
-        display: block;
-        width: 100%;
-    }
-
-    @include mobile_landscape {
-        width: 100%;
-    }
-}
-
-.project:hover {
-    .overlay {
-        opacity: 1;
-    }
-}
-
-/*==================================
-ABOUT
-==================================*/
-
-/*=== Social ===*/
-
-ul.social_list {
-    text-align: center;
-    border-top: 1px solid $grey;
-    padding-top: 20px;
-}
-
-ul.social_list li {
-    display: inline-block;
-    font-family: 'baskerville';
-    font-style: italic;
-    margin: 0px 10px;
-}
-
-ul.social_list li a {
-    color: $black;
-
-    &:hover {
-        color: $grey;
-    }
-}
-
-/*==================================
-NEW HOMEPAGE
-==================================*/
-
-section.website_images_carousel {
-    width: 100%;
-}
-
-section.website_images_carousel .website_container img {
-    width: 100%;
-}
-
-button.slick-prev.slick-arrow, 
-button.slick-next.slick-arrow {
-    position: absolute;
-    z-index: 20;
-    top: 0;
 }
 
 // Website Nav 
@@ -558,13 +430,18 @@ button.slick-next.slick-arrow {
 section.website_mobile_filter {
     display: none;
     text-align: center;
-    background: black;
-    color: white;
-    padding: 10px 0px;
+    background: $black;
+    color: $white;
+    padding: 3px 0px;
 
     @include tablet_landscape {
         display: block;
     }
+}
+
+span.down_arrow {
+    position: absolute;
+    right: 10px;
 }
 
 // Website Content
@@ -574,7 +451,7 @@ section.website_mobile_filter {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding: 100px 0px;
+    padding: 50px 0px;
 
     @include tablet_landscape {
         padding: 30px 0px;
@@ -583,4 +460,60 @@ section.website_mobile_filter {
 
 .website_content a {
     font-family: baskerville;
+}
+
+/*==================================
+PROJECTS
+==================================*/
+
+.projects_container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    width: 50%;
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    @include mobile_landscape {
+        width: 100%;
+    }
+}
+
+.project:hover {
+    .overlay {
+        opacity: 1;
+    }
+}
+
+/*==================================
+ABOUT
+==================================*/
+
+/*=== Social ===*/
+
+ul.social_list {
+    text-align: center;
+    border-top: 1px solid $grey;
+    padding-top: 20px;
+}
+
+ul.social_list li {
+    display: inline-block;
+    font-family: 'baskerville';
+    font-style: italic;
+    margin: 0px 10px;
+}
+
+ul.social_list li a {
+    color: $black;
+
+    &:hover {
+        color: $grey;
+    }
 }

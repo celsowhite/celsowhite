@@ -61,31 +61,31 @@
                         <img src="img/websites/tribeca.png" />
                     </div>
                 </a>
-                <a class="website_container" data-website="lusa" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
+                <a class="website_container" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
                     <div class="website_image">
                         <img src="img/websites/latino_usa.png" />
                     </div>
                 </a>
-                <a class="website_container" data-website="matte" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
+                <a class="website_container" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
                     <div class="website_image">
                         <img src="img/websites/matte.png" />
                     </div>
                 </a>
-                <a class="website_container" data-website="twt" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
+                <a class="website_container" data-website="twt" href="http://watertrust.org" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(37,30,94,.3);"></div>
                     <div class="website_image">
                         <img src="img/websites/the_water_trust.png" />
                     </div>
                 </a>
-                <a class="website_container" data-website="trago" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
+                <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
                     <div class="website_image">
                         <img src="img/websites/trago.png" />
                     </div>
                 </a>
-                <a class="website_container" data-website="abtn" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/abtn_header.png'); background-position: right;">
+                <a class="website_container" data-website="abtn" href="http://americabythenumbers.org" target="_blank" style="background-image: url('img/websites/abtn_header.png'); background-position: right;">
                     <div class="color_overlay" style="background-color: rgba(249,182,61,.2);"></div>
                     <div class="website_image">
                         <img src="img/websites/america_by_the_numbers.png" />
@@ -95,6 +95,7 @@
 
             <section class="website_mobile_filter">
                 <span id="filter_selected_website">Fullmoon Festival</span>
+                <span class="down_arrow">&#8595;</span>
             </section>
 
             <div class="website_content_container">
@@ -134,18 +135,21 @@
                         <p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>
                         <a href="http://latinousa.org" target="_blank">View Website</a>
                     </div>
-                    <div id="matte">Hello.</div>
+                    <div id="matte">
+                        <p>MATTE is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
+                        <a href="http://matteprojects.com">Viw Website</a>
+                    </div>
                     <div id="twt">
                         <p>The Water Trust is a non-profit that creates water, sanitation and hygiene systems in East Africa. I designed and developed a website that helps the orginzation better connect with donors, shares real-time updates for their projects, and gives a vivid lens into the lives of the communities they effect.</p>
                         <a href="http://watertrust.org" target="_blank">View Website</a>
                     </div>
                     <div id="trago">
-                        <p>Trago was preparing to launch their innovative Water Cap. In preparation for the launch of their product, Trago needed a custom ecommerce shop to promote and sell the Water Cap. I developed the site in Shopify.</p>
+                        <p>Trago was preparing to launch their innovative Water Cap and needed a site to promote and sell the product. I developed the site in Shopify.</p>
                         <a href="http://trago.co" target="_blank">View Website</a>
                     </div>
                     <div id="abtn">
-                        <p>America by The Numbers is a new PBS documentary series. I created an online experience to share stories and facts from the show. The new website also reflects the unique character the series brings to PBS.</p>
-                        <a href="http://americabythenumbers.com" target="_blank">View Website</a>
+                        <p>America by The Numbers is a PBS documentary series. I created an online experience to share stories and facts from the show. The new website also reflects the unique character the series brings to PBS.</p>
+                        <a href="http://americabythenumbers.org" target="_blank">View Website</a>
                     </div>
                 </div>
             </div>
