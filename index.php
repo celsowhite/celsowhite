@@ -49,57 +49,90 @@
         <main class="page_container">
 
             <section class="website_images_carousel">
+                <a class="website_container" data-website="jimmychin" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/jimmychin_header5.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(63,66,40,.3);"></div>
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/jimmychin.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </a>
                 <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(1,33,74,.6);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/fullmoon_festival.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/fullmoonfest.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
                 <a class="website_container" data-website="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/tribeca.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/tribeca.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
                 <a class="website_container" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/latino_usa.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/latinousa.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
                 <a class="website_container" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/matte.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/matte.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
                 <a class="website_container" data-website="twt" href="http://watertrust.org" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(37,30,94,.3);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/the_water_trust.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/twt.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
                 <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/trago.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/trago.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
                 <a class="website_container" data-website="abtn" href="http://americabythenumbers.org" target="_blank" style="background-image: url('img/websites/abtn_header.png'); background-position: right;">
                     <div class="color_overlay" style="background-color: rgba(249,182,61,.2);"></div>
-                    <div class="website_image">
-                        <img src="img/websites/america_by_the_numbers.png" />
+                    <div class="website_screen">
+                        <img src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/abtn.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
             </section>
 
             <section class="website_mobile_filter">
                 <span id="filter_selected_website">Fullmoon Festival</span>
-                <span class="down_arrow">&#8595;</span>
+                <span class="down_arrow">+</span>
             </section>
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
+                    <li data-title="jimmychin">
+                        <span>Jimmy Chin</span>
+                    </li>
                     <li data-title="fullmoon">
                         <span>Fullmoon Festival</span>
                     </li>
@@ -123,8 +156,12 @@
                     </li>
                 </ul>
                 <div class="tab_content website_content">
+                    <div id="jimmychin">
+                        <p>I worked with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to strategize and develop a unique site for professional photographer and adventurer Jimmy Chin.</p>
+                        <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
+                    </div>
                     <div id="fullmoon">
-                        <p>MATTE Projects designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
+                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
                     </div>
                     <div id="tribeca">
@@ -136,7 +173,7 @@
                         <a href="http://latinousa.org" target="_blank">View Website</a>
                     </div>
                     <div id="matte">
-                        <p>MATTE is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
+                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
                         <a href="http://matteprojects.com">Viw Website</a>
                     </div>
                     <div id="twt">

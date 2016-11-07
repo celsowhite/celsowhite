@@ -22,20 +22,30 @@ $(document).ready(function(){
 	WEBSITE CAROUSEL
 	===================*/
 
-	$('.website_images_carousel').slick({
-		centerMode: true,
-		slidesToShow: 1,
-		draggable: false,
-		arrows: false,
-		accessibility: false
-	});
+	if($('.website_images_carousel').length) {
+		$('.website_images_carousel').slick({
+			centerMode: true,
+			slidesToShow: 1,
+			draggable: false,
+			arrows: false,
+			accessibility: false
+		});
+	}
 
 	// On click of a website name then scroll to its slide
 
 	$('.website_nav li').click(function(){
-		// Scroll to the appropriate slide
 		var websiteIndex = $(this).index();
+		var websiteName = $(this).attr('data-title');
+
+		// Scroll to the appropriate slide
 		$('.website_images_carousel').slick('slickGoTo', websiteIndex);
+
+		// Play the appropriate video
+		$('.website_container[data-website="' + websiteName + '"]').each(function(){
+			$(this).find('video')[0].play();
+		});
+
 		// Set the mobile filter
 		var websiteName = $(this).find('span').text();
 		$('#filter_selected_website').text(websiteName);
@@ -43,12 +53,24 @@ $(document).ready(function(){
 	});
 
 	/*===================
+	VIDEO AUTOPLAY
+	Native html5 video autoplay not working because they are loaded in the Slick carousel. 
+	Therefore, custom triggering their autoplay here.
+	===================*/
+
+	if($('.website_container.slick-current video').length) {
+		$('.website_container.slick-current video')[0].play();
+	}
+
+	/*===================
 	WEBSITE CONTENT TABS
 	===================*/
 
-	$('.website_content_container').tabify({
-		speed: 500
-	});
+	if($('.website_content_container').length) {
+		$('.website_content_container').tabify({
+			speed: 500
+		});
+	}
 
 	/*===================
 	MOBILE FILTER

@@ -78,6 +78,10 @@ ul {
     padding: 0px;
 }
 
+.baskerville {
+    font-family: 'baskerville', serif;
+}
+
 /*==================================
 GRID
 ==================================*/
@@ -332,6 +336,7 @@ section.website_images_carousel .website_container img {
 
 .website_container {
     position: relative;
+    padding: 50px 0 0;
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -365,6 +370,26 @@ section.website_images_carousel .website_container img {
         display: block;
         width: 100%;
     }
+}
+
+// Screen w/ Video
+
+.website_screen {
+    margin: 0 auto;
+    width: 45%;
+    position: relative;
+
+    @include mobile_landscape {
+        width: 65%;
+    }
+}
+
+.website_screen video {
+    position: absolute;
+    z-index: 100;
+    top: 7%;
+    left: 5%;
+    width: 90%;
 }
 
 // Website Nav 
@@ -459,7 +484,7 @@ span.down_arrow {
 }
 
 .website_content a {
-    font-family: baskerville;
+    font-family: 'avenir-bold', sans-serif;
 }
 
 /*==================================
@@ -508,6 +533,10 @@ ul.social_list li {
     font-family: 'baskerville';
     font-style: italic;
     margin: 0px 10px;
+
+    @include mobile {
+        margin: 0 5px;
+    }
 }
 
 ul.social_list li a {
