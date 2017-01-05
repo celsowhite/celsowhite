@@ -49,7 +49,7 @@
         <main class="page_container">
 
             <section class="website_images_carousel">
-                <a class="website_container" data-website="jimmychin" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/jimmychin_header5.jpg');">
+                <!-- <a class="website_container" data-website="jimmychin" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/jimmychin_header5.jpg');">
                     <div class="color_overlay" style="background-color: rgba(63,66,40,.3);"></div>
                     <div class="website_screen">
                         <img src="img/websites/imac.png" />
@@ -57,7 +57,7 @@
                             <source src="video/jimmychin.mp4" type="video/mp4">
                         </video>
                     </div>
-                </a>
+                </a> -->
                 <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(1,33,74,.6);"></div>
                     <div class="website_screen">
@@ -94,30 +94,12 @@
                         </video>
                     </div>
                 </a>
-                <a class="website_container" data-website="twt" href="http://watertrust.org" target="_blank" style="background-image: url('img/websites/watertrust_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(37,30,94,.3);"></div>
-                    <div class="website_screen">
-                        <img src="img/websites/imac.png" />
-                        <video loop>
-                            <source src="video/twt.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </a>
                 <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
                     <div class="website_screen">
                         <img src="img/websites/imac.png" />
                         <video loop>
                             <source src="video/trago.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </a>
-                <a class="website_container" data-website="abtn" href="http://americabythenumbers.org" target="_blank" style="background-image: url('img/websites/abtn_header.png'); background-position: right;">
-                    <div class="color_overlay" style="background-color: rgba(249,182,61,.2);"></div>
-                    <div class="website_screen">
-                        <img src="img/websites/imac.png" />
-                        <video loop>
-                            <source src="video/abtn.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
@@ -130,9 +112,9 @@
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
-                    <li data-title="jimmychin">
+                    <!-- <li data-title="jimmychin">
                         <span>Jimmy Chin</span>
-                    </li>
+                    </li> -->
                     <li data-title="fullmoon">
                         <span>Fullmoon Festival</span>
                     </li>
@@ -145,21 +127,15 @@
                     <li data-title="matte">
                         <span>MATTE</span>
                     </li>
-                    <li data-title="twt">
-                        <span>The Water Trust</span>
-                    </li>
                     <li data-title="trago">
                         <span>Trago</span>
                     </li>
-                    <li data-title="abtn">
-                        <span>PBS's America By The Numbers</span>
-                    </li>
                 </ul>
                 <div class="tab_content website_content">
-                    <div id="jimmychin">
+                    <!-- <div id="jimmychin">
                         <p>I worked with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to strategize and develop a unique site for professional photographer and adventurer Jimmy Chin.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
-                    </div>
+                    </div> -->
                     <div id="fullmoon">
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
@@ -176,17 +152,9 @@
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
                         <a href="http://matteprojects.com">Viw Website</a>
                     </div>
-                    <div id="twt">
-                        <p>The Water Trust is a non-profit that creates water, sanitation and hygiene systems in East Africa. I designed and developed a website that helps the orginzation better connect with donors, shares real-time updates for their projects, and gives a vivid lens into the lives of the communities they effect.</p>
-                        <a href="http://watertrust.org" target="_blank">View Website</a>
-                    </div>
                     <div id="trago">
                         <p>Trago was preparing to launch their innovative Water Cap and needed a site to promote and sell the product. I developed the site in Shopify.</p>
                         <a href="http://trago.co" target="_blank">View Website</a>
-                    </div>
-                    <div id="abtn">
-                        <p>America by The Numbers is a PBS documentary series. I created an online experience to share stories and facts from the show. The new website also reflects the unique character the series brings to PBS.</p>
-                        <a href="http://americabythenumbers.org" target="_blank">View Website</a>
                     </div>
                 </div>
             </div>

@@ -49,7 +49,7 @@
 
             <div class="container">
                 <header class="page_header">
-                    <h1>Beyond making websites, I love to create using all forms of media.</h1>
+                    <h1>Beyond making websites, I love to create<br /> using all forms of media.</h1>
                 </header>
             </div>
 
@@ -72,7 +72,7 @@
                         <p>Explorations of people and places around the world.</p>
                     </div>
                 </a>
-                <a class="project" href="http://www.kuumba.tv/" target="_blank">
+                <a class="project" href="https://vimeo.com/kuumbatv" target="_blank">
                     <img src="../img/projects/kuumbatv.jpg" />
                     <div class="overlay">
                         <p>Creative video network on college campuses.</p>
