@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	var mq = window.matchMedia( '(min-width: 1024px)' );
+
 	 /*===================
 	 PAGE FADEIN & LOGO ANIMATION
 	 ===================*/
@@ -39,14 +41,20 @@ $(document).ready(function(){
 		var websiteName = $(this).attr('data-title');
 
 		// Scroll to the appropriate slide
+
 		$('.website_images_carousel').slick('slickGoTo', websiteIndex);
 
-		// Play the appropriate video
-		$('.website_container[data-website="' + websiteName + '"]').each(function(){
-			$(this).find('video')[0].play();
-		});
+		// Play the appropriate video only on desktop
+
+		if(mq.matches) {
+			$('.website_container[data-website="' + websiteName + '"]').each(function(){
+				$(this).find('video')[0].play();
+			});
+			console.log('working');
+		}
 
 		// Set the mobile filter
+		
 		var websiteName = $(this).find('span').text();
 		$('#filter_selected_website').text(websiteName);
 		$('.website_nav').removeClass('mobile_open');
