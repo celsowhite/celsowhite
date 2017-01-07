@@ -328,7 +328,7 @@ section.website_images_carousel {
     width: 100%;
 }
 
-section.website_images_carousel .website_container img {
+section.website_images_carousel .website_container img.computer_frame {
     width: 100%;
 }
 
@@ -384,12 +384,26 @@ section.website_images_carousel .website_container img {
     }
 }
 
-.website_screen video {
+.website_screen video, .static_screen {
     position: absolute;
     z-index: 100;
     top: 7%;
     left: 5%;
     width: 90%;
+}
+
+.website_screen video {
+    @include tablet_landscape {
+        display: none;
+    }
+}
+
+img.static_screen {
+    opacity: 0;
+
+    @include tablet_landscape {
+        opacity: 1;
+    }
 }
 
 // Website Nav 

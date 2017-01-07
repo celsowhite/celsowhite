@@ -61,46 +61,51 @@
                 <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(1,33,74,.6);"></div>
                     <div class="website_screen">
-                        <img src="img/websites/imac.png" />
+                        <img class="computer_frame" src="img/websites/imac.png" />
                         <video loop>
                             <source src="video/fullmoonfest.mp4" type="video/mp4">
                         </video>
+                        <img class="static_screen" src="img/websites/fullmoon2016_screen.png" />
                     </div>
                 </a>
                 <a class="website_container" data-website="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
                     <div class="website_screen">
-                        <img src="img/websites/imac.png" />
+                        <img class="computer_frame" src="img/websites/imac.png" />
                         <video loop>
                             <source src="video/tribeca.mp4" type="video/mp4">
                         </video>
+                        <img class="static_screen" src="img/websites/tribeca_screen.png" />
                     </div>
                 </a>
                 <a class="website_container" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
                     <div class="website_screen">
-                        <img src="img/websites/imac.png" />
+                        <img class="computer_frame" src="img/websites/imac.png" />
                         <video loop>
                             <source src="video/latinousa.mp4" type="video/mp4">
                         </video>
+                        <img class="static_screen" src="img/websites/lusa_screen.png" />
                     </div>
                 </a>
                 <a class="website_container" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
                     <div class="website_screen">
-                        <img src="img/websites/imac.png" />
+                        <img class="computer_frame" src="img/websites/imac.png" />
                         <video loop>
                             <source src="video/matte.mp4" type="video/mp4">
                         </video>
+                        <img class="static_screen" src="img/websites/matte_screen.png" />
                     </div>
                 </a>
                 <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
                     <div class="website_screen">
-                        <img src="img/websites/imac.png" />
+                        <img class="computer_frame" src="img/websites/imac.png" />
                         <video loop>
                             <source src="video/trago.mp4" type="video/mp4">
                         </video>
+                        <img class="static_screen" src="img/websites/trago_screen.png" />
                     </div>
                 </a>
             </section>
@@ -137,7 +142,7 @@
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
                     </div> -->
                     <div id="fullmoon">
-                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page using javascript and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
+                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
                     </div>
                     <div id="tribeca">
@@ -153,7 +158,7 @@
                         <a href="http://matteprojects.com">Viw Website</a>
                     </div>
                     <div id="trago">
-                        <p>Trago was preparing to launch their innovative Water Cap and needed a site to promote and sell the product. I developed the site in Shopify.</p>
+                        <p>E-commerce website built in Shopify. Trago was preparing to launch their innovative Water Cap and needed a site to promote and sell the product. I developed the site with custom templates and integrations in Shopify to fit their product needs.</p>
                         <a href="http://trago.co" target="_blank">View Website</a>
                     </div>
                 </div>
