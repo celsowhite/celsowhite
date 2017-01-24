@@ -50,7 +50,6 @@ $(document).ready(function(){
 			$('.website_container[data-website="' + websiteName + '"]').each(function(){
 				$(this).find('video')[0].play();
 			});
-			console.log('working');
 		}
 
 		// Set the mobile filter

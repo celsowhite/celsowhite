@@ -58,11 +58,21 @@
                         </video>
                     </div>
                 </a> -->
+                <a class="website_container" data-website="humbleriot" href="http://humbleriot.com" target="_blank" style="background-image: url('img/websites/humbleriot_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
+                    <div class="website_screen">
+                        <img class="computer_frame" src="img/websites/imac.png" />
+                        <video loop>
+                            <source src="video/humbleriot.mp4" type="video/mp4">
+                        </video>
+                        <img class="static_screen" src="img/websites/humbleriot_screen.png" />
+                    </div>
+                </a>
                 <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/fullmoon_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(1,33,74,.6);"></div>
                     <div class="website_screen">
                         <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop>
+                        <video loop preload="none">
                             <source src="video/fullmoonfest.mp4" type="video/mp4">
                         </video>
                         <img class="static_screen" src="img/websites/fullmoon2016_screen.png" />
@@ -72,7 +82,7 @@
                     <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
                     <div class="website_screen">
                         <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop>
+                        <video loop preload="none">
                             <source src="video/tribeca.mp4" type="video/mp4">
                         </video>
                         <img class="static_screen" src="img/websites/tribeca_screen.png" />
@@ -82,7 +92,7 @@
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
                     <div class="website_screen">
                         <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop>
+                        <video loop preload="none">
                             <source src="video/latinousa.mp4" type="video/mp4">
                         </video>
                         <img class="static_screen" src="img/websites/lusa_screen.png" />
@@ -92,7 +102,7 @@
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
                     <div class="website_screen">
                         <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop>
+                        <video loop preload="none">
                             <source src="video/matte.mp4" type="video/mp4">
                         </video>
                         <img class="static_screen" src="img/websites/matte_screen.png" />
@@ -102,7 +112,7 @@
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
                     <div class="website_screen">
                         <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop>
+                        <video loop preload="none">
                             <source src="video/trago.mp4" type="video/mp4">
                         </video>
                         <img class="static_screen" src="img/websites/trago_screen.png" />
@@ -111,7 +121,7 @@
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">Fullmoon Festival</span>
+                <span id="filter_selected_website">Humbleriot</span>
                 <span class="down_arrow">+</span>
             </section>
 
@@ -120,6 +130,9 @@
                     <!-- <li data-title="jimmychin">
                         <span>Jimmy Chin</span>
                     </li> -->
+                    <li data-title="humbleriot">
+                        <span>Humbleriot</span>
+                    </li>
                     <li data-title="fullmoon">
                         <span>Fullmoon Festival</span>
                     </li>
@@ -141,6 +154,10 @@
                         <p>I worked with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to strategize and develop a unique site for professional photographer and adventurer Jimmy Chin.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
                     </div> -->
+                    <div id="humbleriot">
+                        <p>Humbleriot needed a new site to authentically capture and communicate the evolution of their brand and services. I transformed the unique designs done by <a href="http://www.emilykapsner.com/" target="_blank">Emily Kapsner</a> into interactive and flowing elements on the screen. Creating a seamless experience across the site.</p>
+                        <a href="http://humbleriot.com" target="_blank">View Website</a>
+                    </div>
                     <div id="fullmoon">
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> designed a really interesting concept for their 2016 music festival website. I developed the site which involved adding points of user interactions on the page and adapting the unique layout for various devices. I also developed a custom html email template for all of their festival email blasts.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
