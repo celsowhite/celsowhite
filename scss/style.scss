@@ -447,7 +447,7 @@ img.static_screen {
 .website_nav li span:after {
     content: "";
     position: absolute;
-    top: 7px;
+    bottom: 0;
     width: 100%;
     height: 1px;
     background: $white;

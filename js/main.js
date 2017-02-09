@@ -28,11 +28,17 @@ $(document).ready(function(){
 		$('.website_images_carousel').slick({
 			centerMode: true,
 			slidesToShow: 1,
-			draggable: false,
+			draggable: true,
 			arrows: false,
 			accessibility: false
 		});
 	}
+
+	// Upon changing a slide via the slick carousel then trigger the appropriate click functions for the website nav.
+
+	$('.website_images_carousel').on('afterChange', function(event, slick, currentSlide){
+		$('.website_nav li').eq(currentSlide).trigger('click');
+	});
 
 	// On click of a website name then scroll to its slide
 

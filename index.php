@@ -58,6 +58,16 @@
                         </video>
                     </div>
                 </a> -->
+                <a class="website_container" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
+                    <div class="website_screen">
+                        <img class="computer_frame" src="img/websites/imac.png" />
+                        <video loop preload="none">
+                            <source src="video/matte.mp4" type="video/mp4">
+                        </video>
+                        <img class="static_screen" src="img/websites/matte_screen.png" />
+                    </div>
+                </a>
                 <a class="website_container" data-website="humbleriot" href="http://humbleriot.com" target="_blank" style="background-image: url('img/websites/humbleriot_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
                     <div class="website_screen">
@@ -98,16 +108,6 @@
                         <img class="static_screen" src="img/websites/lusa_screen.png" />
                     </div>
                 </a>
-                <a class="website_container" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop preload="none">
-                            <source src="video/matte.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/matte_screen.png" />
-                    </div>
-                </a>
                 <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
                     <div class="website_screen">
@@ -121,7 +121,7 @@
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">Humbleriot</span>
+                <span id="filter_selected_website">Matte</span>
                 <span class="down_arrow">+</span>
             </section>
 
@@ -130,6 +130,9 @@
                     <!-- <li data-title="jimmychin">
                         <span>Jimmy Chin</span>
                     </li> -->
+                    <li data-title="matte">
+                        <span>MATTE</span>
+                    </li>
                     <li data-title="humbleriot">
                         <span>Humbleriot</span>
                     </li>
@@ -142,9 +145,6 @@
                     <li data-title="lusa">
                         <span>NPR's Latino USA</span>
                     </li>
-                    <li data-title="matte">
-                        <span>MATTE</span>
-                    </li>
                     <li data-title="trago">
                         <span>Trago</span>
                     </li>
@@ -154,6 +154,10 @@
                         <p>I worked with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to strategize and develop a unique site for professional photographer and adventurer Jimmy Chin.</p>
                         <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
                     </div> -->
+                    <div id="matte">
+                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
+                        <a href="http://matteprojects.com">Viw Website</a>
+                    </div>
                     <div id="humbleriot">
                         <p>Humbleriot needed a new site to authentically capture and communicate the evolution of their brand and services. I transformed the unique designs done by <a href="http://www.emilykapsner.com/" target="_blank">Emily Kapsner</a> into interactive and flowing elements on the screen. Creating a seamless experience across the site.</p>
                         <a href="http://humbleriot.com" target="_blank">View Website</a>
@@ -169,10 +173,6 @@
                     <div id="lusa">
                         <p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>
                         <a href="http://latinousa.org" target="_blank">View Website</a>
-                    </div>
-                    <div id="matte">
-                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
-                        <a href="http://matteprojects.com">Viw Website</a>
                     </div>
                     <div id="trago">
                         <p>E-commerce website built in Shopify. Trago was preparing to launch their innovative Water Cap and needed a site to promote and sell the product. I developed the site with custom templates and integrations in Shopify to fit their product needs.</p>
