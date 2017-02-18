@@ -28,7 +28,7 @@
 
         <header class="mobile_header">
             <a href="." class="logo">
-                <span class="initials">CW</span>
+                <span class="initials">Celso</span>
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
@@ -38,7 +38,7 @@
 
         <header class="sidebar_menu">
             <a href="." class="logo">
-                <span class="initials">CW</span>
+                <span class="initials">Celso</span>
                 <span class="circle"></span>
             </a>
             <nav class="main_navigation">
