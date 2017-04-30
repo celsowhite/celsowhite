@@ -156,7 +156,7 @@
                     </div> -->
                     <div id="matte">
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
-                        <a href="http://matteprojects.com">Viw Website</a>
+                        <a href="http://matteprojects.com">View Website</a>
                     </div>
                     <div id="humbleriot">
                         <p>Humbleriot needed a new site to authentically capture and communicate the evolution of their brand and services. I transformed the unique designs done by <a href="http://www.emilykapsner.com/" target="_blank">Emily Kapsner</a> into interactive and flowing elements on the screen. Creating a seamless experience across the site.</p>
