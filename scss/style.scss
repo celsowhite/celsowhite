@@ -332,8 +332,36 @@ header.mobile_header {
 WEBSITES
 ==================================*/
 
+.page_container.homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+// Slick Structure
+
 section.website_images_carousel {
     width: 100%;
+    height: 60%;
+
+    @include tablet_landscape {
+        height: 400px;
+    }
+
+    @include mobile_landscape {
+        height: 250px;
+    }
+
+    @include mobile {
+        height: 180px;
+    }
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-track {
+    height: 100%;
 }
 
 section.website_images_carousel .website_container img.computer_frame {
@@ -342,17 +370,34 @@ section.website_images_carousel .website_container img.computer_frame {
 
 /*=== Images ===*/
 
+.website_content_container {
+    height: 40%;
+
+    @include tablet_landscape {
+        height: auto;
+    }
+
+}
+
 .website_container {
     position: relative;
-    padding: 50px 0 0;
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
+    height: 100% !important;
 
     &.active {
         opacity: 1;
+    }
+
+    @include tablet_landscape {
+        // height: 350px !important;
+    }
+
+    @include mobile_landscape {
+        // height: 250px !important;
     }
 }
 
@@ -382,27 +427,43 @@ section.website_images_carousel .website_container img.computer_frame {
 
 // Screen w/ Video
 
-.website_screen {
-    margin: 0 auto;
-    width: 45%;
-    position: relative;
+.website_screen_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    @include mobile_landscape {
-        width: 65%;
+.website_screen {
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        width: 70%;
     }
 }
 
-.website_screen video, .static_screen {
+.website_screen video {
+    position: relative;
+    width: 100%;
+}
+
+.static_screen {
     position: absolute;
     z-index: 100;
-    top: 7%;
-    left: 5%;
-    width: 90%;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .website_screen video {
     @include tablet_landscape {
-        display: none;
+        opacity: 0;
     }
 }
 
@@ -418,15 +479,19 @@ img.static_screen {
 
 .website_nav {
     text-align: center;
-    padding: 20px 0px;
+    height: 20%;
     background: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .5s ease-in-out;
 
     @include tablet_landscape {
         max-height: 0;
         overflow: hidden;
         padding: 0px;
+        flex-direction: column;
     }
 }
 
@@ -496,12 +561,16 @@ span.down_arrow {
 .website_content {
     max-width: 800px;
     width: 90%;
+    height: 80%;
     margin: 0 auto;
     text-align: center;
-    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include tablet_landscape {
-        padding: 30px 0px;
+        height: auto;
+        padding: 60px 0;
     }
 }
 

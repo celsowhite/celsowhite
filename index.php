@@ -46,76 +46,73 @@
             </nav>
         </header>
 
-        <main class="page_container">
+        <main class="page_container homepage">
 
             <section class="website_images_carousel">
-                <!-- <a class="website_container" data-website="jimmychin" href="http://fullmoonfest.com/2016" target="_blank" style="background-image: url('img/websites/jimmychin_header5.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(63,66,40,.3);"></div>
-                    <div class="website_screen">
-                        <img src="img/websites/imac.png" />
-                        <video loop>
-                            <source src="video/jimmychin.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </a> -->
                 <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com" target="_blank" style="background-image: url('img/websites/fullmoon2017_header.png'); background-position: 98% center;">
                     <div class="color_overlay" style="background-color: rgba(254, 244, 244, 0);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop preload="none">
-                            <source src="video/fullmoonfest.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop>
+                                <source src="video/fullmoonfest.mp4" type="video/mp4">
+                            </video>
+                            <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
+                        </div>
                     </div>
                 </a>
                 <a class="website_container" data-website="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop preload="none">
-                            <source src="video/tribeca.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/tribeca_screen.png" />
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop>
+                                <source src="video/tribeca.mp4" type="video/mp4">
+                            </video>
+                            <img class="static_screen" src="img/websites/tribeca_screen.png" />
+                        </div>
                     </div>
                 </a>
                 <a class="website_container" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop preload="none">
-                            <source src="video/matte.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/matte_screen.png" />
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop>
+                                <source src="video/matte.mp4" type="video/mp4">
+                            </video>
+                            <img class="static_screen" src="img/websites/matte_screen.png" />
+                        </div>
                     </div>
                 </a>
                 <a class="website_container" data-website="humbleriot" href="http://humbleriot.com" target="_blank" style="background-image: url('img/websites/humbleriot_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop>
-                            <source src="video/humbleriot.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/humbleriot_screen.png" />
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop>
+                                <source src="video/humbleriot.mp4" type="video/mp4">
+                            </video>
+                            <img class="static_screen" src="img/websites/humbleriot_screen.png" />
+                        </div>
                     </div>
                 </a>
                 <a class="website_container" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop preload="none">
-                            <source src="video/latinousa.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/lusa_screen.png" />
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop>
+                                <source src="video/latinousa.mp4" type="video/mp4">
+                            </video>
+                            <img class="static_screen" src="img/websites/lusa_screen.png" />
+                        </div>
                     </div>
                 </a>
                 <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
-                    <div class="website_screen">
-                        <img class="computer_frame" src="img/websites/imac.png" />
-                        <video loop preload="none">
-                            <source src="video/trago.mp4" type="video/mp4">
-                        </video>
-                        <img class="static_screen" src="img/websites/trago_screen.png" />
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop>
+                                <source src="video/trago.mp4" type="video/mp4">
+                            </video>
+                            <img class="static_screen" src="img/websites/trago_screen.png" />
+                        </div>
                     </div>
                 </a>
             </section>
@@ -127,9 +124,6 @@
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
-                    <!-- <li data-title="jimmychin">
-                        <span>Jimmy Chin</span>
-                    </li> -->
                     <li data-title="fullmoon">
                         <span>Fullmoon Festival</span>
                     </li>
@@ -150,10 +144,6 @@
                     </li>
                 </ul>
                 <div class="tab_content website_content">
-                    <!-- <div id="jimmychin">
-                        <p>I worked with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to strategize and develop a unique site for professional photographer and adventurer Jimmy Chin.</p>
-                        <a href="http://fullmoonfest.com/2016" target="_blank">View Website</a>
-                    </div> -->
                     <div id="fullmoon">
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> got really creative with their branding and design for their 2017 music festival. I developed the site which involved animating the illustrations and bringing the design to life.</p>
                         <a href="http://fullmoonfest.com" target="_blank">View Website</a>
