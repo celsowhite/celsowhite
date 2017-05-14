@@ -5,9 +5,11 @@ var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cssmin       = require('gulp-cssmin');
 var rename       = require('gulp-rename');
+var babel        = require('gulp-babel');
 var watch        = require('gulp-watch');
 var uglify       = require('gulp-uglify');
-var gutil        = require('gulp-util');
+var notify       = require('gulp-notify');
+var concat       = require('gulp-concat');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 
@@ -16,8 +18,8 @@ var pngquant     = require('imagemin-pngquant');
 gulp.task('styles', function () {
 
     gulp.src('./scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({ browsers: ['last 3 versions'] }))
+    .pipe(sass().on('error', notify.onError("Error: <%= error.message %>")))
+    .pipe(autoprefixer({ browsers: ['iOS >= 7','last 2 versions'] }))
     .pipe(cssmin())
     .pipe(rename( {suffix: '.min'} ))
     .pipe(gulp.dest('./css'))
@@ -28,10 +30,11 @@ gulp.task('styles', function () {
 
 gulp.task('js-minify', function(){
 
-	gulp.src('./js/main.js')
-  .pipe(uglify().on('error', gutil.log))
+  gulp.src('./js/main.js')
+  .pipe(babel({presets: ['es2015']}).on('error', notify.onError("Error: <%= error.message %>")))
+  .pipe(uglify().on('error', notify.onError("Error: <%= error.cause %>")))
   .pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./js'))
+  .pipe(gulp.dest('./js'))
 
 });
 
