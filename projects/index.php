@@ -49,7 +49,7 @@
 
             <div class="container">
                 <header class="page_header">
-                    <h1>Beyond making websites, I love to create<br /> using all forms of media.</h1>
+                    <h1>Beyond making websites<br /> I love to create using all forms of media.</h1>
                 </header>
             </div>
 

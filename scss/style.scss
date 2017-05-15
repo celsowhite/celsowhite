@@ -352,7 +352,7 @@ section.website_images_carousel {
     }
 
     @include mobile {
-        height: 180px;
+        height: 150px;
     }
 }
 
@@ -570,7 +570,7 @@ span.down_arrow {
 
     @include tablet_landscape {
         height: auto;
-        padding: 60px 0;
+        padding: 30px 0;
     }
 }
 
