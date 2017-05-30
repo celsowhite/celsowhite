@@ -49,8 +49,8 @@
         <main class="page_container homepage">
 
             <section class="website_images_carousel">
-                <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com" target="_blank" style="background-image: url('img/websites/fullmoon2017_header.png'); background-position: 98% center;">
-                    <div class="color_overlay" style="background-color: rgba(254, 244, 244, 0);"></div>
+                <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com" target="_blank" style="background-image: url('img/websites/fullmoon2017_header.jpg'); background-position: 98% center;">
+                    <div class="color_overlay" style="background-color: rgba(254, 244, 244, .3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
                             <video loop>
@@ -145,7 +145,7 @@
                 </ul>
                 <div class="tab_content website_content">
                     <div id="fullmoon">
-                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> got really creative with their branding and design for their 2017 music festival. I developed the site which involved animating the illustrations and bringing the design to life.</p>
+                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> got really creative with the branding and design for their 2017 music festival. I developed the site which involved crafting the front end animations and creating custom API integrations with Mailchimp to register RSVP's.</p>
                         <a href="http://fullmoonfest.com" target="_blank">View Website</a>
                     </div>
                     <div id="tribeca">
