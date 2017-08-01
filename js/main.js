@@ -50,11 +50,23 @@ $(document).ready(function(){
 
 		$('.website_images_carousel').slick('slickGoTo', websiteIndex);
 
-		// Play the appropriate video only on desktop
+		// Open and play the appropriate video only on desktop
 
 		if(mq.matches) {
+			// Find this specific website within the slick carousel
 			$('.website_container[data-website="' + websiteName + '"]').each(function(){
-				$(this).find('video')[0].play();
+				// Save the video instance and data-src attribute. Only the first video on the page is loaded on initial load.
+				const video = $(this).find('video');
+				const videoURL = video.attr('data-src');
+				// If the videoURL exists then we have not yet loaded this video and need to do so.
+				if(videoURL) {
+					// Load the video
+					video.attr('src', videoURL);
+					// Remove the data-src attribute so we don't load it again
+					video.removeAttr('data-src');
+				}
+				// Play the video
+				video[0].play();
 			});
 		}
 

@@ -49,24 +49,29 @@
         <main class="page_container homepage">
 
             <section class="website_images_carousel">
+                <a class="website_container" data-website="nyss" href="https://nyss.org" target="_blank" style="background-image: url('img/websites/nyss_header.jpg'); background-position: center;">
+                    <div class="color_overlay" style="background-color: rgba(70, 101, 254, 0.22);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop src="video/nyss.mp4"></video>
+                            <img class="static_screen" src="img/websites/nyss_screen.png" />
+                        </div>
+                    </div>
+                </a>
                 <a class="website_container" data-website="fullmoon" href="http://fullmoonfest.com" target="_blank" style="background-image: url('img/websites/fullmoon2017_header.jpg'); background-position: 98% center;">
                     <div class="color_overlay" style="background-color: rgba(254, 244, 244, .3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop>
-                                <source src="video/fullmoonfest.mp4" type="video/mp4">
-                            </video>
+                            <video loop data-src="video/fullmoonfest.mp4"></video>
                             <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
                         </div>
                     </div>
                 </a>
-                <a class="website_container" data-website="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg');">
+                <a class="website_container" data-website="tribeca" href="http://tribecafilm.com" target="_blank" style="background-image: url('img/websites/tribeca_header.jpg'); background-position: center">
                     <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop>
-                                <source src="video/tribeca.mp4" type="video/mp4">
-                            </video>
+                            <video loop data-src="video/tribeca.mp4"></video>
                             <img class="static_screen" src="img/websites/tribeca_screen.png" />
                         </div>
                     </div>
@@ -75,9 +80,7 @@
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop>
-                                <source src="video/matte.mp4" type="video/mp4">
-                            </video>
+                            <video loop data-src="video/matte.mp4"></video>
                             <img class="static_screen" src="img/websites/matte_screen.png" />
                         </div>
                     </div>
@@ -86,44 +89,32 @@
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop>
-                                <source src="video/humbleriot.mp4" type="video/mp4">
-                            </video>
+                            <video loop data-src="video/humbleriot.mp4"></video>
                             <img class="static_screen" src="img/websites/humbleriot_screen.png" />
                         </div>
                     </div>
                 </a>
-                <a class="website_container" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg');">
+                <a class="website_container" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg'); background-position: left center;">
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop>
-                                <source src="video/latinousa.mp4" type="video/mp4">
-                            </video>
+                            <video loop data-src="video/latinousa.mp4"></video>
                             <img class="static_screen" src="img/websites/lusa_screen.png" />
-                        </div>
-                    </div>
-                </a>
-                <a class="website_container" data-website="trago" href="http://trago.co" target="_blank" style="background-image: url('img/websites/trago_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(30,63,83,.6);"></div>
-                    <div class="website_screen_container">
-                        <div class="website_screen">
-                            <video loop>
-                                <source src="video/trago.mp4" type="video/mp4">
-                            </video>
-                            <img class="static_screen" src="img/websites/trago_screen.png" />
                         </div>
                     </div>
                 </a>
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">Full Moon Festival</span>
+                <span id="filter_selected_website">New York Studio School</span>
                 <span class="down_arrow">+</span>
             </section>
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
+                    <li data-title="nyss">
+                        <span>New York Studio School</span>
+                    </li>
                     <li data-title="fullmoon">
                         <span>Fullmoon Festival</span>
                     </li>
@@ -139,13 +130,14 @@
                     <li data-title="lusa">
                         <span>NPR's Latino USA</span>
                     </li>
-                    <li data-title="trago">
-                        <span>Trago</span>
-                    </li>
                 </ul>
                 <div class="tab_content website_content">
+                    <div id="nyss">
+                        <p>New York Studio School is a historic institution. They offer academic programs, lectures, exhibitions and a vibrant community of artists in NYC. I brought together a team to reinvent their online presence. We mapped a new user experience to engage audiences coming to the school, crafted a design that brings to life the NYSS experience and developed the site with a custom backend that can be easily updated moving forward.</p>
+                        <a href="https://nyss.org/" target="_blank">View Website</a>
+                    </div>
                     <div id="fullmoon">
-                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> got really creative with the branding and design for their 2017 music festival. I developed the site which involved crafting the front end animations and creating custom API integrations with Mailchimp to register RSVP's.</p>
+                        <p>I've been working with <a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> for the last few years to build their Full Moon website. With each site we have taken a unique approach in mixing illustrations and web animations. Beyond the core website I've also developed email campaigns for the festival and custom API integrations with Mailchimp to register RSVP's and giveaway submissions.</p>
                         <a href="http://fullmoonfest.com" target="_blank">View Website</a>
                     </div>
                     <div id="tribeca">
@@ -163,10 +155,6 @@
                     <div id="lusa">
                         <p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>
                         <a href="http://latinousa.org" target="_blank">View Website</a>
-                    </div>
-                    <div id="trago">
-                        <p>E-commerce website built in Shopify. Trago was preparing to launch their innovative Water Cap and needed a site to promote and sell the product. I developed the site with custom templates and integrations in Shopify to fit their product needs.</p>
-                        <a href="http://trago.co" target="_blank">View Website</a>
                     </div>
                 </div>
             </div>
