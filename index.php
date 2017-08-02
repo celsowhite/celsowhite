@@ -50,7 +50,7 @@
 
             <section class="website_images_carousel">
                 <a class="website_container" data-website="nyss" href="https://nyss.org" target="_blank" style="background-image: url('img/websites/nyss_header.jpg'); background-position: center;">
-                    <div class="color_overlay" style="background-color: rgba(70, 101, 254, 0.22);"></div>
+                    <div class="color_overlay" style="background-color: rgba(70, 101, 254, 0.15);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
                             <video loop src="video/nyss.mp4"></video>
