@@ -49,6 +49,15 @@
         <main class="page_container homepage">
 
             <section class="website_images_carousel">
+                <a class="website_container" data-website="jimmychin" href="https://jimmychin.com" target="_blank" style="background-image: url('img/websites/jimmychin_header.jpg'); background-position: center top;">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop src="video/jimmychin.mp4"></video>
+                            <img class="static_screen" src="img/websites/jimmychin_screen.png" />
+                        </div>
+                    </div>
+                </a>
                 <a class="website_container" data-website="nyss" href="https://nyss.org" target="_blank" style="background-image: url('img/websites/nyss_header.jpg'); background-position: center;">
                     <div class="color_overlay" style="background-color: rgba(70, 101, 254, 0.15);"></div>
                     <div class="website_screen_container">
@@ -106,12 +115,15 @@
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">New York Studio School</span>
+                <span id="filter_selected_website">Jimmy Chin</span>
                 <span class="down_arrow">+</span>
             </section>
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
+                    <li data-title="jimmychin">
+                        <span>Jimmy Chin</span>
+                    </li>
                     <li data-title="nyss">
                         <span>New York Studio School</span>
                     </li>
@@ -132,6 +144,10 @@
                     </li>
                 </ul>
                 <div class="tab_content website_content">
+                    <div id="jimmychin">
+                        <p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with <a href="http://www.rxrsports.com/">RXR Sports</a> to create a new site that showcases Jimmy's work.</p>
+                        <a href="https://jimmychin.com/" target="_blank">View Website</a>
+                    </div>
                     <div id="nyss">
                         <p>New York Studio School is a historic institution. They offer academic programs, lectures, exhibitions and a vibrant community of artists in NYC. I brought together a team to reinvent their online presence. We mapped a new user experience to engage audiences coming to the school, crafted a design that brings to life the NYSS experience and developed the site with a custom backend that can be easily updated moving forward.</p>
                         <a href="https://nyss.org/" target="_blank">View Website</a>
