@@ -50,7 +50,7 @@
 
             <section class="website_images_carousel">
                 <a class="website_container" data-website="jimmychin" href="https://jimmychin.com" target="_blank" style="background-image: url('img/websites/jimmychin_header.jpg'); background-position: center top;">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.1);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
                             <video loop src="video/jimmychin.mp4"></video>
@@ -73,6 +73,15 @@
                         <div class="website_screen">
                             <video loop data-src="video/fullmoonfest.mp4"></video>
                             <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
+                        </div>
+                    </div>
+                </a>
+                <a class="website_container" data-website="mas" href="https://musicandstrategy.com" target="_blank" style="background-image: url('img/websites/mas_header.jpg'); background-position: 98% center;">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop data-src="video/mas.mp4"></video>
+                            <img class="static_screen" src="img/websites/mas_screen.png" />
                         </div>
                     </div>
                 </a>
@@ -128,7 +137,10 @@
                         <span>New York Studio School</span>
                     </li>
                     <li data-title="fullmoon">
-                        <span>Fullmoon Festival</span>
+                        <span>Full Moon Festival</span>
+                    </li>
+                    <li data-title="mas">
+                        <span>MAS</span>
                     </li>
                     <li data-title="tribeca">
                         <span>Tribeca Fillm</span>
@@ -155,6 +167,10 @@
                     <div id="fullmoon">
                         <p>I've been working with <a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> for the last few years to build their Full Moon website. With each site we have taken a unique approach in mixing illustrations and web animations. Beyond the core website I've also developed email campaigns for the festival and custom API integrations with Mailchimp to register RSVP's and giveaway submissions.</p>
                         <a href="http://fullmoonfest.com" target="_blank">View Website</a>
+                    </div>
+                    <div id="mas">
+                        <p>Music and Strategy is a creative music company for brands and agencies. My team worked with MAS to create a website that captures their essence, innovation and impact in their industry. The project involved strategic planning, branding, design and custom Wordpress theme development.</p>
+                        <a href="https://musicandstrategy.com" target="_blank">View Website</a>
                     </div>
                     <div id="tribeca">
                         <p>Tribeca Film was in need of a new homepage to better surface featured content and showcase the past years festival. I brought a team together to strategize, design and develop the new homepage.</p>
