@@ -43,38 +43,63 @@ $(document).ready(function(){
 	// On click of a website name then scroll to its slide
 
 	$('.website_nav li').click(function(){
-		var websiteIndex = $(this).index();
-		var websiteName = $(this).attr('data-title');
+
+		var targetWebsiteIndex = $(this).index();
+		var targetWebsiteName = $(this).attr('data-title');
 
 		// Scroll to the appropriate slide
 
-		$('.website_images_carousel').slick('slickGoTo', websiteIndex);
+		$('.website_images_carousel').slick('slickGoTo', targetWebsiteIndex);
 
 		// Open and play the appropriate video only on desktop
 
 		if(mq.matches) {
-			// Find this specific website within the slick carousel
-			$('.website_container[data-website="' + websiteName + '"]').each(function(){
-				// Save the video instance and data-src attribute. Only the first video on the page is loaded on initial load.
+
+			// Loop through the website containers and trigger play/pause
+
+			$('.website_container').each(function(){
+
+				const containerWebsiteName = $(this).data('website');
 				const video = $(this).find('video');
 				const videoURL = video.attr('data-src');
-				// If the videoURL exists then we have not yet loaded this video and need to do so.
-				if(videoURL) {
+
+				// If this is the website container we are transitioning to then load the video and play.
+				// Also make sure it's not the cloned version of this website slide.
+
+				if (containerWebsiteName === targetWebsiteName && !$(this).hasClass('slick-cloned')) {
+					
 					// Load the video
+					
 					video.attr('src', videoURL);
+
 					// Remove the data-src attribute so we don't load it again
+
 					video.removeAttr('data-src');
+
+					// Play the video
+
+					video[0].play();
+
 				}
-				// Play the video
-				video[0].play();
+
+				// Else pause all other videos so we don't have multiple media running at the same time.
+
+				else {
+
+					video[0].pause();
+					
+				}
+
 			});
+
 		}
 
 		// Set the mobile filter
 		
-		var websiteName = $(this).find('span').text();
+		const websiteName = $(this).find('span').text();
 		$('#filter_selected_website').text(websiteName);
 		$('.website_nav').removeClass('mobile_open');
+
 	});
 
 	/*===================
