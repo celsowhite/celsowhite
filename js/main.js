@@ -100,6 +100,10 @@ $(document).ready(function(){
 		$('#filter_selected_website').text(websiteName);
 		$('.website_nav').removeClass('mobile_open');
 
+		// Track the click event via google analytics
+
+		ga('send', 'event', 'Project', 'View', websiteName);
+
 	});
 
 	/*===================
@@ -128,6 +132,24 @@ $(document).ready(function(){
 
 	$('.website_mobile_filter').click(function(){
 		$('.website_nav').toggleClass('mobile_open');
+	});
+
+	/*===================
+	WEBSITE CLICK EVENT
+	===================*/
+
+	const websiteContainers = document.querySelectorAll('.website_container');
+
+	Array.from(websiteContainers).forEach(websiteContainer => {
+		websiteContainer.addEventListener('click', function() {
+			
+			const websiteLink = this.getAttribute('href');
+
+			// Track the click event via google analytics
+
+			ga('send', 'event', 'Project', 'Click', websiteLink);
+
+		});
 	});
 
 });

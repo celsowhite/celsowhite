@@ -62,7 +62,7 @@
                     <div class="color_overlay" style="background-color: rgba(70, 101, 254, 0.15);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/nyss.mp4">
+                            <video loop data-src="video/nyss.mp4"></video>
                             <img class="static_screen" src="img/websites/nyss_screen.png" />
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="color_overlay" style="background-color: rgba(254, 244, 244, .3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/fullmoonfest.mp4">
+                            <video loop data-src="video/fullmoonfest.mp4"></video>
                             <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/mas.mp4">
+                            <video loop data-src="video/mas.mp4"></video>
                             <img class="static_screen" src="img/websites/mas_screen.png" />
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                     <div class="color_overlay" style="background-color: rgba(180,112,53,.3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/tribeca.mp4">
+                            <video loop data-src="video/tribeca.mp4"></video>
                             <img class="static_screen" src="img/websites/tribeca_screen.png" />
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/matte.mp4">
+                            <video loop data-src="video/matte.mp4"></video>
                             <img class="static_screen" src="img/websites/matte_screen.png" />
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/humbleriot.mp4">
+                            <video loop data-src="video/humbleriot.mp4"></video>
                             <img class="static_screen" src="img/websites/humbleriot_screen.png" />
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/latinousa.mp4">
+                            <video loop data-src="video/latinousa.mp4"></video>
                             <img class="static_screen" src="img/websites/lusa_screen.png" />
                         </div>
                     </div>
