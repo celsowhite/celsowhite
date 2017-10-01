@@ -121,7 +121,10 @@ $(document).ready(function(){
 
 	const featuredWebsiteName = $('.website_nav li:first-child span').text();
 
-	ga('send', 'event', 'Project', 'View', featuredWebsiteName);
+	if(featuredWebsiteName){
+		ga('send', 'event', 'Project', 'View', featuredWebsiteName);
+		console.log('homepage');
+	}
 
 	/*===================
 	WEBSITE CONTENT TABS
