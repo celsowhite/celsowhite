@@ -107,14 +107,21 @@ $(document).ready(function(){
 	});
 
 	/*===================
-	VIDEO AUTOPLAY
-	Native html5 video autoplay not working because they are loaded in the Slick carousel. 
-	Therefore, custom triggering their autoplay here.
+	1st Project Functions
 	===================*/
+
+	// Trigger video Autoplay. Native html5 video autoplay not working because they are loaded in the Slick carousel. 
+	// Therefore, custom triggering their autoplay here.
 
 	if($('.website_container.slick-current video').length) {
 		$('.website_container.slick-current video')[0].play();
 	}
+
+	// Track first project on page load
+
+	const featuredWebsiteName = $('.website_nav li:first-child span').text();
+
+	ga('send', 'event', 'Project', 'View', featuredWebsiteName);
 
 	/*===================
 	WEBSITE CONTENT TABS
@@ -138,16 +145,17 @@ $(document).ready(function(){
 	WEBSITE CLICK EVENT
 	===================*/
 
-	const websiteContainers = document.querySelectorAll('.website_container');
+	const websiteLinks = document.querySelectorAll('.website_link');
 
-	Array.from(websiteContainers).forEach(websiteContainer => {
-		websiteContainer.addEventListener('click', function() {
+	Array.from(websiteLinks).forEach(websiteLink => {
+
+		websiteLink.addEventListener('click', function() {
 			
-			const websiteLink = this.getAttribute('href');
+			const href = this.getAttribute('href');
 
 			// Track the click event via google analytics
 
-			ga('send', 'event', 'Project', 'Click', websiteLink);
+			ga('send', 'event', 'Project', 'Click', href);
 
 		});
 	});
