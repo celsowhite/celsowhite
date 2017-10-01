@@ -123,7 +123,6 @@ $(document).ready(function(){
 
 	if(featuredWebsiteName){
 		ga('send', 'event', 'Project', 'View', featuredWebsiteName);
-		console.log('homepage');
 	}
 
 	/*===================

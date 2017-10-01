@@ -158,11 +158,11 @@
                 <div class="tab_content website_content">
                     <div id="jimmychin">
                         <p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with <a href="http://www.rxrsports.com/">RXR Sports</a> to create a new site that showcases Jimmy's work.</p>
-                        <h3><a href="https://jimmychin.com/" class="website_link" target="_blank">View Website</a></h3>
+                        <h3><a href="https://jimmychin.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="nyss">
                         <p>New York Studio School is a historic institution. They offer academic programs, lectures, exhibitions and a vibrant community of artists in NYC. I brought together a team to reinvent their online presence. We mapped a new user experience to engage audiences coming to the school, crafted a design that brings to life the NYSS experience and developed the site with a custom backend that can be easily updated moving forward.</p>
-                        <h3><a href="https://nyss.org/" class="website_link" target="_blank">View Website</a></h3>
+                        <h3><a href="https://nyss.org" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="fullmoon">
                         <p>I've been working with <a href="http://www.matteprojects.com/" target="_blank">MATTE Projects</a> for the last few years to build their Full Moon website. With each site we have taken a unique approach in mixing illustrations and web animations. Beyond the core website I've also developed email campaigns for the festival and custom API integrations with Mailchimp to register RSVP's and giveaway submissions.</p>
