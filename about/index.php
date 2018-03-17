@@ -56,7 +56,7 @@
                     <div class="column_1_2">
                         <p>My name is Celso White, I create websites and digital experiences that help individuals and brands tell their story and grow their business.</p>
                         <h3>Development</h3><p>I specialize as a front end developer, building custom websites in Wordpress and Shopify platforms. I'll collaborate with your team and offer feedback through strategy, user experience, and design. By the time development starts, I have an intimate idea of the projects goals and a detailed technical strategy for how to achieve them.</p>
-                        <h3>Agency</h3><p>Celso White LLC is a full service digital agency. I bring in and lead a team of contractors perfect for your project. I have a network of contractors that specialize in different industries and skill sets. We specialize in logo design, branding, user experience, strategy and development. During our project we integrate and become a part of your team.</p>
+                        <h3>Agency</h3><p>Celso White LLC is a full service digital agency. I bring in and lead a team of contractors perfect for your project. We specialize in logo design, branding, user experience, strategy and development. During our project we integrate and become a part of your team.</p>
                         <h3>Clients</h3>NPR // Jimmy Chin // New York Studio School // Tribeca Film // PBS // MATTE // "I Have A 
                             Dream" Foundation // Futuro Media Group</p>
                         <ul class="social_list">

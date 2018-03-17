@@ -49,11 +49,20 @@
         <main class="page_container homepage">
 
             <section class="website_images_carousel">
-                <a class="website_container website_link" data-website="jimmychin" href="https://jimmychin.com" target="_blank" style="background-image: url('img/websites/jimmychin_header.jpg'); background-position: center top;">
+                <a class="website_container website_link" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop src="video/matte.mp4"></video>
+                            <img class="static_screen" src="img/websites/matte_screen.png" />
+                        </div>
+                    </div>
+                </a>
+                <a class="website_container website_link" data-website="jimmychin" href="https://jimmychin.com" target="_blank" style="background-image: url('img/websites/jimmychin_header.jpg'); background-position: left center;">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.1);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop src="video/jimmychin.mp4"></video>
+                            <video loop data-src="video/jimmychin.mp4"></video>
                             <img class="static_screen" src="img/websites/jimmychin_screen.png" />
                         </div>
                     </div>
@@ -94,15 +103,6 @@
                         </div>
                     </div>
                 </a>
-                <a class="website_container website_link" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
-                    <div class="website_screen_container">
-                        <div class="website_screen">
-                            <video loop data-src="video/matte.mp4"></video>
-                            <img class="static_screen" src="img/websites/matte_screen.png" />
-                        </div>
-                    </div>
-                </a>
                 <a class="website_container website_link" data-website="humbleriot" href="http://humbleriot.com" target="_blank" style="background-image: url('img/websites/humbleriot_header.jpg');">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
                     <div class="website_screen_container">
@@ -124,12 +124,15 @@
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">Jimmy Chin</span>
+                <span id="filter_selected_website">MATTE</span>
                 <span class="down_arrow">+</span>
             </section>
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
+                    <li data-title="matte">
+                        <span>MATTE</span>
+                    </li>
                     <li data-title="jimmychin">
                         <span>Jimmy Chin</span>
                     </li>
@@ -145,9 +148,6 @@
                     <li data-title="tribeca">
                         <span>Tribeca Fillm</span>
                     </li>
-                    <li data-title="matte">
-                        <span>MATTE</span>
-                    </li>
                     <li data-title="humbleriot">
                         <span>Humbleriot</span>
                     </li>
@@ -156,6 +156,10 @@
                     </li>
                 </ul>
                 <div class="tab_content website_content">
+                    <div id="matte">
+                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
+                        <h3><a href="http://matteprojects.com"class="website_link" target="_blank">View Website</a></h3>
+                    </div>
                     <div id="jimmychin">
                         <p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with <a href="http://www.rxrsports.com/">RXR Sports</a> to create a new site that showcases Jimmy's work.</p>
                         <h3><a href="https://jimmychin.com" class="website_link" target="_blank">View Website</a></h3>
@@ -169,16 +173,12 @@
                         <h3><a href="http://fullmoonfest.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="mas">
-                        <p>Music and Strategy is a creative music company for brands and agencies. My team worked with MAS to create a website that captures their essence, innovation and impact in their industry. The project involved strategic planning, branding, design and custom Wordpress theme development.</p>
+                        <p>Music and Strategy is a creative music company for brands and agencies. I worked with <a href="http://www.jessica-alice.com/" target="_blank">Jessica McGowan</a> to create a website that captures their essence, innovation and impact in their industry. The project involved strategic planning, branding, design and custom Wordpress theme development.</p>
                         <h3><a href="https://musicandstrategy.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="tribeca">
-                        <p>Tribeca Film was in need of a new homepage to better surface featured content and showcase the past years festival. I brought a team together to strategize, design and develop the new homepage.</p>
+                        <p>In 2016, Tribeca Film was in need of a new homepage to better surface featured content and showcase the past years festival. I brought a team together to strategize, design and develop the new homepage.</p>
                         <h3><a href="http://tribecafilm.com" class="website_link" target="_blank">View Website</a></h3>
-                    </div>
-                    <div id="matte">
-                        <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
-                        <h3><a href="http://matteprojects.com"class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="humbleriot">
                         <p>Humbleriot needed a new site to authentically capture and communicate the evolution of their brand and services. I transformed the unique designs done by <a href="http://www.emilykapsner.com/" target="_blank">Emily Kapsner</a> into interactive and flowing elements on the screen. Creating a seamless experience across the site.</p>
