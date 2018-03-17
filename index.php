@@ -49,21 +49,21 @@
         <main class="page_container homepage">
 
             <section class="website_images_carousel">
-                <a class="website_container website_link" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
-                    <div class="website_screen_container">
-                        <div class="website_screen">
-                            <video loop src="video/matte.mp4"></video>
-                            <img class="static_screen" src="img/websites/matte_screen.png" />
-                        </div>
-                    </div>
-                </a>
                 <a class="website_container website_link" data-website="jimmychin" href="https://jimmychin.com" target="_blank" style="background-image: url('img/websites/jimmychin_header.jpg'); background-position: left center;">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.1);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video loop data-src="video/jimmychin.mp4"></video>
+                            <video loop src="video/jimmychin.mp4"></video>
                             <img class="static_screen" src="img/websites/jimmychin_screen.png" />
+                        </div>
+                    </div>
+                </a>
+                <a class="website_container website_link" data-website="matte" href="http://matteprojects.com" target="_blank" style="background-image: url('img/websites/matte_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.6);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop data-src="video/matte.mp4"></video>
+                            <img class="static_screen" src="img/websites/matte_screen.png" />
                         </div>
                     </div>
                 </a>
@@ -124,17 +124,17 @@
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">MATTE</span>
+                <span id="filter_selected_website">Jimmy Chin</span>
                 <span class="down_arrow">+</span>
             </section>
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
-                    <li data-title="matte">
-                        <span>MATTE</span>
-                    </li>
                     <li data-title="jimmychin">
                         <span>Jimmy Chin</span>
+                    </li>
+                    <li data-title="matte">
+                        <span>MATTE</span>
                     </li>
                     <li data-title="nyss">
                         <span>New York Studio School</span>
@@ -156,13 +156,13 @@
                     </li>
                 </ul>
                 <div class="tab_content website_content">
+                    <div id="jimmychin">
+                        <p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to create a new site that showcases Jimmy's work.</p>
+                        <h3><a href="https://jimmychin.com" class="website_link" target="_blank">View Website</a></h3>
+                    </div>
                     <div id="matte">
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
                         <h3><a href="http://matteprojects.com"class="website_link" target="_blank">View Website</a></h3>
-                    </div>
-                    <div id="jimmychin">
-                        <p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with <a href="http://www.rxrsports.com/">RXR Sports</a> to create a new site that showcases Jimmy's work.</p>
-                        <h3><a href="https://jimmychin.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="nyss">
                         <p>New York Studio School is a historic institution. They offer academic programs, lectures, exhibitions and a vibrant community of artists in NYC. I brought together a team to reinvent their online presence. We mapped a new user experience to engage audiences coming to the school, crafted a design that brings to life the NYSS experience and developed the site with a custom backend that can be easily updated moving forward.</p>
