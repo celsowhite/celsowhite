@@ -67,6 +67,15 @@
                         </div>
                     </div>
                 </a>
+                 <a class="website_container website_link" data-website="forto" href="https://fortocoffee.com" target="_blank" style="background-image: url('img/websites/forto_header.jpg');">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video loop data-src="video/forto.mp4"></video>
+                            <img class="static_screen" src="img/websites/forto_screen.png" />
+                        </div>
+                    </div>
+                </a>
                 <a class="website_container website_link" data-website="nyss" href="https://nyss.org" target="_blank" style="background-image: url('img/websites/nyss_header.jpg'); background-position: center;">
                     <div class="color_overlay" style="background-color: rgba(70, 101, 254, 0.15);"></div>
                     <div class="website_screen_container">
@@ -136,6 +145,9 @@
                     <li data-title="matte">
                         <span>MATTE</span>
                     </li>
+                    <li data-title="forto">
+                        <span>Forto</span>
+                    </li>
                     <li data-title="nyss">
                         <span>New York Studio School</span>
                     </li>
@@ -163,6 +175,10 @@
                     <div id="matte">
                         <p><a href="http://www.matteprojects.com/" target="_blank">MATTE</a> is a creative agency and production company. They designed a site to showcase their work. I developed the site with custom interactions and components to bring the design to life.</p>
                         <h3><a href="http://matteprojects.com"class="website_link" target="_blank">View Website</a></h3>
+                    </div>
+                    <div id="forto">
+                        <p>Forto creates small but powerful coffee shots. I built a custom Shopify site so they could sell products direct to consumers while still fulfilling through Amazon. The site includes a store locator, custom add to cart functionality, subscription services and user accounts. Design and UX by Matthew Abrams.</p>
+                        <h3><a href="https://fortocoffee.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="nyss">
                         <p>New York Studio School is a historic institution. They offer academic programs, lectures, exhibitions and a vibrant community of artists in NYC. I brought together a team to reinvent their online presence. We mapped a new user experience to engage audiences coming to the school, crafted a design that brings to life the NYSS experience and developed the site with a custom backend that can be easily updated moving forward.</p>
