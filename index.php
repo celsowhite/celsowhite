@@ -19,7 +19,7 @@
         <meta name="twitter:title" content="Celso White: Web Design & Development">
         <meta name="twitter:description" content="Website developer and digital agency. Celso works with individuals and brands to plan, design and develop websites.">
         <meta name="twitter:image" content="img/celso.jpg">
-        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+        <link rel='icon' href='favicon.png' />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="stylesheet" href="css/slick.css">
