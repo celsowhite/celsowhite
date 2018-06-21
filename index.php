@@ -21,7 +21,7 @@
         <meta name="twitter:image" content="img/celso.jpg">
         <link rel='icon' href='favicon.png' />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/style.min.css?v=1.0.0">
         <link rel="stylesheet" href="css/slick.css">
     </head>
     <body>
@@ -49,11 +49,20 @@
         <main class="page_container homepage">
 
             <section class="website_images_carousel">
+                <a class="website_container website_link" data-website="ticketmaster" href="http://insider.ticketmaster.com" target="_blank" style="background-image: url('img/websites/ticketmaster_header.jpg'); background-position: center bottom;">
+                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
+                    <div class="website_screen_container">
+                        <div class="website_screen">
+                            <video muted playsinline loop src="video/ticketmaster.mp4"></video>
+                            <img class="static_screen" src="img/websites/ticketmaster_screen.png" />
+                        </div>
+                    </div>
+                </a>
                 <a class="website_container website_link" data-website="jimmychin" href="https://jimmychin.com" target="_blank" style="background-image: url('img/websites/jimmychin_header.jpg'); background-position: left center;">
                     <div class="color_overlay" style="background-color: rgba(0,0,0,.1);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video muted playsinline loop src="video/jimmychin.mp4" ></video>
+                            <video muted playsinline loop data-src="video/jimmychin.mp4" ></video>
                             <img class="static_screen" src="img/websites/jimmychin_screen.png" />
                         </div>
                     </div>
@@ -89,7 +98,7 @@
                     <div class="color_overlay" style="background-color: rgba(254, 244, 244, .3);"></div>
                     <div class="website_screen_container">
                         <div class="website_screen">
-                            <video muted playsinline loop data-src="video/fullmoonfest.mp4"></video>
+                            <video muted playsinline loop data-src="video/fullmoonfest_2018.mp4"></video>
                             <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
                         </div>
                     </div>
@@ -112,15 +121,6 @@
                         </div>
                     </div>
                 </a>
-                <a class="website_container website_link" data-website="humbleriot" href="http://humbleriot.com" target="_blank" style="background-image: url('img/websites/humbleriot_header.jpg');">
-                    <div class="color_overlay" style="background-color: rgba(0,0,0,.3);"></div>
-                    <div class="website_screen_container">
-                        <div class="website_screen">
-                            <video muted playsinline loop data-src="video/humbleriot.mp4"></video>
-                            <img class="static_screen" src="img/websites/humbleriot_screen.png" />
-                        </div>
-                    </div>
-                </a>
                 <a class="website_container website_link" data-website="lusa" href="http://latinousa.org" target="_blank" style="background-image: url('img/websites/latino_usa_header.jpg'); background-position: left center;">
                     <div class="color_overlay" style="background-color: rgba(44,56,149,.5);"></div>
                     <div class="website_screen_container">
@@ -133,12 +133,15 @@
             </section>
 
             <section class="website_mobile_filter">
-                <span id="filter_selected_website">Jimmy Chin</span>
+                <span id="filter_selected_website">Ticketmaster</span>
                 <span class="down_arrow">+</span>
             </section>
 
             <div class="website_content_container">
                 <ul class="tab_items website_nav">
+                    <li data-title="ticketmaster">
+                        <span>Ticketmaster</span>
+                    </li>
                     <li data-title="jimmychin">
                         <span>Jimmy Chin</span>
                     </li>
@@ -160,14 +163,15 @@
                     <li data-title="tribeca">
                         <span>Tribeca Fillm</span>
                     </li>
-                    <li data-title="humbleriot">
-                        <span>Humbleriot</span>
-                    </li>
                     <li data-title="lusa">
                         <span>NPR's Latino USA</span>
                     </li>
                 </ul>
                 <div class="tab_content website_content">
+                    <div id="ticketmaster">
+                        <p>Our team was tasked with the redesign of Ticketmaster's news site. I developed a robust backend for them to easily manage content, a festival finder and created unique ways to integrate live ticket sales with article content. Agency: <a href="http://bearinthehall.com/" target="_blank">Bear In The Hall</a> // Design: <a href="https://www.wearebill.com/" target="_blank">We Are Bill</a>.</p>
+                        <h3><a href="http://insider.ticketmaster.com" class="website_link" target="_blank">View Website</a></h3>
+                    </div>
                     <div id="jimmychin">
                         <p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with <a href="http://www.rxrsports.com/" target="_blank">RXR Sports</a> to create a new site that showcases Jimmy's work.</p>
                         <h3><a href="https://jimmychin.com" class="website_link" target="_blank">View Website</a></h3>
@@ -177,7 +181,7 @@
                         <h3><a href="http://matteprojects.com"class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="forto">
-                        <p>Forto creates small but powerful coffee shots. I built a custom Shopify site so they could sell products direct to consumers while still fulfilling through Amazon. The site includes a store locator, custom add to cart functionality, subscription services and user accounts. Design and UX by Matthew Abrams.</p>
+                        <p>Forto creates small but powerful coffee shots. I built a custom Shopify site so they could sell products direct to consumers while still fulfilling through Amazon. The site includes a store locator, custom add to cart functionality, subscription services and user accounts.</p>
                         <h3><a href="https://fortocoffee.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="nyss">
@@ -195,10 +199,6 @@
                     <div id="tribeca">
                         <p>In 2016, Tribeca Film was in need of a new homepage to better surface featured content and showcase the past years festival. I brought a team together to strategize, design and develop the new homepage.</p>
                         <h3><a href="http://tribecafilm.com" class="website_link" target="_blank">View Website</a></h3>
-                    </div>
-                    <div id="humbleriot">
-                        <p>Humbleriot needed a new site to authentically capture and communicate the evolution of their brand and services. I transformed the unique designs done by <a href="http://www.emilykapsner.com/" target="_blank">Emily Kapsner</a> into interactive and flowing elements on the screen. Creating a seamless experience across the site.</p>
-                        <h3><a href="http://humbleriot.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="lusa">
                         <p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>

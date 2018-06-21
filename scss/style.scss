@@ -444,7 +444,7 @@ section.website_images_carousel .website_container img.computer_frame {
     }
 }
 
-// Screen w/ Video
+/// Screen w/ Video
 
 .website_screen_container {
     width: 100%;
@@ -629,6 +629,20 @@ PROJECTS
 /*==================================
 ABOUT
 ==================================*/
+
+// Client Logos
+
+ul.client_logos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ul.client_logos li {
+    width: 25%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+}
 
 /*=== Social ===*/
 
