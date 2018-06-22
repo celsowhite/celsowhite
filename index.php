@@ -99,7 +99,7 @@
                     <div class="website_screen_container">
                         <div class="website_screen">
                             <video muted playsinline loop data-src="video/fullmoonfest_2018.mp4"></video>
-                            <img class="static_screen" src="img/websites/fullmoon2017_screen.png" />
+                            <img class="static_screen" src="img/websites/fullmoon_screen.png" />
                         </div>
                     </div>
                 </a>
@@ -169,7 +169,7 @@
                 </ul>
                 <div class="tab_content website_content">
                     <div id="ticketmaster">
-                        <p>Our team was tasked with the redesign of Ticketmaster's news site. I developed a robust backend for them to easily manage content, a festival finder and created unique ways to integrate live ticket sales with article content. Agency: <a href="http://bearinthehall.com/" target="_blank">Bear In The Hall</a> // Design: <a href="https://www.wearebill.com/" target="_blank">We Are Bill</a>.</p>
+                        <p>Our team was tasked with the redesign of Ticketmaster's marketing/news site. I developed a robust backend for them to easily manage content, a festival finder and created unique ways to integrate live ticket sales with article content. Agency: <a href="http://bearinthehall.com/" target="_blank">Bear In The Hall</a> // Design: <a href="https://www.wearebill.com/" target="_blank">We Are Bill</a>.</p>
                         <h3><a href="http://insider.ticketmaster.com" class="website_link" target="_blank">View Website</a></h3>
                     </div>
                     <div id="jimmychin">
