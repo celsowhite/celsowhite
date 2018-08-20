@@ -7,6 +7,7 @@ import Meta from 'vue-meta'
 import Home from '@/components/Home'
 import Websites from '@/components/Websites'
 import SingleWebsite from '@/components/SingleWebsite'
+import About from '@/components/About'
 
 // Helper
 
@@ -27,6 +28,11 @@ export default new Router({
       path: '/websites',
       name: 'Websites',
       component: Websites
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     },
     {
       path: '/websites/:slug',

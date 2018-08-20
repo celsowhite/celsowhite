@@ -13,7 +13,7 @@
                     :class="[activeBackgroundImage && activeBackgroundImage !== website.title ? 'blur' : '']"                     
                     @mouseover="showBackground(website.title)" 
                     @mouseleave="showBackground('')">
-                        {{ website.title }}
+                        <router-link :to="'/websites/' + getSlug(website.title)">{{ website.title }}</router-link>
                     </li>
                 </ul>
                 <router-link to="websites" class="featured_link">View All Websites</router-link>
@@ -40,6 +40,7 @@
 
     import { websites } from '../data/websites';
     import { store } from "../store/store.js";
+    import getSlugMixin from '../mixins/getSlug';
                     
     export default {
         name: 'Home',
@@ -52,6 +53,7 @@
                 websites
             }
         },
+        mixins: [getSlugMixin],
         methods: {
             showBackground(imageName) {
                 this.activeBackgroundImage = imageName;

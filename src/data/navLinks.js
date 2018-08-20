@@ -1,5 +1,9 @@
 export const navLinks = [
     {
+        title: 'Home',
+        link: '/'
+    },
+    {
         title: 'Websites',
         link: '/websites'
     },
@@ -13,10 +17,6 @@ export const navLinks = [
     },
     {
         title: 'About',
-        link: '/sample'
-    },
-    {
-        title: 'Contact',
-        link: '/sample'
+        link: '/about'
     }
 ];

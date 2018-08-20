@@ -4,7 +4,6 @@
     <transition name="router_anim" appear mode="out-in">
       <router-view :key="$route.fullPath" />
     </transition>
-    <MainFooter v-if="$route.name !== 'Home'" />
   </div>
 </template>
 
@@ -24,8 +23,7 @@
       titleTemplate: '%s | Celso White'
     },
     components: {
-      FixedOverlay,
-      MainFooter
+      FixedOverlay
     },
     data() {
       return {

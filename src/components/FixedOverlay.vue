@@ -11,10 +11,14 @@
             <nav class="main_navigation">
                 <ul>
                     <li v-for="link in navLinks" :key="link.title">
-                        <router-link :to="link.link" @click.native="toggleNavigation">{{ link.title }}</router-link>
+                        <router-link :to="link.link" @click.native="toggleNavigation" exact>{{ link.title }}</router-link>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="contact">
+            <p>celso@celsowhite.com</p>
+            <span class="line"></span>
         </div>
     </div>
 </template>
@@ -61,6 +65,45 @@
     
     .fixed_overlay.light .logo {
         color: $black;
+    }
+    
+    // Contact
+    
+    .fixed_overlay .contact {
+        position: fixed;
+        bottom: 0;
+        right: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include z-index('overlay');
+    }
+    
+    .fixed_overlay .contact p {
+        color: $white;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: .6px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    
+    .fixed_overlay .contact span.line {
+        width: 1px;
+        height: 30px;
+        background: $white;
+        display: block;
+    }
+    
+    .fixed_overlay.light {
+        .contact p {
+            color: $black;
+        }
+        span.line {
+            background: $black;
+        }
     }
     
     /*==================================

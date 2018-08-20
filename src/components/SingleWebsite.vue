@@ -6,22 +6,29 @@
                 <div class="small_container">
                     <video autoplay muted playsinline loop :src="websiteInfo.video"></video>
                     <div v-html="websiteInfo.content"></div>
+                    <ul class="credit_list">
+                        <li 
+                        v-for="credit in websiteInfo.credits" 
+                        :key="credit.title">
+                            <span class="title">{{ credit.title }}</span>
+                            <span v-html="credit.text" class="text"></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="panel">
+            <div class="panel" v-if="relatedWebsites.length > 0">
                 <div class="large_container">
                     <h3>More {{ primaryCategory }}</h3>
                     <div class="row">
                         <div
-                        v-for="relatedWebsite in websites" 
+                        v-for="relatedWebsite in relatedWebsites" 
                         :key="relatedWebsite.title"
-                        v-if="relatedWebsite.category.includes(primaryCategory) && relatedWebsite.title !== websiteInfo.title"
                         class="column_1_3">
                             <CardSlim 
                             :isBlurred="false" 
                             :title="relatedWebsite.title" 
-                            :image="relatedWebsite.featuredImageLarge" 
-                            :imageFocus="relatedWebsite.featuredImageLargeFocus" 
+                            :image="relatedWebsite.featuredImageSmall" 
+                            :imageFocus="relatedWebsite.featuredImageSmallFocus" 
                             :link="'/websites/' + getSlug(relatedWebsite.title)" />
                         </div>
                     </div>
@@ -37,7 +44,7 @@
     import CardSlim from './CardSlim';
     import { store } from "../store/store.js";
     import { websites } from '../data/websites';
-    import getSlug from 'speakingurl';
+    import getSlugMixin from '../mixins/getSlug';
                         
     export default {
         name: 'SingleWebsite',
@@ -57,23 +64,18 @@
         mounted: function() {
             store.setColorScheme('light');
             this.getWebsiteInfo();
-            this.getRelatedWebsites();
         },
+        mixins: [getSlugMixin],
         methods: {
-            getSlug(string) {
-                return getSlug(string);
-            },
             getWebsiteInfo: function () {
                 const websiteInfo = websites.find((website) => {
-                    return getSlug(website.title) == this.websiteSlug;
+                    return this.getSlug(website.title) == this.websiteSlug;
                 }); 
                 this.websiteInfo = websiteInfo;
                 this.primaryCategory = websiteInfo.category[1];
-            },
-            getRelatedWebsites() {
                 this.relatedWebsites = websites.filter((website) => {
-                    // return website.category.includes
-                })
+                    return website.category.includes(this.primaryCategory) && website.title !== this.websiteInfo.title;
+                });
             }
         }
     }
@@ -86,6 +88,7 @@
     
     video {
         margin-bottom: 20px;
+        box-shadow: rgba($black,.3) 0 2px 8px
     }
     
 

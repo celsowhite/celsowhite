@@ -29,5 +29,9 @@
         text-align: center;
         padding-top: 100px;
     }
+    
+    header.page_header h2 {
+        margin-bottom: 0;
+    }
 
 </style>
