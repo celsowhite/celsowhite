@@ -1,0 +1,116 @@
+/*================
+MEDIA QUERIES
+================*/
+
+@mixin mobile() {
+	@media all and (max-width: 480px){
+		@content;
+	}
+}
+
+@mixin mobile_landscape() {
+	@media all and (max-width: 568px) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media all and (max-width: 768px){
+		@content;
+	}
+}
+
+@mixin tablet_landscape() {
+	@media all and (max-width: 1024px){
+		@content;
+	}
+}
+
+@mixin desktop() {
+	@media all and (min-width: 1280px){
+		@content;
+	}
+}
+
+/*================
+Z-Index
+================*/
+
+$z-index: (
+  modal              : 40,
+  overlay            : 30,
+  navigation         : 20,
+  priority-content   : 10,
+  hidden             : -10
+);
+
+@function z-index($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
+
+/*================
+STAGGERED TRANSITION
+================*/
+
+@mixin staggered_transition($start:1, $items:2, $initial:0, $step:.1){
+	@for $i from $start through $items{
+		&:nth-of-type(#{abs($i)}){
+			transition-delay:#{$initial}s;
+		}
+		$initial: $initial + $step;
+	}
+}
+
+/*================
+OVERLAY
+================*/
+
+@mixin overlay($background) {
+  content: "";
+  position: absolute;
+  background: $background;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*================
+CENTERED CONTENT CONTAINER
+Center content horizontally and vertically in div.
+================*/
+
+@mixin content_container($horizontal_position, $vertical_position) {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: $horizontal_position;
+    align-items: $vertical_position;
+}
+
+/*================
+SCROLLBAR
+================*/
+
+@mixin scrollbar() {
+	&::-webkit-scrollbar {
+	    width: 5px;
+	}
+	 
+	&::-webkit-scrollbar-track {
+	    background: rgba(255,255,255,.2); 
+	}
+	 
+	&::-webkit-scrollbar-thumb {
+	    background: $teal;  
+	}
+}
