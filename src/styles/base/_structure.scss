@@ -24,8 +24,14 @@ GENERAL STRUCTURE
     margin: 0 auto;
 }
 
+// Panel
+
 .panel {
     padding: 50px 0;
+}
+
+.panel.padding_bottom {
+    padding: 0 0 50px;
 }
 
 /*==================================

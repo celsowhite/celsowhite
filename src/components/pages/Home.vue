@@ -144,7 +144,7 @@
     }
     
     /*--- 
-    Router Animation
+    Homepage Route Animation
     ---*/
         
     // Enter/Appear
@@ -154,14 +154,14 @@
             transition: all .8s cubic-bezier(0.895, 0.03, 0.685, 0.22);
         }
         ul.featured_project_list li {
-            transition: all .3s ease-in-out;
+            transition: all .5s ease-in-out;
             @include staggered_transition($start:0, $items:10, $initial:.2, $step:.1);
         }
     }
     
     .router_anim-enter, .router_anim-leave-to {
         .home_background_container {
-            width: 0%;
+            height: 0%;
         }
         ul.featured_project_list li {
             opacity: 0;

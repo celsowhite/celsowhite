@@ -46,6 +46,10 @@ Links
     transition: transform .3s ease-in-out;
 }
 
+.featured_link.black:after {
+    background: $black;
+}
+
 .featured_link:hover:after {
     transform: scaleX(1);
 }

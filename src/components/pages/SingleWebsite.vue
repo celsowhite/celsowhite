@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="panel" v-if="relatedWebsites.length > 0">
+        <div class="panel padding_bottom" v-if="relatedWebsites.length > 0">
             <div class="large_container">
                 <h3>More {{ primaryCategory }}</h3>
                 <div class="row">
@@ -27,6 +27,11 @@
                         :link="'/websites/' + getSlug(relatedWebsite.title)" />
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="panel padding_bottom">
+            <div class="large_container text_alignment_center">
+                <router-link to="/websites" class="featured_link black">View All Websites</router-link>
             </div>
         </div>
     </div>
