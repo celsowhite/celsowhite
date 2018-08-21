@@ -1,0 +1,22 @@
+/*
+USAGE:
+
+	Regular:			font-family: "SweetSans";	font-weight: normal; 	font-style: normal;
+	Medium:   			font-family: "SweetSans";	font-weight: bold; 		font-style: normal;
+*/
+
+/**************** Sweet Sans REGULAR ****************/
+@font-face {
+    font-family: "SweetSans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("SweetSansPro-Regular.eot");
+}
+
+/**************** Sweet Sans MEDIUM ****************/
+@font-face {
+    font-family: "SweetSans";
+    font-weight: bold;
+    font-style: normal;
+    src: url("SweetSansPro-Medium.eot");
+}
