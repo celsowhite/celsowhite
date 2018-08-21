@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <FixedOverlay />
+    <MobileNavigation />
     <transition name="router_anim" appear mode="out-in">
       <router-view :key="$route.fullPath" />
     </transition>
+    <FixedOverlay />
   </div>
 </template>
 
@@ -14,7 +15,7 @@
   import { store } from "./store/store.js";
   import './styles/main.scss';
   import FixedOverlay from './components/FixedOverlay';
-  import MainFooter from './components/MainFooter';
+  import MobileNavigation from './components/MobileNavigation';
   
   export default {
     name: 'App',
@@ -23,7 +24,8 @@
       titleTemplate: '%s | Celso White'
     },
     components: {
-      FixedOverlay
+      FixedOverlay,
+      MobileNavigation
     },
     data() {
       return {
@@ -45,25 +47,25 @@
   .router_anim-enter-active {
     transition: all 2s ease-in-out;
     
-    &.main_content {
-      transition: all 1s ease-in-out;
+    .main_content {
+      transition: all .5s .3s ease-in-out;
     }
   }
   
   .router_anim-enter, .router_anim-leave-to {
-    &.main_content {
+    .main_content {
       opacity: 0;
-      transform: translateY(30px);
+      transform: scale(.95);
     }
   }
     
   // Leave
   
   .router_anim-leave-active {
-    transition: all .5s ease-in-out;
+    transition: all .8s ease-in-out;
     
-    &.main_content {
-      transition: all .5s ease-in-out;
+    .main_content {
+      transition: all .3s ease-in-out;
     }
   }
             

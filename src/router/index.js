@@ -8,6 +8,8 @@ import Home from '@/components/Home'
 import Websites from '@/components/Websites'
 import SingleWebsite from '@/components/SingleWebsite'
 import About from '@/components/About'
+import Projects from '@/components/Projects'
+import Apps from '@/components/Apps'
 
 // Helper
 
@@ -30,18 +32,28 @@ export default new Router({
       component: Websites
     },
     {
+      path: '/websites/:slug',
+      component: SingleWebsite
+    },
+    {
       path: '/about',
       name: 'About',
       component: About
     },
     {
-      path: '/websites/:slug',
-      component: SingleWebsite
+      path: '/projects',
+      name: 'Projects',
+      component: Projects
+    },
+    {
+      path: '/apps',
+      name: 'Apps',
+      component: Apps
     }
   ],
   scrollBehavior (to, from, savedPosition) {
     
-    const transitionTime = 800;
+    const transitionTime = 600;
     
     return new Promise((resolve, reject) => {
       

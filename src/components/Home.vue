@@ -1,27 +1,30 @@
 <template>
-    <div class="home">
-        
-        <!-- Content -->
-        
-        <div class="home_content">
-            <div class="container">
-                <ul class="featured_project_list">
-                    <li 
-                    v-for="website in websites" 
-                    v-if="website.featured"
-                    :key="website.title"
-                    :class="[activeBackgroundImage && activeBackgroundImage !== website.title ? 'blur' : '']"                     
-                    @mouseover="showBackground(website.title)" 
-                    @mouseleave="showBackground('')">
-                        <router-link :to="'/websites/' + getSlug(website.title)">{{ website.title }}</router-link>
-                    </li>
-                </ul>
-                <router-link to="websites" class="featured_link">View All Websites</router-link>
+    <div>
+        <div class="home_content_container">
+            
+            <!-- Content -->
+            
+            <div class="home_content">
+                <div class="container">
+                    <ul class="featured_project_list">
+                        <li 
+                        v-for="website in websites" 
+                        v-if="website.featured"
+                        :key="website.title"
+                        :class="[activeBackgroundImage && activeBackgroundImage !== website.title ? 'blur' : '']"                     
+                        @mouseover="showBackground(website.title)" 
+                        @mouseleave="showBackground('')">
+                            <router-link :to="'/websites/' + getSlug(website.title)">{{ website.title }}</router-link>
+                        </li>
+                    </ul>
+                    <router-link to="websites" class="featured_link">View All Websites</router-link>
+                </div>
             </div>
+                    
         </div>
         
         <!-- Background Images -->
-        
+            
         <div class="home_background_container">
             <div 
             v-for="website in websites" 
@@ -70,11 +73,9 @@
 
     // Structure
     
-    .home {
+    .home_content_container {
+        width: 100%;
         height: 100vh;
-        background: $black;
-        background-size: cover;
-        background-position: center;
         color: $white;
         display: flex;
         justify-content: center;
@@ -103,7 +104,7 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: .6px;
-        transition: all .3s ease-in-out;
+        transition: filter .3s ease-in-out;
         
         &.blur {
             filter: blur(2px);
@@ -111,6 +112,15 @@
     }
     
     // Background 
+    
+    .home_background_container {
+        background: $black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
     
     .home_background_image {
         position: absolute;
@@ -131,6 +141,43 @@
     
     .home_background_image:after {
         @include overlay(rgba($black, 0));
+    }
+    
+    /*--- 
+    Router Animation
+    ---*/
+        
+    // Enter/Appear
+        
+    .router_anim-enter-active {
+        .home_background_container {
+            transition: all .8s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        }
+        ul.featured_project_list li {
+            transition: all .5s ease-in-out;
+            @include staggered_transition($start:0, $items:10, $initial:.1, $step:.1);
+        }
+    }
+    
+    .router_anim-enter, .router_anim-leave-to {
+        .home_background_container {
+            // transform: translateX(-100%);
+            width: 0%;
+        }
+        ul.featured_project_list li {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+    }
+    
+    .router_anim-leave-active {
+        .home_background_container {
+            transition: all .8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        ul.featured_project_list li {
+            transition: all .5s ease-in-out;
+            @include staggered_transition($start:0, $items:10, $initial:.1, $step:.1);
+        }
     }
 
 </style>

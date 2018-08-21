@@ -1,9 +1,9 @@
 <template>
-    <div class="fixed_overlay" :class="storeState.colorScheme">
+    <div class="fixed_overlay" :class="[{nav_open: storeState.navIsOpen}, storeState.colorScheme]">
         <div class="logo">
             <router-link to="/">Celso</router-link>
         </div>
-        <div class="menu_button_container" :class="{nav_open: navIsOpen}">
+        <div class="menu_button_container" :class="{nav_open: storeState.navIsOpen}">
             <div class="menu_button" @click="toggleNavigation">
                 <button>Menu</button>
                 <span class="menu_icon"></span>
@@ -26,20 +26,19 @@
 <script>
     
     import { store } from "../store/store.js";
-    import {navLinks} from '../data/navLinks';
+    import { navLinks } from '../data/navLinks';
                 
     export default {
         name: 'FixedOverlay',
         data () {
             return {
-                navIsOpen: false,
                 navLinks,
                 storeState: store.state
             }
         },
         methods: {
             toggleNavigation() {
-                this.navIsOpen = !this.navIsOpen;
+                store.toggleNavigation();
             }
         }
     }
@@ -48,7 +47,9 @@
 
 <style scoped lang="scss">
 
-    // Logo
+    /*==================================
+    Logo
+    ==================================*/
     
     .logo {
         font-family: 'jaapokki';
@@ -61,13 +62,29 @@
         letter-spacing: .6px;
         transition: color .3s ease-in-out;
         @include z-index('overlay');
+        
+        @include tablet {
+            font-size: 25px;
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            bottom: auto;
+        }
     }
     
     .fixed_overlay.light .logo {
         color: $black;
     }
     
-    // Contact
+    .fixed_overlay.light.nav_open .logo {
+        @include tablet {
+            color: $white;
+        }
+    }
+    
+    /*==================================
+    Contact
+    ==================================*/
     
     .fixed_overlay .contact {
         position: fixed;
@@ -79,6 +96,12 @@
         justify-content: center;
         align-items: center;
         @include z-index('overlay');
+        
+        @include tablet {
+            position: relative;
+            right: 0;
+            width: 100%;
+        }
     }
     
     .fixed_overlay .contact p {
@@ -87,14 +110,17 @@
         text-transform: uppercase;
         letter-spacing: .6px;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 400;
+        transition: all .3s ease-in-out;
     }
     
     .fixed_overlay .contact span.line {
         width: 1px;
         height: 30px;
+        margin: 0 auto;
         background: $white;
         display: block;
+        transition: all .3s ease-in-out;
     }
     
     .fixed_overlay.light {
@@ -129,7 +155,7 @@
         color: $white;
         text-transform: uppercase;
         padding: 0 10px 0 0;
-        font-weight: 700;
+        font-weight: 400;
         position: relative;
         cursor: pointer;
         transition: all .3s ease-in-out;
@@ -195,6 +221,16 @@
             background: $black;
         }
     }
+    
+    .fixed_overlay.light.nav_open .menu_icon {
+        @include tablet {
+            background: $white;
+
+            &:before, &:after {
+                background: $white;
+            }
+        }
+    }
 
     .fixed_overlay.light .nav_open .menu_icon {
         background: transparent;
@@ -210,6 +246,10 @@
         opacity: 0;
         top: 0;
         z-index: 9;
+        
+        @include tablet {
+            display: none;
+        }
     }
 
     nav.main_navigation {
@@ -235,7 +275,7 @@
         display: inline-block;
         color: $white;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: .1em;
         transform: translateX(20px);
         opacity: 0;

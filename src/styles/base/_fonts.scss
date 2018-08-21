@@ -45,6 +45,16 @@ h2 {
     line-height: 38px;
     font-family: 'canela', serif;
     font-weight: normal;
+    
+    @include tablet {
+        font-size: 25px;
+        line-height: 31px;
+    }
+    
+    @include mobile_landscape {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 h3 {

@@ -14,7 +14,7 @@
             v-for="website in websites" 
             :key="website.title"
             class="column_1_3">
-                <CardSlim 
+                <ThumbnailCard 
                 :isBlurred="!website.category.includes(activeCategory)" 
                 :title="website.title" 
                 :image="website.featuredImageSmall" 
@@ -27,7 +27,7 @@
 
 <script>
 
-    import CardSlim from './CardSlim';
+    import ThumbnailCard from './ThumbnailCard';
     import { websites } from '../data/websites';
     import getSlugMixin from '../mixins/getSlug';
                     
@@ -42,7 +42,7 @@
         },
         mixins: [getSlugMixin],
         components: {
-            CardSlim
+            ThumbnailCard
         },
         methods: {
             setActiveCategory(category) {
@@ -69,6 +69,11 @@
         
         &.active {
             font-weight: 700;
+        }
+        
+        @include mobile_landscape {
+            margin-right: 10px;
+            font-size: 10px;
         }
     }
 

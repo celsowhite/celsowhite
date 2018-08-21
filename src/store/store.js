@@ -5,7 +5,8 @@ export const store = {
     // Global State
     
     state: {
-        colorScheme: ''
+        colorScheme: '',
+        navIsOpen: false
     },
     
     // Set Site Color Scheme
@@ -14,6 +15,12 @@ export const store = {
         
         this.state.colorScheme = theme;
         
+    },
+    
+    // Toggle Navigation
+    
+    toggleNavigation() {
+        this.state.navIsOpen = !this.state.navIsOpen;
     }
     
 };

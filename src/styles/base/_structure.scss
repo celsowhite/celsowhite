@@ -72,7 +72,11 @@ GRID
 
 .column_1_3 {
     width: 33.33%;
-
+    
+    @include tablet {
+    	width: 50%;
+    }
+    
     @include mobile_landscape {
     	width: 100%;
     }

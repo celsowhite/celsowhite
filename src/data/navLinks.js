@@ -9,11 +9,11 @@ export const navLinks = [
     },
     {
         title: 'Apps',
-        link: '/sample'
+        link: '/apps'
     },
     {
         title: 'Projects',
-        link: '/sample'
+        link: '/projects'
     },
     {
         title: 'About',

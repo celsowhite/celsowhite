@@ -16,21 +16,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="panel" v-if="relatedWebsites.length > 0">
-                <div class="large_container">
-                    <h3>More {{ primaryCategory }}</h3>
-                    <div class="row">
-                        <div
-                        v-for="relatedWebsite in relatedWebsites" 
-                        :key="relatedWebsite.title"
-                        class="column_1_3">
-                            <CardSlim 
-                            :isBlurred="false" 
-                            :title="relatedWebsite.title" 
-                            :image="relatedWebsite.featuredImageSmall" 
-                            :imageFocus="relatedWebsite.featuredImageSmallFocus" 
-                            :link="'/websites/' + getSlug(relatedWebsite.title)" />
-                        </div>
+        </div>
+        <div class="panel" v-if="relatedWebsites.length > 0">
+            <div class="large_container">
+                <h3>More {{ primaryCategory }}</h3>
+                <div class="row">
+                    <div
+                    v-for="relatedWebsite in relatedWebsites" 
+                    :key="relatedWebsite.title"
+                    class="column_1_3">
+                        <ThumbnailCard 
+                        :title="relatedWebsite.title" 
+                        :image="relatedWebsite.featuredImageSmall" 
+                        :imageFocus="relatedWebsite.featuredImageSmallFocus" 
+                        :link="'/websites/' + getSlug(relatedWebsite.title)" />
                     </div>
                 </div>
             </div>
@@ -41,7 +40,7 @@
 <script>
 
     import PageHeader from './PageHeader';
-    import CardSlim from './CardSlim';
+    import ThumbnailCard from './ThumbnailCard';
     import { store } from "../store/store.js";
     import { websites } from '../data/websites';
     import getSlugMixin from '../mixins/getSlug';
@@ -59,7 +58,7 @@
         },
         components: {
             PageHeader,
-            CardSlim
+            ThumbnailCard
         },
         mounted: function() {
             store.setColorScheme('light');

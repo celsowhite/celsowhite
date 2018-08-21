@@ -39,7 +39,7 @@ export const websites = [
         content: '<p>In 2016, Tribeca Film was in need of a new homepage to better surface featured content and showcase the past years festival. I brought a team together to strategize, design and develop the new homepage.</p>',
         credits: [
             {title: 'Year', text: '2016'},
-            {title: 'Role', text: 'Agency (UX, Design & Development'}
+            {title: 'Role', text: 'Agency (UX, Design & Development)'}
         ],
         featured: true,
         featuredImageLarge: '/static/img/websites/tribeca/featured_image_large.jpg',
@@ -54,7 +54,7 @@ export const websites = [
         content: "<p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>",
         credits: [
             {title: 'Link', text: '<a href="https://latinousa.org" target="_blank">latinousa.org'},
-            {title: 'Role', text: 'Agency (UX, Design & Development'}
+            {title: 'Role', text: 'Agency (UX, Design & Development)'}
         ],
         featured: true,
         featuredImageLarge: '/static/img/websites/latinousa/featured_image_large.jpg',
@@ -85,7 +85,7 @@ export const websites = [
         content: '<p>New York Studio School is a historic institution. They offer academic programs, lectures, exhibitions and a vibrant community of artists in NYC. I brought together a team to reinvent their online presence. We mapped a new user experience to engage audiences coming to the school, crafted a design that brings to life the NYSS experience and developed the site with a custom backend that can be easily updated moving forward.</p>',
         credits: [
             {title: 'Link', text: '<a href="https://nyss.org" target="_blank">nyss.org'},
-            {title: 'Role', text: 'Agency (UX, Design & Development'}
+            {title: 'Role', text: 'Agency (UX, Design & Development)'}
         ],
         summary: 'A new online presence for a historic institution.',
         featured: true,
