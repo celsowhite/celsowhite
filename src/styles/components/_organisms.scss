@@ -11,26 +11,3 @@ Lists
 ==================================*/
 
 // Credit List
-
-ul.credit_list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.credit_list li {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-ul.credit_list li .title {
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 30%;
-}
-
-ul.credit_list li .text {
-    width: 70%;
-}

@@ -4,12 +4,12 @@ import Meta from 'vue-meta'
 
 // Route Templates
 
-import Home from '@/components/Home'
-import Websites from '@/components/Websites'
-import SingleWebsite from '@/components/SingleWebsite'
-import About from '@/components/About'
-import Projects from '@/components/Projects'
-import Apps from '@/components/Apps'
+import Home from '@/components/pages/Home'
+import Websites from '@/components/pages/Websites'
+import SingleWebsite from '@/components/pages/SingleWebsite'
+import About from '@/components/pages/About'
+import Projects from '@/components/pages/Projects'
+import Apps from '@/components/pages/Apps'
 
 // Helper
 

@@ -12,9 +12,7 @@ export const store = {
     // Set Site Color Scheme
     
     setColorScheme(theme) {
-        
         this.state.colorScheme = theme;
-        
     },
     
     // Toggle Navigation

@@ -7,12 +7,7 @@
                     <video autoplay muted playsinline loop :src="websiteInfo.video"></video>
                     <div v-html="websiteInfo.content"></div>
                     <ul class="credit_list">
-                        <li 
-                        v-for="credit in websiteInfo.credits" 
-                        :key="credit.title">
-                            <span class="title">{{ credit.title }}</span>
-                            <span v-html="credit.text" class="text"></span>
-                        </li>
+                        <CreditList :credits="websiteInfo.credits" />
                     </ul>
                 </div>
             </div>
@@ -39,11 +34,12 @@
 
 <script>
 
-    import PageHeader from './PageHeader';
-    import ThumbnailCard from './ThumbnailCard';
-    import { store } from "../store/store.js";
-    import { websites } from '../data/websites';
-    import getSlugMixin from '../mixins/getSlug';
+    import PageHeader from '../organisms/PageHeader';
+    import CreditList from '../atoms/CreditList';
+    import ThumbnailCard from '../atoms/ThumbnailCard';
+    import { store } from "../../store/store.js";
+    import { websites } from '../../data/websites';
+    import getSlugMixin from '../../mixins/getSlug';
                         
     export default {
         name: 'SingleWebsite',
@@ -58,7 +54,8 @@
         },
         components: {
             PageHeader,
-            ThumbnailCard
+            ThumbnailCard,
+            CreditList
         },
         mounted: function() {
             store.setColorScheme('light');

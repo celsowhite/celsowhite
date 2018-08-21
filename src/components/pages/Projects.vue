@@ -13,9 +13,9 @@
 
 <script>
 
-    import PageHeader from './PageHeader';
-    import ProjectsGrid from './ProjectsGrid';
-    import { store } from "../store/store.js";
+    import PageHeader from '../organisms/PageHeader';
+    import ProjectsGrid from '../organisms/ProjectsGrid';
+    import { store } from "../../store/store.js";
                     
     export default {
         name: 'Projects',

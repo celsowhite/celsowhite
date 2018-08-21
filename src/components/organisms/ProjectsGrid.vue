@@ -21,9 +21,9 @@
 
 <script>
 
-    import ThumbnailCard from './ThumbnailCard';
-    import { projects } from '../data/projects';
-    import getSlugMixin from '../mixins/getSlug';
+    import ThumbnailCard from '../atoms/ThumbnailCard';
+    import { projects } from '../../data/projects';
+    import getSlugMixin from '../../mixins/getSlug';
                     
     export default {
         name: 'ProjectsGrid',

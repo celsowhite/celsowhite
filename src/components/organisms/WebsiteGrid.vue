@@ -27,9 +27,9 @@
 
 <script>
 
-    import ThumbnailCard from './ThumbnailCard';
-    import { websites } from '../data/websites';
-    import getSlugMixin from '../mixins/getSlug';
+    import ThumbnailCard from '../atoms/ThumbnailCard';
+    import { websites } from '../../data/websites';
+    import getSlugMixin from '../../mixins/getSlug';
                     
     export default {
         name: 'WebsiteGrid',

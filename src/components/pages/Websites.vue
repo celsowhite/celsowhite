@@ -13,9 +13,9 @@
 
 <script>
 
-    import PageHeader from './PageHeader';
-    import WebsiteGrid from './WebsiteGrid';
-    import { store } from "../store/store.js";
+    import PageHeader from '../organisms/PageHeader';
+    import WebsiteGrid from '../organisms/WebsiteGrid';
+    import { store } from "../../store/store.js";
                     
     export default {
         name: 'Websites',

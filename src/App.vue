@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <MobileNavigation />
-    <transition name="router_anim" appear mode="out-in">
+    <transition name="router_anim" appear mode="out-in" :duration="{ enter: 1300, leave: 1000 }">
       <router-view :key="$route.fullPath" />
     </transition>
     <FixedOverlay />
@@ -14,8 +14,8 @@
   
   import { store } from "./store/store.js";
   import './styles/main.scss';
-  import FixedOverlay from './components/FixedOverlay';
-  import MobileNavigation from './components/MobileNavigation';
+  import FixedOverlay from './components/organisms/FixedOverlay';
+  import MobileNavigation from './components/organisms/MobileNavigation';
   
   export default {
     name: 'App',
@@ -44,9 +44,7 @@
       
   // Enter/Appear
       
-  .router_anim-enter-active {
-    transition: all 2s ease-in-out;
-    
+  .router_anim-enter-active {    
     .main_content {
       transition: all .5s .3s ease-in-out;
     }
@@ -58,14 +56,12 @@
       transform: scale(.95);
     }
   }
-    
+      
   // Leave
   
-  .router_anim-leave-active {
-    transition: all .8s ease-in-out;
-    
+  .router_anim-leave-active {    
     .main_content {
-      transition: all .3s ease-in-out;
+      transition: all .5s ease-in-out;
     }
   }
             

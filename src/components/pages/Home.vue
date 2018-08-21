@@ -41,9 +41,9 @@
 
 <script>
 
-    import { websites } from '../data/websites';
-    import { store } from "../store/store.js";
-    import getSlugMixin from '../mixins/getSlug';
+    import { websites } from '../../data/websites';
+    import { store } from "../../store/store.js";
+    import getSlugMixin from '../../mixins/getSlug';
                     
     export default {
         name: 'Home',
@@ -154,14 +154,13 @@
             transition: all .8s cubic-bezier(0.895, 0.03, 0.685, 0.22);
         }
         ul.featured_project_list li {
-            transition: all .5s ease-in-out;
-            @include staggered_transition($start:0, $items:10, $initial:.1, $step:.1);
+            transition: all .3s ease-in-out;
+            @include staggered_transition($start:0, $items:10, $initial:.2, $step:.1);
         }
     }
     
     .router_anim-enter, .router_anim-leave-to {
         .home_background_container {
-            // transform: translateX(-100%);
             width: 0%;
         }
         ul.featured_project_list li {
@@ -176,7 +175,7 @@
         }
         ul.featured_project_list li {
             transition: all .5s ease-in-out;
-            @include staggered_transition($start:0, $items:10, $initial:.1, $step:.1);
+            @include staggered_transition($start:0, $items:10, $initial:0, $step:.1);
         }
     }
 

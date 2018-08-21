@@ -22,9 +22,9 @@
 
 <script>
 
-    import ThumbnailCard from './ThumbnailCard';
-    import { apps } from '../data/apps';
-    import getSlugMixin from '../mixins/getSlug';
+    import ThumbnailCard from '../atoms/ThumbnailCard';
+    import { apps } from '../../data/apps';
+    import getSlugMixin from '../../mixins/getSlug';
                     
     export default {
         name: 'AppsGrid',

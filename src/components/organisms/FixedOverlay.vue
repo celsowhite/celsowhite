@@ -25,8 +25,8 @@
 
 <script>
     
-    import { store } from "../store/store.js";
-    import { navLinks } from '../data/navLinks';
+    import { store } from "../../store/store.js";
+    import { navLinks } from '../../data/navLinks';
                 
     export default {
         name: 'FixedOverlay',
