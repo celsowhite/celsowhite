@@ -7,7 +7,7 @@ export const apps = [
     },
     {
         title: 'Fresh Phrase',
-        summary: 'Google Chrome extension built using Vue JS. Allows users to learn new languages on each new tab.',
+        summary: 'Google Chrome extension built using Vue JS. Gives you a random translation each time you open a new tab.',
         link: 'https://chrome.google.com/webstore/detail/fresh-phrase/efddjajgkbcnlojnmbcnmckcmhibginc?hl=en-US',
         primaryColor: '#2F80CA'
     }

@@ -159,15 +159,5 @@ export const websites = [
         featuredImageSmallFocus: 'center center',
         video: '/static/video/websites/humbleriot/featured.mp4',
         category: ['All', 'Creative']
-    },
-    {
-        title: 'Row New York',
-        featured: true,
-        featuredImageLarge: '/static/img/websites/rownewyork/featured_image_large.jpg',
-        featuredImageLargeFocus: 'center 60%',
-        featuredImageSmall: '/static/img/websites/rownewyork/featured_image_small.jpg',
-        featuredImageSmallFocus: 'center 60%',
-        video: '/static/video/websites/matte/featured.mp4',
-        category: ['All', 'Non-Profit']
     }
 ];
