@@ -4,7 +4,9 @@
         <div class="main_content">
             <div class="panel">
                 <div class="small_container">
-                    <video autoplay muted playsinline loop :src="websiteInfo.video"></video>
+                    <video autoplay muted playsinline loop>
+                        <source :src="websiteInfo.video" type="video/mp4">
+                    </video>
                     <div v-html="websiteInfo.content"></div>
                     <ul class="credit_list">
                         <CreditList :credits="websiteInfo.credits" />

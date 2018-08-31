@@ -28,10 +28,18 @@ GENERAL STRUCTURE
 
 .panel {
     padding: 50px 0;
+    
+    @include mobile_landscape {
+        padding: 30px 0;
+    }
 }
 
 .panel.padding_bottom {
     padding: 0 0 50px;
+    
+    @include mobile_landscape {
+        padding: 0 0 30px;
+    }
 }
 
 /*==================================

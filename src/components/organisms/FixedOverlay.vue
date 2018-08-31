@@ -17,7 +17,7 @@
             </nav>
         </div>
         <div class="contact">
-            <p>celso@celsowhite.com</p>
+            <p><a href="mailto:celso@celsowhite.com">celso@celsowhite.com</a></p>
             <span class="line"></span>
         </div>
     </div>

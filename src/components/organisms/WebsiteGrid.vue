@@ -73,7 +73,7 @@
         
         @include mobile_landscape {
             margin-right: 10px;
-            font-size: 10px;
+            font-size: 11px;
         }
     }
 

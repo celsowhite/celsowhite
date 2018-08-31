@@ -116,7 +116,7 @@
     .home_background_container {
         background: $black;
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 100vh;
@@ -165,7 +165,7 @@
         }
         ul.featured_project_list li {
             opacity: 0;
-            transform: translateX(-20px);
+            transform: translateX(-40px);
         }
     }
     
