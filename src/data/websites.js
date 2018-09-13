@@ -159,5 +159,20 @@ export const websites = [
         featuredImageSmallFocus: 'center center',
         video: '/static/video/websites/humbleriot/featured.mp4',
         category: ['All', 'Creative']
+    },
+    {
+        title: 'Row New York',
+        content: '<p>Row New York is a non-profit organization that teaches rowing and provides rigorous academic support to youth in NYC. We were tasked with redesigning their site from the ground up. The site enables them to showcase their impact, sell programs and give a true feel for what it means to be apart of their community.</p>',
+        credits: [
+            { title: 'Link', text: '<a href="https://rownewyork.org" target="_blank">rownewyork.org' },
+            { title: 'Role', text: 'Agency (UX, Design & Development)' }
+        ],
+        featured: true,
+        featuredImageLarge: '/static/img/websites/rownewyork/featured_image_large.jpg',
+        featuredImageLargeFocus: 'center center',
+        featuredImageSmall: '/static/img/websites/rownewyork/featured_image_small.jpg',
+        featuredImageSmallFocus: 'center center',
+        video: '/static/video/websites/rownewyork/featured.mp4',
+        category: ['All', 'Non-Profit']
     }
 ];
