@@ -18,9 +18,9 @@
     import { store } from "../../store/store.js";
                     
     export default {
-        name: 'Websites',
+        name: 'Apps',
         metaInfo: {
-            title: 'Websites',
+            title: 'Apps',
         },
         data() {
             return {

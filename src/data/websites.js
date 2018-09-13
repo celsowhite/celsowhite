@@ -171,7 +171,7 @@ export const websites = [
         featuredImageLarge: '/static/img/websites/rownewyork/featured_image_large.jpg',
         featuredImageLargeFocus: 'center center',
         featuredImageSmall: '/static/img/websites/rownewyork/featured_image_small.jpg',
-        featuredImageSmallFocus: 'center center',
+        featuredImageSmallFocus: 'center 80%',
         video: '/static/video/websites/rownewyork/featured.mp4',
         category: ['All', 'Non-Profit']
     }

@@ -155,7 +155,7 @@
         }
         ul.featured_project_list li {
             transition: all .5s ease-in-out;
-            @include staggered_transition($start:0, $items:10, $initial:.2, $step:.1);
+            @include staggered_transition($start:0, $items:10, $initial:0, $step:.1);
         }
     }
     
