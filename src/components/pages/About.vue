@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PageHeader title="About" summary="Web Designer & Digital Agency based in Brooklyn, NY" />
+        <PageHeader title="About" summary="Web Developer & Digital Agency based in Brooklyn, NY" />
         <div class="main_content">
             <div class="panel">
                 <div class="large_container">
