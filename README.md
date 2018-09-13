@@ -1,3 +1,3 @@
 ## About
 
-Personal website build using Vue JS.
+Personal website built using Vue JS.
