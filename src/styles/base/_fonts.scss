@@ -14,14 +14,14 @@ body {
 
 body, p {
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 25px;
     font-family: "SweetSans";
     font-weight: 100;
 }
 
 h1 {
 	font-size: 48px;
-	line-height: 52px;
+	line-height: 54px;
     font-weight: normal;
     
     &.display {
@@ -31,7 +31,7 @@ h1 {
     
     @include tablet {
         font-size: 40px;
-        line-height: 43px;
+        line-height: 45px;
     }
     
     @include mobile_landscape {
@@ -59,8 +59,13 @@ h2 {
 
 h3 {
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 20px;
     text-transform: uppercase;
+
+    @include mobile_landscape {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 p, h1, h2, h3 {

@@ -70,11 +70,11 @@
     .thumbnail_card {
         display: block;
         height: 100%;
-        box-shadow: rgba($black, .3) 0 2px 4px;
+        box-shadow: 0 4px 8px 0 rgba($black, 0.12);
         transition: all .3s ease-in-out;
         
         &:hover {
-            box-shadow: rgba($black, 1) 0 2px 10px;
+            box-shadow: 0 6px 10px 0 rgba($black, 0.18);
         }
     }
         

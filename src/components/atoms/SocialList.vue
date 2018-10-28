@@ -35,6 +35,14 @@
         margin: 0 10px 0 0;
     }
 
+    ul.social_list li a {
+        transition: all .3s ease-in-out;
+    }
+
+    ul.social_list li a:hover {
+        opacity: .6;
+    }
+
     ul.social_list.right {
         text-align: right;
 

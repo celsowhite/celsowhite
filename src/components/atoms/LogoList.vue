@@ -32,6 +32,10 @@
         width: 14%;
         margin: 0 5px 10px;
         filter: grayscale(100%);
+
+        @include mobile_landscape {
+            width: 20%;
+        }
     }
     
     ul.logo_list.left li:first-child {
