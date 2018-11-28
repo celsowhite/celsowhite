@@ -42,13 +42,13 @@ h1 {
 
 h2 {
 	font-size: 30px;
-    line-height: 38px;
+    line-height: 43px;
     font-family: 'canela', serif;
     font-weight: normal;
     
     @include tablet {
         font-size: 25px;
-        line-height: 31px;
+        line-height: 32px;
     }
     
     @include mobile_landscape {

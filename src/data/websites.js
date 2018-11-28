@@ -1,11 +1,10 @@
 export const websites = [
     {
         title: 'Ticketmaster',
-        content: '<p>Our team was tasked with the redesign of Ticketmasters marketing/news site. I developed a robust backend for them to easily manage content, a festival finder and created unique ways to integrate live ticket sales with article content.</p>',
+        content: '<p>Ticketmaster went through a company-wide rebrand and tasked us with recreating their blog. They use the blog as an outlet to communicate with fans and post curated content. I developed a robust backend for them to easily manage that content, created unique stylistic elements and built custom integrations with their API so they can integrate live ticket sales within posts.</p>',
         credits: [
             {title: 'Link', text: '<a href="https://insider.ticketmaster.com" target="_blank">insider.ticketmaster.com'}, 
             {title: 'Role', text: 'Developer & UX Consultant'},
-            {title: 'Design', text: '<a href="https://www.wearebill.com/" target="_blank">We Are Bill</a>'},
             {title: 'Agency', text: '<a href="http://bearinthehall.com/" target="_blank">Bear In The Hall</a>'}
         ],
         summary: 'A new interface and robust backend for Ticketmasters news and blog content.',
