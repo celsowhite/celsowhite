@@ -114,11 +114,12 @@ export const websites = [
     },
     {
         title: 'Forto',
-        content: '<p>Forto creates small but powerful coffee shots. I built a custom Shopify site so they could sell products direct to consumers while still fulfilling through Amazon. The site includes a store locator, custom add to cart functionality, subscription services and user accounts.</p>',
+        content: '<p>Forto creates small but powerful coffee shots. I built a custom Shopify site so they could sell products direct to consumers while still fulfilling through Amazon. The site includes custom add to cart functionality, the ability to subscribe to products, user accounts and advanced tracking integration to improve Fortos visibility across social platforms. I work on an ongoing basis with Forto to create new landing pages and features as the company evolves.</p>',
         credits: [
-            {title: 'Link', text: '<a href="https://fortocoffee.com" target="_blank">fortocoffee.com'},
+            { title: 'Link', text: '<a href="https://fortocoffee.com" target="_blank">fortocoffee.com</a>'},
             {title: 'Role', text: 'Developer & UX Consultant'}
         ],
+        summary: "An online store for a growing coffee brand.",
         featured: false,
         featuredImageLarge: '/static/img/websites/forto/featured_image_large.jpg',
         featuredImageLargeFocus: 'center 33%',

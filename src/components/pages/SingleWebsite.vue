@@ -1,14 +1,14 @@
 <template>
     <div>
         <PageHeader :title="websiteInfo.title" :summary="websiteInfo.summary" />
-        <div class="main_content">
+        <div class="main_content wysiwyg">
             <div class="panel">
                 <div class="small_container">
                     <video autoplay muted playsinline loop>
                         <source :src="websiteInfo.video" type="video/mp4">
                     </video>
                     <div v-html="websiteInfo.content"></div>
-                    <ul class="credit_list">
+                    <ul class="credit_list no_bullets">
                         <CreditList :credits="websiteInfo.credits" />
                     </ul>
                 </div>
