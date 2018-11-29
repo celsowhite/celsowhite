@@ -50,11 +50,12 @@ export const websites = [
     },
     {
         title: "NPR's Latino USA",
-        content: "<p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact around their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>",
+        content: "<p>NPR's Latino USA with Maria Hinojosa is the longest running Latino-focused program on U.S. public media. I led the redesign and development of their new website. We created an experience that encourages users to explore, share and interact with their content. I developed the site with a custom backend and php templating structure to fit their publishing needs.</p>",
         credits: [
             {title: 'Link', text: '<a href="https://latinousa.org" target="_blank">latinousa.org'},
             {title: 'Role', text: 'Agency (UX, Design & Development)'}
         ],
+        summary: 'A hub for latino news content.',
         featured: true,
         featuredImageLarge: '/static/img/websites/latinousa/featured_image_large.jpg',
         featuredImageLargeFocus: 'center 20%',
@@ -162,7 +163,7 @@ export const websites = [
     },
     {
         title: 'Row New York',
-        content: '<p>Row New York is a non-profit organization that teaches rowing and provides rigorous academic support to youth in NYC. We were tasked with redesigning their site from the ground up. The site enables them to showcase their impact, sell programs and give a true feel for what it means to be apart of their community.</p><p>We also created an online store so they can sell Row New York branded products direct to their rowers and others in the community. The store is built using Woocommerce and integrated within the same backend they manage all of their other website content.',
+        content: '<p>Row New York is a non-profit organization that teaches rowing and provides rigorous academic support to youth in NYC. We were tasked with redesigning their site from the ground up. The site enables them to showcase their impact, sell programs and give a true feel for what it means to be apart of their community.</p><p>We also created an online store so they can sell Row New York branded products direct to their rowers and others in the community. The store is built using Woocommerce and integrated within the same backend they manage all of their other website content.</p>',
         credits: [
             { title: 'Link', text: '<a href="https://rownewyork.org" target="_blank">rownewyork.org' },
             { title: 'Store', text: '<a href="https://rownewyork.org/shop" target="_blank">rownewyork.org/shop' },
@@ -176,5 +177,21 @@ export const websites = [
         featuredImageSmallFocus: 'center 80%',
         video: '/static/video/websites/rownewyork/featured.mp4',
         category: ['All', 'Non-Profit', 'E-Commerce']
+    },
+    {
+        title: 'Terez',
+        content: "<p>Terez is one of the top shopping destinations for women's apparel including leggings, tops and bottoms. I work with Terez to build out custom features and provide user experience feedback to ensure those features are as engaging as possible. I've built custom add to cart functionality, a dynamic quick view pop up, social login capability, a related products algorithm and uniquely styled landing pages for marketing campaigns.",
+        credits: [
+            { title: 'Link', text: '<a href="https://terez.com" target="_blank">terez.com' },
+            { title: 'Role', text: 'Developer & UX Consultant' }
+        ],
+        summary: 'A feature rich store for a Shopify Plus client.',
+        featured: false,
+        featuredImageLarge: '',
+        featuredImageLargeFocus: 'center top',
+        featuredImageSmall: '/static/img/websites/terez/featured_image_small.jpg',
+        featuredImageSmallFocus: 'center 40%',
+        video: '/static/video/websites/terez/featured.mp4',
+        category: ['All', 'E-Commerce']
     }
 ];
