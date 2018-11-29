@@ -162,17 +162,19 @@ export const websites = [
     },
     {
         title: 'Row New York',
-        content: '<p>Row New York is a non-profit organization that teaches rowing and provides rigorous academic support to youth in NYC. We were tasked with redesigning their site from the ground up. The site enables them to showcase their impact, sell programs and give a true feel for what it means to be apart of their community.</p>',
+        content: '<p>Row New York is a non-profit organization that teaches rowing and provides rigorous academic support to youth in NYC. We were tasked with redesigning their site from the ground up. The site enables them to showcase their impact, sell programs and give a true feel for what it means to be apart of their community.</p><p>We also created an online store so they can sell Row New York branded products direct to their rowers and others in the community. The store is built using Woocommerce and integrated within the same backend they manage all of their other website content.',
         credits: [
             { title: 'Link', text: '<a href="https://rownewyork.org" target="_blank">rownewyork.org' },
+            { title: 'Store', text: '<a href="https://rownewyork.org/shop" target="_blank">rownewyork.org/shop' },
             { title: 'Role', text: 'Agency (UX, Design & Development)' }
         ],
+        summary: 'A vivid view into an impactful non profit.',
         featured: true,
         featuredImageLarge: '/static/img/websites/rownewyork/featured_image_large.jpg',
         featuredImageLargeFocus: 'center center',
         featuredImageSmall: '/static/img/websites/rownewyork/featured_image_small.jpg',
         featuredImageSmallFocus: 'center 80%',
         video: '/static/video/websites/rownewyork/featured.mp4',
-        category: ['All', 'Non-Profit']
+        category: ['All', 'Non-Profit', 'E-Commerce']
     }
 ];
