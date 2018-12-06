@@ -3,7 +3,7 @@ export const websites = [
         title: 'Ticketmaster',
         content: '<p>Ticketmaster went through a company-wide rebrand and tasked us with recreating their blog. They use the blog as an outlet to communicate with fans and post curated content. I developed a robust backend for them to easily manage that content, created unique stylistic elements and built custom integrations with their API so they can integrate live ticket sales within posts.</p>',
         credits: [
-            {title: 'Link', text: '<a href="https://insider.ticketmaster.com" target="_blank">insider.ticketmaster.com'}, 
+            {title: 'Link', text: '<a href="https://blog.ticketmaster.com" target="_blank">blog.ticketmaster.com'}, 
             {title: 'Role', text: 'Developer & UX Consultant'},
             {title: 'Agency', text: '<a href="http://bearinthehall.com/" target="_blank">Bear In The Hall</a>'}
         ],
@@ -180,7 +180,7 @@ export const websites = [
     },
     {
         title: 'Terez',
-        content: "<p>Terez is one of the top shopping destinations for women's apparel including leggings, tops and bottoms. I work with Terez to build out custom features and provide user experience feedback to ensure those features are as engaging as possible. I've built custom add to cart functionality, a dynamic quick view pop up, social login capability, a related products algorithm and uniquely styled landing pages for marketing campaigns.",
+        content: "<p>Terez is one of the top shopping destinations for women's apparel including leggings, tops and bottoms. I work with Terez to build out custom features and provide user experience feedback to ensure those features are as engaging as possible. I've built custom add to cart functionality, a dynamic product quick view, social login capability, a related products algorithm and uniquely styled landing pages for marketing campaigns.",
         credits: [
             { title: 'Link', text: '<a href="https://terez.com" target="_blank">terez.com' },
             { title: 'Role', text: 'Developer & UX Consultant' }
