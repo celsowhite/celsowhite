@@ -75,10 +75,10 @@
             });
 
             // Automatically alternate the profile images in the three js scene.
-
+            
             let currentImage = 'first';
 
-            window.setInterval(function(){
+            (function transitionImage() {
                 if(currentImage === 'first') {
                     profileImageAnimation.next();
                     currentImage = 'second';
@@ -87,7 +87,8 @@
                     profileImageAnimation.previous();
                     currentImage = 'first';
                 }
-            }, 3000);
+                setTimeout(transitionImage, 3000);
+            })();
 
         }
     }
