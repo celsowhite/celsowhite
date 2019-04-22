@@ -35,7 +35,7 @@
 
     // Libraries
 
-    import imageHoverEffect from '../../vendor/imageHoverEffect.js';
+    import imageHoverEffect from 'hover-effect';
                     
     export default {
         name: 'About',
