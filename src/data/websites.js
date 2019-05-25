@@ -200,7 +200,7 @@ export const websites = [
         text:
           '<a href="https://musicandstrategy.com" target="_blank">musicandstrategy.com',
       },
-      { title: 'Role', text: 'Agency (UX, Design & Development' },
+      { title: 'Role', text: 'Agency (UX, Design & Development)' },
     ],
     summary: 'A new look and feel for a creative music company.',
     featured: false,
