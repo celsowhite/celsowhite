@@ -36,9 +36,11 @@
     </div>
     <div class="panel padding_bottom">
       <div class="large_container text_alignment_center">
-        <router-link to="/websites" class="featured_link black"
-          >View All Websites</router-link
-        >
+        <h3>
+          <router-link to="/websites" class="featured_link black"
+            >View All Websites</router-link
+          >
+        </h3>
       </div>
     </div>
   </div>
