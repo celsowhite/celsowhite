@@ -31,11 +31,16 @@ export const websites = [
   {
     title: 'Jimmy Chin',
     content:
-      "<p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with Austin Turner to create a new site that showcases Jimmy's work.</p>",
+      "<p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with Austin Turner to create a new site that showcases Jimmy's work.</p><p>I also worked with Jimmy to create a Shopify store to sell his prints. I guided the project through each phase. Planned the organization of content, designed the site to fit with the branding of his main site and assisted with planning product fulfillment logistics.</p>",
     credits: [
       {
         title: 'Link',
         text: '<a href="http://jimmychin.com" target="_blank">jimmychin.com',
+      },
+      {
+        title: 'Store',
+        text:
+          '<a href="https://shop.jimmychin.com" target="_blank">shop.jimmychin.com</a>',
       },
       { title: 'Role', text: 'Developer & UX Consultant' },
       {
@@ -51,7 +56,7 @@ export const websites = [
     featuredImageSmall:
       '/static/img/websites/jimmychin/featured_image_small.jpg',
     featuredImageSmallFocus: 'center 20%',
-    category: ['All', 'Creative'],
+    category: ['All', 'Creative', 'E-Commerce'],
     video: '/static/video/websites/jimmychin/featured.mp4',
     summary: 'A media rich website for an extreme mountain sports athlete.',
   },
@@ -239,12 +244,13 @@ export const websites = [
     credits: [
       {
         title: 'Link',
-        text: '<a href="https://rownewyork.org" target="_blank">rownewyork.org',
+        text:
+          '<a href="https://rownewyork.org" target="_blank">rownewyork.org</a>',
       },
       {
         title: 'Store',
         text:
-          '<a href="https://rownewyork.org/shop" target="_blank">rownewyork.org/shop',
+          '<a href="https://rownewyork.org/shop" target="_blank">rownewyork.org/shop</a>',
       },
       { title: 'Role', text: 'Agency (UX, Design & Development)' },
     ],
