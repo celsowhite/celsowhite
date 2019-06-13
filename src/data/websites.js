@@ -31,7 +31,7 @@ export const websites = [
   {
     title: 'Jimmy Chin',
     content:
-      "<p>Jimmy Chin is a photographer, filmmaker and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with Austin Turner to create a new site that showcases Jimmy's work.</p><p>I also worked with Jimmy to create a Shopify store to sell his prints. I guided the project through each phase. Planned the organization of content, designed the site to fit with the branding of his main site and assisted with planning product fulfillment logistics.</p>",
+      "<p>Jimmy Chin is an Academy Award winning filmmaker, National Geographic photographer and mountain sports athlete. He takes incredible images in extreme environments. I collaborated with Austin Turner to create a new site that showcases Jimmy's work.</p><p>I also worked with Jimmy to create a Shopify store to sell his prints. I guided the project through each phase. Planned the organization of content, designed the site to fit with the branding of his main site and assisted with planning product fulfillment logistics.</p>",
     credits: [
       {
         title: 'Link',
@@ -147,11 +147,7 @@ export const websites = [
     content:
       "<p>I've been working with <a href='http://www.matteprojects.com/' target='_blank'>MATTE Projects</a> for the last few years to build their Full Moon website. With each site we have taken a unique approach in mixing illustrations and web animations. Beyond the core website I've also developed email campaigns for the festival and custom API integrations with Mailchimp to register RSVP's and giveaway submissions.</p>",
     credits: [
-      {
-        title: 'Link',
-        text:
-          '<a href="https://fullmoonfest.com" target="_blank">fullmoonfest.com',
-      },
+      { title: 'Years', text: '2016/2017/2018' },
       { title: 'Role', text: 'Developer' },
       {
         title: 'Design',
