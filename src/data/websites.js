@@ -187,6 +187,31 @@ export const websites = [
     category: ['All', 'E-Commerce'],
   },
   {
+    title: 'Coterie',
+    content:
+      "<p>I worked with the team at <a href='http://www.human-nyc.com/'>Human NYC</a> to create a party supply store for Coterie. A key feature in the store is a party box building tool that lets users curate party supplies based on style and vibe. We explored beyond the traditional add to cart experience to create a unique shopping flow thats enjoyable and simple to use.</p>",
+    credits: [
+      {
+        title: 'Link',
+        text:
+          '<a href="https://coterieparty.com/pages/build-your-own#/" target="_blank">coterieparty.com</a>',
+      },
+      {
+        title: 'Agency',
+        text: '<a href="http://www.human-nyc.com/">Human NYC</a>',
+      },
+      { title: 'Role', text: 'Developer' },
+    ],
+    summary: 'A unique shopping experience for party supplies.',
+    featured: false,
+    featuredImageLarge: '/static/img/websites/coterie/featured_image_large.jpg',
+    featuredImageLargeFocus: 'center 33%',
+    featuredImageSmall: '/static/img/websites/coterie/featured_image_small.jpg',
+    featuredImageSmallFocus: 'center 33%',
+    video: '/static/video/websites/coterie/featured.mp4',
+    category: ['All', 'E-Commerce'],
+  },
+  {
     title: 'MAS',
     content:
       '<p>Music and Strategy is a creative music company for brands and agencies. I worked with <a href="http://www.jessica-alice.com/" target="_blank">Jessica McGowan</a> to create a website that captures their essence, innovation and impact in their industry. The project involved strategic planning, branding, design and custom Wordpress theme development.</p>',
