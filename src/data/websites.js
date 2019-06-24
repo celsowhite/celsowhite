@@ -189,7 +189,7 @@ export const websites = [
   {
     title: 'Coterie',
     content:
-      "<p>I worked with the team at <a href='http://www.human-nyc.com/'>Human NYC</a> to create a party supply store for Coterie. A key feature in the store is a party box building tool that lets users curate party supplies based on style and vibe. We explored beyond the traditional add to cart experience to create a unique shopping flow thats enjoyable and simple to use.</p>",
+      "<p>I worked with the team at <a href='http://www.human-nyc.com/'>Human NYC</a> to create a party supply store for Coterie. A key feature in the store is a party box building tool that lets users curate party supplies based on occasion and vibe. We explored beyond the traditional add to cart experience to create a unique shopping flow thats enjoyable and simple to use.</p>",
     credits: [
       {
         title: 'Link',
