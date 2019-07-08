@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import { websites } from '../../data/websites';
 import { store } from '../../store/store.js';
 import getSlugMixin from '../../mixins/getSlug';
@@ -61,6 +62,7 @@ export default {
     return {
       activeBackgroundImage: '',
       websites,
+      websitesTest: [],
     };
   },
   mixins: [getSlugMixin],
@@ -71,6 +73,11 @@ export default {
   },
   mounted: function() {
     store.setColorScheme('dark');
+    axios
+      .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
+      .then(response => {
+        this.websitesTest = response.data;
+      });
   },
 };
 </script>

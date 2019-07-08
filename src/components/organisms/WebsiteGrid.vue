@@ -18,7 +18,7 @@
           :title="website.title"
           :image="website.featuredImageSmall"
           :imageFocus="website.featuredImageSmallFocus"
-          :link="'/websites/' + getSlug(website.title)"
+          :link="'/websites/' + website.slug"
         />
       </div>
     </div>
@@ -26,8 +26,9 @@
 </template>
 
 <script>
+import axios from 'axios';
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { websites } from '../../data/websites';
+// import { websites } from '../../data/websites';
 import getSlugMixin from '../../mixins/getSlug';
 
 export default {
@@ -35,9 +36,19 @@ export default {
   data() {
     return {
       activeCategory: 'All',
-      websites,
+      websites: [],
+      websitesTest: [],
       categories: ['All', 'Creative', 'Non-Profit', 'E-Commerce'],
     };
+  },
+  mounted: function() {
+    axios
+      .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
+      .then(response => {
+        this.websites = response.data.map(website => {
+          return website.api;
+        });
+      });
   },
   mixins: [getSlugMixin],
   components: {

@@ -4,7 +4,7 @@
     <div class="main_content wysiwyg">
       <div class="panel">
         <div class="small_container">
-          <video autoplay muted playsinline loop>
+          <video autoplay muted playsinline loop v-if="websiteInfo.video">
             <source :src="websiteInfo.video" type="video/mp4" />
           </video>
           <div v-html="websiteInfo.content"></div>
@@ -47,11 +47,12 @@
 </template>
 
 <script>
+import axios from 'axios';
 import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
 import { store } from '../../store/store.js';
-import { websites } from '../../data/websites';
+// import { websites } from '../../data/websites';
 import getSlugMixin from '../../mixins/getSlug';
 
 export default {
@@ -59,7 +60,7 @@ export default {
   data() {
     return {
       websiteSlug: this.$route.params.slug,
-      websites,
+      websites: [],
       websiteInfo: '',
       primaryCategory: '',
       relatedWebsites: '',
@@ -72,17 +73,24 @@ export default {
   },
   mounted: function() {
     store.setColorScheme('light');
-    this.getWebsiteInfo();
+    axios
+      .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
+      .then(response => {
+        this.websites = response.data.map(website => {
+          return website.api;
+        });
+        this.getWebsiteInfo();
+      });
   },
   mixins: [getSlugMixin],
   methods: {
     getWebsiteInfo: function() {
-      const websiteInfo = websites.find(website => {
+      const websiteInfo = this.websites.find(website => {
         return this.getSlug(website.title) == this.websiteSlug;
       });
       this.websiteInfo = websiteInfo;
       this.primaryCategory = websiteInfo.category[1];
-      this.relatedWebsites = websites.filter(website => {
+      this.relatedWebsites = this.websites.filter(website => {
         return (
           website.category.includes(this.primaryCategory) &&
           website.title !== this.websiteInfo.title
