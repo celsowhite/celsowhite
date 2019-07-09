@@ -26,9 +26,8 @@
 </template>
 
 <script>
-import axios from 'axios';
+import { mapState } from 'vuex';
 import ThumbnailCard from '../atoms/ThumbnailCard';
-// import { websites } from '../../data/websites';
 import getSlugMixin from '../../mixins/getSlug';
 
 export default {
@@ -36,19 +35,15 @@ export default {
   data() {
     return {
       activeCategory: 'All',
-      websites: [],
       categories: ['All', 'Creative', 'Non-Profit', 'E-Commerce'],
     };
   },
-  mounted: function() {
-    axios
-      .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
-      .then(response => {
-        this.websites = response.data.map(website => {
-          return website.api;
-        });
-      });
+  computed: {
+    ...mapState('content', {
+      websites: state => state.websites,
+    }),
   },
+  mounted: function() {},
   mixins: [getSlugMixin],
   components: {
     ThumbnailCard,

@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import { mapState } from 'vuex';
 import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
@@ -59,7 +59,6 @@ export default {
   data() {
     return {
       websiteSlug: this.$route.params.slug,
-      websites: [],
       websiteInfo: '',
       primaryCategory: '',
       relatedWebsites: '',
@@ -72,14 +71,12 @@ export default {
   },
   mounted: function() {
     store.setColorScheme('light');
-    axios
-      .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
-      .then(response => {
-        this.websites = response.data.map(website => {
-          return website.api;
-        });
-        this.getWebsiteInfo();
-      });
+    this.getWebsiteInfo();
+  },
+  computed: {
+    ...mapState('content', {
+      websites: state => state.websites,
+    }),
   },
   mixins: [getSlugMixin],
   methods: {

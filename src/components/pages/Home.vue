@@ -48,8 +48,8 @@
 </template>
 
 <script>
-import axios from 'axios';
 import { store } from '../../store/store.js';
+import { mapState } from 'vuex';
 import getSlugMixin from '../../mixins/getSlug';
 
 export default {
@@ -60,7 +60,6 @@ export default {
   data() {
     return {
       activeBackgroundImage: '',
-      websites: [],
     };
   },
   mixins: [getSlugMixin],
@@ -71,13 +70,11 @@ export default {
   },
   mounted: function() {
     store.setColorScheme('dark');
-    axios
-      .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
-      .then(response => {
-        this.websites = response.data.map(website => {
-          return website.api;
-        });
-      });
+  },
+  computed: {
+    ...mapState('content', {
+      websites: state => state.websites,
+    }),
   },
 };
 </script>

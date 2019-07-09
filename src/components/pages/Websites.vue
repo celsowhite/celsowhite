@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       title="Websites"
-      summary="I specialize in building custom websites in Wordpress and Shopify."
+      excerpt="I specialize in building custom websites in Wordpress and Shopify."
     />
     <div class="main_content">
       <div class="panel">
