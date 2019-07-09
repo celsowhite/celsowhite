@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       title="Apps"
-      summary="I enjoy building fullstack apps using javascript."
+      excerpt="I enjoy building fullstack apps using javascript."
     />
     <div class="main_content">
       <div class="panel">

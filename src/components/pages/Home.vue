@@ -8,7 +8,7 @@
           <ul class="featured_project_list">
             <li
               v-for="website in websites"
-              v-if="website.featured"
+              v-if="website.homepageFeatured"
               :key="website.title"
               :class="[
                 activeBackgroundImage && activeBackgroundImage !== website.title
@@ -37,7 +37,7 @@
     <div class="home_background_container">
       <div
         v-for="website in websites"
-        v-if="website.featured"
+        v-if="website.homepageFeatured"
         :key="website.title"
         class="home_background_image"
         :class="[activeBackgroundImage == website.title ? 'active' : '']"
@@ -49,7 +49,6 @@
 
 <script>
 import axios from 'axios';
-import { websites } from '../../data/websites';
 import { store } from '../../store/store.js';
 import getSlugMixin from '../../mixins/getSlug';
 
@@ -61,8 +60,7 @@ export default {
   data() {
     return {
       activeBackgroundImage: '',
-      websites,
-      websitesTest: [],
+      websites: [],
     };
   },
   mixins: [getSlugMixin],
@@ -76,7 +74,9 @@ export default {
     axios
       .get('http://celsowhite-api.localhost/wp-json/wp/v2/website')
       .then(response => {
-        this.websitesTest = response.data;
+        this.websites = response.data.map(website => {
+          return website.api;
+        });
       });
   },
 };

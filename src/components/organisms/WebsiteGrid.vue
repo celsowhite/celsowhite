@@ -13,11 +13,11 @@
     <div class="row">
       <div v-for="website in websites" :key="website.title" class="column_1_3">
         <ThumbnailCard
-          :isBlurred="!website.category.includes(activeCategory)"
+          :isBlurred="!website.categories.includes(activeCategory)"
           :isOverlayed="true"
           :title="website.title"
-          :image="website.featuredImageSmall"
-          :imageFocus="website.featuredImageSmallFocus"
+          :image="website.featuredImageMedium"
+          :imageFocus="website.featuredImageFocus"
           :link="'/websites/' + website.slug"
         />
       </div>
@@ -37,7 +37,6 @@ export default {
     return {
       activeCategory: 'All',
       websites: [],
-      websitesTest: [],
       categories: ['All', 'Creative', 'Non-Profit', 'E-Commerce'],
     };
   },

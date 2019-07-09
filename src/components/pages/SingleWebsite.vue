@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader :title="websiteInfo.title" :summary="websiteInfo.summary" />
+    <PageHeader :title="websiteInfo.title" :excerpt="websiteInfo.excerpt" />
     <div class="main_content wysiwyg">
       <div class="panel">
         <div class="small_container">
@@ -26,8 +26,8 @@
             <ThumbnailCard
               :title="relatedWebsite.title"
               :isOverlayed="true"
-              :image="relatedWebsite.featuredImageSmall"
-              :imageFocus="relatedWebsite.featuredImageSmallFocus"
+              :image="relatedWebsite.featuredImageMedium"
+              :imageFocus="relatedWebsite.featuredImageFocus"
               :link="'/websites/' + getSlug(relatedWebsite.title)"
             />
           </div>
@@ -52,7 +52,6 @@ import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
 import { store } from '../../store/store.js';
-// import { websites } from '../../data/websites';
 import getSlugMixin from '../../mixins/getSlug';
 
 export default {
@@ -89,10 +88,10 @@ export default {
         return this.getSlug(website.title) == this.websiteSlug;
       });
       this.websiteInfo = websiteInfo;
-      this.primaryCategory = websiteInfo.category[1];
+      this.primaryCategory = websiteInfo.categories[1];
       this.relatedWebsites = this.websites.filter(website => {
         return (
-          website.category.includes(this.primaryCategory) &&
+          website.categories.includes(this.primaryCategory) &&
           website.title !== this.websiteInfo.title
         );
       });
