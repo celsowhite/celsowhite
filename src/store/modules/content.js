@@ -12,11 +12,6 @@ const state = {
 
 /*----------------------------
 Mutations
----
-Operations that are responsible for mutating the state.
-Each mutation handler gets the entire state tree as the
-first argument, followed by additional payload arguments.
-Mutations must be synchronous and can be recorded by plugins for debugging purposes.
 ----------------------------*/
 
 const mutations = {
@@ -31,9 +26,6 @@ const mutations = {
 
 /*----------------------------
 Actions
----
-Functions that cause side effects and can involve asynchronous operations.
-Actions are normally responsible for committing mutations.
 ----------------------------*/
 
 const actions = {
@@ -47,9 +39,6 @@ const actions = {
 
 /*----------------------------
 Getters
----
-Functions that can grab, alter and return data from state.
-These are reactive. When the state changes these values will change.
 ----------------------------*/
 
 const getters = {
@@ -62,8 +51,6 @@ const getters = {
 
 /*----------------------------
 Cart Vuex Data
----
-Export state, getters, actions and mutations so they can be used by vue instances and components.
 ----------------------------*/
 
 export default {

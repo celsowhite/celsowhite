@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <PageHeader :title="websiteInfo.title" :excerpt="websiteInfo.excerpt" />
+  <div v-if="activeWebsite">
+    <PageHeader :title="activeWebsite.title" :excerpt="activeWebsite.excerpt" />
     <div class="main_content wysiwyg">
       <div class="panel">
         <div class="small_container">
-          <video autoplay muted playsinline loop v-if="websiteInfo.video">
-            <source :src="websiteInfo.video" type="video/mp4" />
+          <video autoplay muted playsinline loop v-if="activeWebsite.video">
+            <source :src="activeWebsite.video" type="video/mp4" />
           </video>
-          <div v-html="websiteInfo.content"></div>
+          <div v-html="activeWebsite.content"></div>
           <ul class="credit_list no_bullets">
-            <CreditList :credits="websiteInfo.credits" />
+            <CreditList :credits="activeWebsite.credits" />
           </ul>
         </div>
       </div>
@@ -28,7 +28,7 @@
               :isOverlayed="true"
               :image="relatedWebsite.featuredImageMedium"
               :imageFocus="relatedWebsite.featuredImageFocus"
-              :link="'/websites/' + getSlug(relatedWebsite.title)"
+              :link="'/websites/' + relatedWebsite.slug"
             />
           </div>
         </div>
@@ -52,18 +52,9 @@ import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
 import { store } from '../../store/store.js';
-import getSlugMixin from '../../mixins/getSlug';
 
 export default {
   name: 'SingleWebsite',
-  data() {
-    return {
-      websiteSlug: this.$route.params.slug,
-      websiteInfo: '',
-      primaryCategory: '',
-      relatedWebsites: '',
-    };
-  },
   components: {
     PageHeader,
     ThumbnailCard,
@@ -71,25 +62,28 @@ export default {
   },
   mounted: function() {
     store.setColorScheme('light');
-    this.getWebsiteInfo();
   },
   computed: {
+    // All Websites Data
     ...mapState('content', {
       websites: state => state.websites,
     }),
-  },
-  mixins: [getSlugMixin],
-  methods: {
-    getWebsiteInfo: function() {
-      const websiteInfo = this.websites.find(website => {
-        return this.getSlug(website.title) == this.websiteSlug;
+    // Active Website (Based on slug)
+    activeWebsite: function() {
+      return this.websites.find(website => {
+        return website.slug == this.$route.params.slug;
       });
-      this.websiteInfo = websiteInfo;
-      this.primaryCategory = websiteInfo.categories[1];
-      this.relatedWebsites = this.websites.filter(website => {
+    },
+    // Primary Category
+    primaryCategory: function() {
+      return this.activeWebsite.categories[1];
+    },
+    // Related websites to the active website.
+    relatedWebsites: function() {
+      return this.websites.filter(website => {
         return (
           website.categories.includes(this.primaryCategory) &&
-          website.title !== this.websiteInfo.title
+          website.title !== this.activeWebsite.title
         );
       });
     },
