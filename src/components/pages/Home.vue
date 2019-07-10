@@ -48,7 +48,6 @@
 </template>
 
 <script>
-import { store } from '../../store/store.js';
 import { mapState } from 'vuex';
 import getSlugMixin from '../../mixins/getSlug';
 
@@ -69,7 +68,9 @@ export default {
     },
   },
   mounted: function() {
-    store.setColorScheme('dark');
+    this.$store.dispatch('global/setColorScheme', {
+      colorScheme: 'dark',
+    });
   },
   computed: {
     ...mapState('content', {

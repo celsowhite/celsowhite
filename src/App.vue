@@ -16,7 +16,6 @@
 <script>
 // Imports
 
-import { store } from './store/store.js';
 import './styles/main.scss';
 import FixedOverlay from './components/organisms/FixedOverlay';
 import MobileNavigation from './components/organisms/MobileNavigation';
@@ -30,11 +29,6 @@ export default {
   components: {
     FixedOverlay,
     MobileNavigation,
-  },
-  data() {
-    return {
-      storeState: store.state,
-    };
   },
   mounted: function() {},
 };

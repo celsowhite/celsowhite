@@ -17,7 +17,6 @@
 <script>
 import PageHeader from '../organisms/PageHeader';
 import WebsiteGrid from '../organisms/WebsiteGrid';
-import { store } from '../../store/store.js';
 
 export default {
   name: 'Websites',
@@ -32,7 +31,9 @@ export default {
     WebsiteGrid,
   },
   mounted: function() {
-    store.setColorScheme('light');
+    this.$store.dispatch('global/setColorScheme', {
+      colorScheme: 'light',
+    });
   },
 };
 </script>

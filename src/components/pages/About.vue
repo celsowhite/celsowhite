@@ -50,7 +50,6 @@
 import PageHeader from '../organisms/PageHeader';
 import SocialList from '../atoms/SocialList';
 import LogoList from '../atoms/LogoList';
-import { store } from '../../store/store';
 import { personalSocials } from '../../data/socials';
 import { clientLogos } from '../../data/logos';
 
@@ -75,11 +74,13 @@ export default {
     LogoList,
   },
   mounted: function() {
-    store.setColorScheme('light');
+    this.$store.dispatch('global/setColorScheme', {
+      colorScheme: 'light',
+    });
 
     /*----------------------
-            Profile Image Animation
-            ----------------------*/
+    Profile Image Animation
+    ----------------------*/
 
     var profileImageAnimation = new imageHoverEffect({
       parent: document.querySelector('.profile-image'),

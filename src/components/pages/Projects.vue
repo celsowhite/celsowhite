@@ -17,7 +17,6 @@
 <script>
 import PageHeader from '../organisms/PageHeader';
 import ProjectsGrid from '../organisms/ProjectsGrid';
-import { store } from '../../store/store.js';
 
 export default {
   name: 'Projects',
@@ -32,7 +31,9 @@ export default {
     ProjectsGrid,
   },
   mounted: function() {
-    store.setColorScheme('light');
+    this.$store.dispatch('global/setColorScheme', {
+      colorScheme: 'light',
+    });
   },
 };
 </script>

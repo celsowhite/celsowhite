@@ -17,7 +17,6 @@
 <script>
 import PageHeader from '../organisms/PageHeader';
 import AppsGrid from '../organisms/AppsGrid';
-import { store } from '../../store/store.js';
 
 export default {
   name: 'Apps',
@@ -32,7 +31,9 @@ export default {
     AppsGrid,
   },
   mounted: function() {
-    store.setColorScheme('light');
+    this.$store.dispatch('global/setColorScheme', {
+      colorScheme: 'light',
+    });
   },
 };
 </script>

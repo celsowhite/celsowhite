@@ -51,7 +51,6 @@ import { mapState } from 'vuex';
 import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { store } from '../../store/store.js';
 
 export default {
   name: 'SingleWebsite',
@@ -61,7 +60,9 @@ export default {
     CreditList,
   },
   mounted: function() {
-    store.setColorScheme('light');
+    this.$store.dispatch('global/setColorScheme', {
+      colorScheme: 'light',
+    });
   },
   computed: {
     // All Websites Data
