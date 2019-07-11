@@ -14,8 +14,6 @@
 </template>
 
 <script>
-// Imports
-
 import './styles/main.scss';
 import FixedOverlay from './components/organisms/FixedOverlay';
 import MobileNavigation from './components/organisms/MobileNavigation';
