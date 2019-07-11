@@ -10,10 +10,13 @@
       </div>
       <nav class="main_navigation">
         <ul>
-          <li v-for="link in navLinks" :key="link.title">
-            <router-link :to="link.link" @click.native="toggleNav" exact>{{
-              link.title
-            }}</router-link>
+          <li v-for="item in menus.main_menu" :key="item.title">
+            <router-link
+              :to="`/${item.slug}`"
+              @click.native="toggleNav"
+              exact
+              >{{ item.title }}</router-link
+            >
           </li>
         </ul>
       </nav>
@@ -26,16 +29,10 @@
 </template>
 
 <script>
-import { navLinks } from '../../data/navLinks';
 import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'FixedOverlay',
-  data() {
-    return {
-      navLinks,
-    };
-  },
   methods: {
     ...mapActions('global', ['toggleNav']),
   },
@@ -43,6 +40,9 @@ export default {
     ...mapState('global', {
       colorScheme: state => state.colorScheme,
       navIsOpen: state => state.navIsOpen,
+    }),
+    ...mapState('content', {
+      menus: state => state.menus,
     }),
   },
 };

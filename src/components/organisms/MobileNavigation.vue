@@ -1,9 +1,9 @@
 <template>
   <nav class="mobile_navigation" :class="{ nav_open: navIsOpen }">
     <ul>
-      <li v-for="link in navLinks" :key="link.title">
-        <router-link :to="link.link" @click.native="toggleNav" exact>{{
-          link.title
+      <li v-for="item in menus.main_menu" :key="item.title">
+        <router-link :to="`/${item.slug}`" @click.native="toggleNav" exact>{{
+          item.title
         }}</router-link>
       </li>
     </ul>
@@ -11,19 +11,16 @@
 </template>
 
 <script>
-import { navLinks } from '../../data/navLinks';
 import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'MobileNavigation',
-  data() {
-    return {
-      navLinks,
-    };
-  },
   computed: {
     ...mapState('global', {
       navIsOpen: state => state.navIsOpen,
+    }),
+    ...mapState('content', {
+      menus: state => state.menus,
     }),
   },
   methods: {

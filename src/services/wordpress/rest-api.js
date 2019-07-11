@@ -16,3 +16,15 @@ export function getWebsiteContent() {
       });
   });
 }
+
+/*----------------------------
+Get Menus
+----------------------------*/
+
+export function getMenus() {
+  return new Promise((resolve, reject) => {
+    axios.get(`${process.env.ROOT_API}/wp-json/cw/v1/menus`).then(response => {
+      resolve(response.data);
+    });
+  });
+}

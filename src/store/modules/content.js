@@ -1,4 +1,4 @@
-import { getWebsiteContent } from '../../services/wordpress/rest-api';
+import { getWebsiteContent, getMenus } from '../../services/wordpress/rest-api';
 
 /*----------------------------
 State
@@ -8,6 +8,7 @@ Root state object that holds the global state for the site.
 
 const state = {
   websites: [],
+  menus: [],
 };
 
 /*----------------------------
@@ -22,6 +23,14 @@ const mutations = {
   setWebsiteData(state, websites) {
     state.websites = websites;
   },
+
+  /**
+   * Set Menus
+   */
+
+  setMenus(state, menus) {
+    state.menus = menus;
+  },
 };
 
 /*----------------------------
@@ -32,8 +41,12 @@ const actions = {
   // Get Initial Data
 
   async getInitialData({ commit }) {
-    const [websiteContent] = await Promise.all([getWebsiteContent()]);
+    const [websiteContent, menus] = await Promise.all([
+      getWebsiteContent(),
+      getMenus(),
+    ]);
     commit('setWebsiteData', websiteContent);
+    commit('setMenus', menus);
   },
 };
 
