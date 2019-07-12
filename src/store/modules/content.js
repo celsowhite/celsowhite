@@ -1,4 +1,4 @@
-import { getWebsiteContent, getMenus } from '../../services/wordpress/rest-api';
+import { getPosts, getMenus } from '../../services/wordpress/rest-api';
 
 /*----------------------------
 State
@@ -9,6 +9,7 @@ Root state object that holds the global state for the site.
 const state = {
   websites: [],
   menus: [],
+  page: {},
 };
 
 /*----------------------------
@@ -42,7 +43,7 @@ const actions = {
 
   async getInitialData({ commit }) {
     const [websiteContent, menus] = await Promise.all([
-      getWebsiteContent(),
+      getPosts('website'),
       getMenus(),
     ]);
     commit('setWebsiteData', websiteContent);
@@ -54,13 +55,7 @@ const actions = {
 Getters
 ----------------------------*/
 
-const getters = {
-  /**
-   * Featured Homepage Websites
-   */
-
-  featuredHomepageWebsites(state) {},
-};
+const getters = {};
 
 /*----------------------------
 Cart Vuex Data
