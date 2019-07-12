@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <PageHeader
-      title="Apps"
-      excerpt="I enjoy building fullstack apps using javascript."
-    />
+  <div v-if="!loading">
+    <PageHeader :title="title" :excerpt="excerpt" />
     <div class="main_content">
       <div class="panel">
         <div class="large_container">
@@ -17,6 +14,7 @@
 <script>
 import PageHeader from '../organisms/PageHeader';
 import AppsGrid from '../organisms/AppsGrid';
+import { getPage } from '../../services/wordpress/rest-api';
 
 export default {
   name: 'Apps',
@@ -24,15 +22,27 @@ export default {
     title: 'Apps',
   },
   data() {
-    return {};
+    return {
+      loading: false,
+      title: '',
+      excerpt: '',
+    };
   },
   components: {
     PageHeader,
     AppsGrid,
   },
   mounted: function() {
+    this.loading = true;
+    // Set the color scheme.
     this.$store.dispatch('global/setColorScheme', {
       colorScheme: 'light',
+    });
+    // Get the page info.
+    getPage('apps').then(pageData => {
+      this.title = pageData.title;
+      this.excerpt = pageData.excerpt;
+      this.loading = false;
     });
   },
 };
