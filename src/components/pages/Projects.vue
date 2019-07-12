@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <PageHeader
-      title="Projects"
-      excerpt="Beyond making websites I love to create using all forms of media."
-    />
+  <div v-if="!loading">
+    <PageHeader :title="title" :excerpt="excerpt" />
     <div class="main_content">
       <div class="panel">
         <div class="large_container">
@@ -17,6 +14,7 @@
 <script>
 import PageHeader from '../organisms/PageHeader';
 import ProjectsGrid from '../organisms/ProjectsGrid';
+import { getPage } from '../../services/wordpress/rest-api';
 
 export default {
   name: 'Projects',
@@ -24,15 +22,25 @@ export default {
     title: 'Projects',
   },
   data() {
-    return {};
+    return {
+      loading: false,
+      title: '',
+      excerpt: '',
+    };
   },
   components: {
     PageHeader,
     ProjectsGrid,
   },
   mounted: function() {
+    this.loading = true;
     this.$store.dispatch('global/setColorScheme', {
       colorScheme: 'light',
+    });
+    getPage('projects').then(pageData => {
+      this.title = pageData.title;
+      this.excerpt = pageData.excerpt;
+      this.loading = false;
     });
   },
 };

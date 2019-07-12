@@ -16,7 +16,7 @@
           backgroundColor: color,
         }"
       >
-        <h3>{{ title }}</h3>
+        <h3 v-html="title"></h3>
       </div>
       <div class="thumbnail_card_content" v-if="content" v-html="content"></div>
     </a>
@@ -36,7 +36,7 @@
           backgroundColor: color,
         }"
       >
-        <h3>{{ title }}</h3>
+        <h3 v-html="title"></h3>
       </div>
       <div class="thumbnail_card_content" v-if="content" v-html="content"></div>
     </router-link>

@@ -9,6 +9,7 @@ Root state object that holds the global state for the site.
 const state = {
   websites: [],
   apps: [],
+  projects: [],
   menus: [],
   page: {},
 };
@@ -35,6 +36,14 @@ const mutations = {
   },
 
   /**
+   * Set Project Data
+   */
+
+  setProjectData(state, projects) {
+    state.projects = projects;
+  },
+
+  /**
    * Set Menus
    */
 
@@ -51,13 +60,24 @@ const actions = {
   // Get Initial Data
 
   async getInitialData({ commit }) {
-    const [websiteContent, appContent, menus] = await Promise.all([
+    // Get data from REST api
+    const [
+      websiteContent,
+      appContent,
+      projectContent,
+      menus,
+    ] = await Promise.all([
       getPosts('website'),
       getPosts('app'),
+      getPosts('project'),
       getMenus(),
     ]);
+
+    // Set data
+
     commit('setWebsiteData', websiteContent);
     commit('setAppData', appContent);
+    commit('setProjectData', projectContent);
     commit('setMenus', menus);
   },
 };
