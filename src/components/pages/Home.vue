@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="websites.length > 0">
     <div class="home_content_container">
       <!-- Content -->
 

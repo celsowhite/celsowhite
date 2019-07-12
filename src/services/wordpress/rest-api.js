@@ -4,7 +4,7 @@ import axios from 'axios';
  * Get Posts
  *
  * @param   string   postType - The name of the post type we want to get posts from.
- * @return  object   postData - The data associated with this post.
+ * @return  object   posts - A list of all the posts from this post type with our custom data.
  */
 
 export function getPosts(postType) {
@@ -15,10 +15,10 @@ export function getPosts(postType) {
         // WP will return additional data on the posts endpoint. This is required data that other apps accessing the api can use.
         // We customize the response by putting all of our custom endpoint data into the 'custom' key. This keeps the data we need centralized
         // and structured in the exact way we want to consume it.
-        const postData = response.data.map(post => {
+        const posts = response.data.map(post => {
           return post.custom;
         });
-        resolve(postData);
+        resolve(posts);
       });
   });
 }

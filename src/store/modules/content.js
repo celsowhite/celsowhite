@@ -55,7 +55,17 @@ const actions = {
 Getters
 ----------------------------*/
 
-const getters = {};
+const getters = {
+  // Website Categories
+
+  websiteCategories(state, getters) {
+    const allCategories = state.websites
+      .map(website => website.categories)
+      .reduce((a, b) => a.concat(b), []);
+    const uniqueCategories = [...new Set(allCategories)];
+    return uniqueCategories;
+  },
+};
 
 /*----------------------------
 Cart Vuex Data

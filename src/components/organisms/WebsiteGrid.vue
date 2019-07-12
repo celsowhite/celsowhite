@@ -2,7 +2,7 @@
   <div class="website_grid_contaner">
     <ul class="filter_list">
       <li
-        v-for="category in categories"
+        v-for="category in websiteCategories"
         :key="category"
         :class="[activeCategory == category ? 'active' : '']"
         @click="setActiveCategory(category)"
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapGetters } from 'vuex';
 import ThumbnailCard from '../atoms/ThumbnailCard';
 import getSlugMixin from '../../mixins/getSlug';
 
@@ -35,13 +35,13 @@ export default {
   data() {
     return {
       activeCategory: 'All',
-      categories: ['All', 'Creative', 'Non-Profit', 'E-Commerce'],
     };
   },
   computed: {
     ...mapState('content', {
       websites: state => state.websites,
     }),
+    ...mapGetters('content', ['websiteCategories']),
   },
   mounted: function() {},
   mixins: [getSlugMixin],
