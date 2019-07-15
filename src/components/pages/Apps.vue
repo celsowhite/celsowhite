@@ -35,7 +35,7 @@ export default {
   mounted: function() {
     this.loading = true;
     // Set the color scheme.
-    this.$store.dispatch('global/setColorScheme', {
+    this.$store.dispatch('settings/setColorScheme', {
       colorScheme: 'light',
     });
     // Get the page info.

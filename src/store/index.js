@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import content from './modules/content';
-import global from './modules/global';
+import settings from './modules/settings';
 
 Vue.use(Vuex);
 
@@ -14,6 +14,6 @@ Export state, getters, actions and mutations so they can be used by vue instance
 export default new Vuex.Store({
   modules: {
     content,
-    global,
+    settings,
   },
 });

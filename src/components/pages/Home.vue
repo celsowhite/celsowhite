@@ -68,7 +68,7 @@ export default {
     },
   },
   mounted: function() {
-    this.$store.dispatch('global/setColorScheme', {
+    this.$store.dispatch('settings/setColorScheme', {
       colorScheme: 'dark',
     });
   },

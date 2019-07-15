@@ -60,7 +60,7 @@ export default {
     CreditList,
   },
   mounted: function() {
-    this.$store.dispatch('global/setColorScheme', {
+    this.$store.dispatch('settings/setColorScheme', {
       colorScheme: 'light',
     });
   },

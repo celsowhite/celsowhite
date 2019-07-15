@@ -34,7 +34,7 @@ export default {
   },
   mounted: function() {
     this.loading = true;
-    this.$store.dispatch('global/setColorScheme', {
+    this.$store.dispatch('settings/setColorScheme', {
       colorScheme: 'light',
     });
     getPage('projects').then(pageData => {
