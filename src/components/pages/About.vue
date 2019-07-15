@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div v-if="!loading">
     <PageHeader :title="title" :excerpt="excerpt" />
     <div class="main_content">
       <div class="panel">
         <div class="large_container">
           <div class="row">
             <div class="column_1_2">
-              <div class="profile-image"></div>
+              <div class="profile-image" ref="profileImage"></div>
             </div>
             <div class="column_1_2">
               <div v-html="content"></div>
@@ -45,6 +45,8 @@ export default {
       title: '',
       excerpt: '',
       content: '',
+      featuredImage: '',
+      displacementImage: '',
     };
   },
   components: {
@@ -60,26 +62,35 @@ export default {
 
     // Get the page info.
     getPage('about').then(pageData => {
-      this.loading = false;
+      // Set the page data in state.
       this.title = pageData.title;
       this.excerpt = pageData.excerpt;
       this.content = pageData.content;
       this.socialProfiles = pageData.socialProfiles;
       this.clientLogos = pageData.clientLogos;
+      this.featuredImage = pageData.featuredImageLarge;
+      this.displacementImage = pageData.displacementImage.sizes.large;
+      // Indicate that we are done loading data.
+      this.loading = false;
+    });
+  },
+  updated() {
+    // Once the data is loaded then we can see the image ref node and interact with it.
+    if (!this.loading) {
       /*----------------------
       Profile Image Animation
       ----------------------*/
 
       var profileImageAnimation = new imageHoverEffect({
-        parent: document.querySelector('.profile-image'),
+        parent: this.$refs.profileImage,
         intensity1: 0.1,
         intensity2: 0.1,
         speedIn: 3,
         speedOut: 3,
         angle2: Math.PI / 2,
-        image1: pageData.featuredImageLarge,
-        image2: pageData.featuredImageLarge,
-        displacementImage: '/static/img/about/displacement-1.jpg',
+        image1: this.featuredImage,
+        image2: this.featuredImage,
+        displacementImage: this.displacementImage,
         hover: false,
       });
 
@@ -97,7 +108,7 @@ export default {
         }
         setTimeout(transitionImage, 3000);
       })();
-    });
+    }
   },
 };
 </script>
