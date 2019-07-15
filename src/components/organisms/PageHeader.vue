@@ -1,8 +1,8 @@
 <template>
   <header class="page_header">
     <div class="container">
-      <h3>{{ title }}</h3>
-      <h2>{{ excerpt }}</h2>
+      <h3 v-html="title"></h3>
+      <h2 v-html="excerpt"></h2>
     </div>
   </header>
 </template>

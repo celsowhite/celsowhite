@@ -6,7 +6,7 @@
           :isBlurred="false"
           :isOverlayed="true"
           cardType="medium"
-          :summary="project.summary"
+          :content="project.content"
           :title="project.title"
           :image="project.featuredImageMedium"
           :imageFocus="project.featuredImageSmallFocus"

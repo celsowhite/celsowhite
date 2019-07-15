@@ -28,7 +28,6 @@
 <script>
 import { mapState, mapGetters } from 'vuex';
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import getSlugMixin from '../../mixins/getSlug';
 
 export default {
   name: 'WebsiteGrid',
@@ -44,7 +43,6 @@ export default {
     ...mapGetters('content', ['websiteCategories']),
   },
   mounted: function() {},
-  mixins: [getSlugMixin],
   components: {
     ThumbnailCard,
   },

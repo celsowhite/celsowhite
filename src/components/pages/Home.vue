@@ -18,9 +18,10 @@
               @mouseover="showBackground(website.title)"
               @mouseleave="showBackground('')"
             >
-              <router-link :to="'/websites/' + getSlug(website.title)">{{
-                website.title
-              }}</router-link>
+              <router-link
+                :to="'/websites/' + website.slug"
+                v-html="website.title"
+              ></router-link>
             </li>
           </ul>
           <h3>
@@ -49,7 +50,6 @@
 
 <script>
 import { mapState } from 'vuex';
-import getSlugMixin from '../../mixins/getSlug';
 
 export default {
   name: 'Home',
@@ -61,7 +61,6 @@ export default {
       activeBackgroundImage: '',
     };
   },
-  mixins: [getSlugMixin],
   methods: {
     showBackground(imageName) {
       this.activeBackgroundImage = imageName;

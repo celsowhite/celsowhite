@@ -10,7 +10,7 @@ import axios from 'axios';
 export function getPosts(postType) {
   return new Promise((resolve, reject) => {
     axios
-      .get(`${process.env.ROOT_API}/wp-json/wp/v2/${postType}`)
+      .get(`${process.env.ROOT_API}/wp-json/wp/v2/${postType}?per_page=30`)
       .then(response => {
         // WP will return additional data on the posts endpoint. This is required data that other apps accessing the api can use.
         // We customize the response by putting all of our custom endpoint data into the 'custom' key. This keeps the data we need centralized
