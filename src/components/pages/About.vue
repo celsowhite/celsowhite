@@ -13,7 +13,7 @@
               <h3>Clients</h3>
               <LogoList :logos="clientLogos" alignment="left" />
               <h3>Social</h3>
-              <SocialList :socials="socialProfiles" alignment="left" />
+              <SocialList :socials="options.socialProfiles" alignment="left" />
             </div>
           </div>
         </div>
@@ -27,6 +27,7 @@ import PageHeader from '../organisms/PageHeader';
 import SocialList from '../atoms/SocialList';
 import LogoList from '../atoms/LogoList';
 import { getPage } from '../../services/wordpress/rest-api';
+import { mapState } from 'vuex';
 
 // Libraries
 
@@ -40,7 +41,6 @@ export default {
   data() {
     return {
       loading: false,
-      socialProfiles: [],
       clientLogos: [],
       title: '',
       excerpt: '',
@@ -109,6 +109,11 @@ export default {
         setTimeout(transitionImage, 3000);
       })();
     }
+  },
+  computed: {
+    ...mapState('content', {
+      options: state => state.options,
+    }),
   },
 };
 </script>

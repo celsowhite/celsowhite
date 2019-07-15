@@ -21,8 +21,10 @@
         </ul>
       </nav>
     </div>
-    <div class="contact">
-      <p><a href="mailto:celso@celsowhite.com">celso@celsowhite.com</a></p>
+    <div class="contact" v-if="options.email">
+      <p>
+        <a :href="`mailto:${options.email}`">{{ options.email }}</a>
+      </p>
       <span class="line"></span>
     </div>
   </div>
@@ -43,6 +45,7 @@ export default {
     }),
     ...mapState('content', {
       menus: state => state.menus,
+      options: state => state.options,
     }),
   },
 };

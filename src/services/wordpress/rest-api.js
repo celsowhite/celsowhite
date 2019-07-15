@@ -53,3 +53,19 @@ export function getPage(slug) {
       });
   });
 }
+
+/**
+ * Get Options
+ *
+ * @return  object - Global option data.
+ */
+
+export function getOptions() {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(`${process.env.ROOT_API}/wp-json/cw/v1/options`)
+      .then(response => {
+        resolve(response.data);
+      });
+  });
+}

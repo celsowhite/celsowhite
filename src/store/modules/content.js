@@ -1,4 +1,8 @@
-import { getPosts, getMenus } from '../../services/wordpress/rest-api';
+import {
+  getPosts,
+  getMenus,
+  getOptions,
+} from '../../services/wordpress/rest-api';
 
 /*----------------------------
 State
@@ -12,6 +16,7 @@ const state = {
   projects: [],
   menus: [],
   page: {},
+  options: {},
 };
 
 /*----------------------------
@@ -50,6 +55,14 @@ const mutations = {
   setMenus(state, menus) {
     state.menus = menus;
   },
+
+  /**
+   * Set Options
+   */
+
+  setOptions(state, options) {
+    state.options = options;
+  },
 };
 
 /*----------------------------
@@ -66,11 +79,13 @@ const actions = {
       appContent,
       projectContent,
       menus,
+      options,
     ] = await Promise.all([
       getPosts('website'),
       getPosts('app'),
       getPosts('project'),
       getMenus(),
+      getOptions(),
     ]);
 
     // Set data
@@ -79,6 +94,7 @@ const actions = {
     commit('setAppData', appContent);
     commit('setProjectData', projectContent);
     commit('setMenus', menus);
+    commit('setOptions', options);
   },
 };
 
