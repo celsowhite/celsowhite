@@ -2,9 +2,12 @@
   <nav class="mobile_navigation" :class="{ nav_open: navIsOpen }">
     <ul>
       <li v-for="item in menus.main_menu" :key="item.title">
-        <router-link :to="`/${item.slug}`" @click.native="toggleNav" exact>{{
-          item.title
-        }}</router-link>
+        <router-link
+          :to="item.slug === 'home' ? '/' : item.slug"
+          @click.native="toggleNav"
+          exact
+          >{{ item.title }}</router-link
+        >
       </li>
     </ul>
   </nav>

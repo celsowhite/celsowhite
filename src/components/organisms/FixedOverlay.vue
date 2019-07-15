@@ -12,7 +12,7 @@
         <ul>
           <li v-for="item in menus.main_menu" :key="item.title">
             <router-link
-              :to="`/${item.slug}`"
+              :to="item.slug === 'home' ? '/' : item.slug"
               @click.native="toggleNav"
               exact
               >{{ item.title }}</router-link
@@ -21,7 +21,7 @@
         </ul>
       </nav>
     </div>
-    <div class="contact" v-if="options.email">
+    <div class="contact">
       <p>
         <a :href="`mailto:${options.email}`">{{ options.email }}</a>
       </p>
