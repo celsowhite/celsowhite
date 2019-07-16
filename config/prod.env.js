@@ -2,5 +2,5 @@
 
 module.exports = {
   NODE_ENV: '"production"',
-  ROOT_API: '"http://celsowhite.com/api"',
+  ROOT_API: '"https://celsowhite.com/celsowhite-api"',
 };
