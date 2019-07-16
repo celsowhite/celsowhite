@@ -5,7 +5,7 @@ Root state object that holds the global state for the site.
 ----------------------------*/
 
 const state = {
-  colorScheme: 'dark',
+  colorScheme: 'light',
   navIsOpen: false,
 };
 

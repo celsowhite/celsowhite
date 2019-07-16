@@ -11,6 +11,7 @@ Root state object that holds the global state for the site.
 ----------------------------*/
 
 const state = {
+  initialContentLoaded: false,
   websites: [],
   apps: [],
   projects: [],
@@ -23,6 +24,14 @@ Mutations
 ----------------------------*/
 
 const mutations = {
+  /**
+   * Set Initial Content Loaded
+   */
+
+  toggleInitialContentLoaded(state) {
+    state.initialContentLoaded = !state.initialContentLoaded;
+  },
+
   /**
    * Set Website Data
    */
@@ -89,6 +98,7 @@ const actions = {
 
     // Set data
 
+    commit('toggleInitialContentLoaded', true);
     commit('setWebsiteData', websiteContent);
     commit('setAppData', appContent);
     commit('setProjectData', projectContent);

@@ -20,7 +20,6 @@
 
 <script>
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { projects } from '../../data/projects';
 import { mapState } from 'vuex';
 
 export default {

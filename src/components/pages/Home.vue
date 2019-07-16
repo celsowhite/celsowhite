@@ -67,14 +67,26 @@ export default {
     },
   },
   mounted: function() {
-    this.$store.dispatch('settings/setColorScheme', {
-      colorScheme: 'dark',
-    });
+    if (this.initialContentLoaded === true) {
+      this.$store.dispatch('settings/setColorScheme', {
+        colorScheme: 'dark',
+      });
+    }
   },
   computed: {
     ...mapState('content', {
+      initialContentLoaded: state => state.initialContentLoaded,
       websites: state => state.websites,
     }),
+  },
+  watch: {
+    initialContentLoaded: function(val) {
+      if (val === true) {
+        this.$store.dispatch('settings/setColorScheme', {
+          colorScheme: 'dark',
+        });
+      }
+    },
   },
 };
 </script>
