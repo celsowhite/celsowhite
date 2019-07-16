@@ -6,9 +6,9 @@
           :isBlurred="false"
           :isOverlayed="true"
           cardType="medium"
-          :summary="project.summary"
+          :content="project.content"
           :title="project.title"
-          :image="project.featuredImageSmall"
+          :image="project.featuredImageMedium"
           :imageFocus="project.featuredImageSmallFocus"
           :isExternalLink="true"
           :link="project.link"
@@ -20,19 +20,17 @@
 
 <script>
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { projects } from '../../data/projects';
-import getSlugMixin from '../../mixins/getSlug';
+import { mapState } from 'vuex';
 
 export default {
   name: 'ProjectsGrid',
-  data() {
-    return {
-      projects,
-    };
-  },
-  mixins: [getSlugMixin],
   components: {
     ThumbnailCard,
+  },
+  computed: {
+    ...mapState('content', {
+      projects: state => state.projects,
+    }),
   },
 };
 </script>

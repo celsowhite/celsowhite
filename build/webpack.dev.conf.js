@@ -37,14 +37,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       ],
     },
     hot: true,
-    https: {
+    /* https: {
       key: fs.readFileSync(
         path.resolve(os.homedir(), '.localhost_ssl/server.key')
       ),
       cert: fs.readFileSync(
         path.resolve(os.homedir(), '.localhost_ssl/server.crt')
       ),
-    },
+    }, */
     contentBase: false, // since we use CopyWebpackPlugin.
     compress: true,
     host: HOST || config.dev.host,

@@ -1,91 +1,92 @@
 <template>
-  <div>
-    <PageHeader :title="websiteInfo.title" :summary="websiteInfo.summary" />
-    <div class="main_content wysiwyg">
-      <div class="panel">
-        <div class="small_container">
-          <video autoplay muted playsinline loop>
-            <source :src="websiteInfo.video" type="video/mp4" />
-          </video>
-          <div v-html="websiteInfo.content"></div>
-          <ul class="credit_list no_bullets">
-            <CreditList :credits="websiteInfo.credits" />
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="panel padding_bottom" v-if="relatedWebsites.length > 0">
-      <div class="large_container">
-        <h3>More {{ primaryCategory }}</h3>
-        <div class="row">
-          <div
-            v-for="relatedWebsite in relatedWebsites"
-            :key="relatedWebsite.title"
-            class="column_1_3"
-          >
-            <ThumbnailCard
-              :title="relatedWebsite.title"
-              :isOverlayed="true"
-              :image="relatedWebsite.featuredImageSmall"
-              :imageFocus="relatedWebsite.featuredImageSmallFocus"
-              :link="'/websites/' + getSlug(relatedWebsite.title)"
-            />
+  <div v-if="activeWebsite">
+    <PageHeader :title="activeWebsite.title" :excerpt="activeWebsite.excerpt" />
+    <div class="main_content">
+      <div class="wysiwyg">
+        <div class="panel">
+          <div class="small_container">
+            <video autoplay muted playsinline loop v-if="activeWebsite.video">
+              <source :src="activeWebsite.video" type="video/mp4" />
+            </video>
+            <div v-html="activeWebsite.content"></div>
+            <ul class="credit_list no_bullets">
+              <CreditList :credits="activeWebsite.credits" />
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-    <div class="panel padding_bottom">
-      <div class="large_container text_alignment_center">
-        <h3>
-          <router-link to="/websites" class="featured_link black"
-            >View All Websites</router-link
-          >
-        </h3>
+      <div class="panel padding_bottom" v-if="relatedWebsites.length > 0">
+        <div class="large_container">
+          <h3>More {{ primaryCategory }}</h3>
+          <div class="row">
+            <div
+              v-for="relatedWebsite in relatedWebsites"
+              :key="relatedWebsite.title"
+              class="column_1_3"
+            >
+              <ThumbnailCard
+                :title="relatedWebsite.title"
+                :isOverlayed="true"
+                :image="relatedWebsite.featuredImageMedium"
+                :imageFocus="relatedWebsite.featuredImageFocus"
+                :link="'/websites/' + relatedWebsite.slug"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel padding_bottom">
+        <div class="large_container text_alignment_center">
+          <h3>
+            <router-link to="/websites" class="featured_link black"
+              >View All Websites</router-link
+            >
+          </h3>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { store } from '../../store/store.js';
-import { websites } from '../../data/websites';
-import getSlugMixin from '../../mixins/getSlug';
 
 export default {
   name: 'SingleWebsite',
-  data() {
-    return {
-      websiteSlug: this.$route.params.slug,
-      websites,
-      websiteInfo: '',
-      primaryCategory: '',
-      relatedWebsites: '',
-    };
-  },
   components: {
     PageHeader,
     ThumbnailCard,
     CreditList,
   },
   mounted: function() {
-    store.setColorScheme('light');
-    this.getWebsiteInfo();
+    this.$store.dispatch('settings/setColorScheme', {
+      colorScheme: 'light',
+    });
   },
-  mixins: [getSlugMixin],
-  methods: {
-    getWebsiteInfo: function() {
-      const websiteInfo = websites.find(website => {
-        return this.getSlug(website.title) == this.websiteSlug;
+  computed: {
+    // All Websites Data
+    ...mapState('content', {
+      websites: state => state.websites,
+    }),
+    // Active Website (Based on slug)
+    activeWebsite: function() {
+      return this.websites.find(website => {
+        return website.slug == this.$route.params.slug;
       });
-      this.websiteInfo = websiteInfo;
-      this.primaryCategory = websiteInfo.category[1];
-      this.relatedWebsites = websites.filter(website => {
+    },
+    // Primary Category
+    primaryCategory: function() {
+      return this.activeWebsite.categories[1];
+    },
+    // Related websites to the active website.
+    relatedWebsites: function() {
+      return this.websites.filter(website => {
         return (
-          website.category.includes(this.primaryCategory) &&
-          website.title !== this.websiteInfo.title
+          website.categories.includes(this.primaryCategory) &&
+          website.title !== this.activeWebsite.title
         );
       });
     },

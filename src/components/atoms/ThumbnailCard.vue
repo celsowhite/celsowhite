@@ -13,14 +13,12 @@
         :style="{
           backgroundImage: 'url(' + image + ')',
           backgroundPosition: imageFocus,
-          backgroundColor: primaryColor,
+          backgroundColor: color,
         }"
       >
-        <h3>{{ title }}</h3>
+        <h3 v-html="title"></h3>
       </div>
-      <div class="thumbnail_card_content" v-if="summary">
-        <p>{{ summary }}</p>
-      </div>
+      <div class="thumbnail_card_content" v-if="content" v-html="content"></div>
     </a>
 
     <router-link
@@ -35,14 +33,12 @@
         :style="{
           backgroundImage: 'url(' + image + ')',
           backgroundPosition: imageFocus,
-          backgroundColor: primaryColor,
+          backgroundColor: color,
         }"
       >
-        <h3>{{ title }}</h3>
+        <h3 v-html="title"></h3>
       </div>
-      <div class="thumbnail_card_content" v-if="summary">
-        <p>{{ summary }}</p>
-      </div>
+      <div class="thumbnail_card_content" v-if="content" v-html="content"></div>
     </router-link>
   </div>
 </template>
@@ -56,11 +52,11 @@ export default {
     isOverlayed: Boolean,
     image: String,
     imageFocus: String,
-    primaryColor: String,
+    color: String,
     title: String,
     link: String,
     isExternalLink: Boolean,
-    summary: String,
+    content: String,
   },
 };
 </script>

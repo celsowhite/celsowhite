@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="websites.length > 0">
     <div class="home_content_container">
       <!-- Content -->
 
@@ -8,7 +8,7 @@
           <ul class="featured_project_list">
             <li
               v-for="website in websites"
-              v-if="website.featured"
+              v-if="website.homepageFeatured"
               :key="website.title"
               :class="[
                 activeBackgroundImage && activeBackgroundImage !== website.title
@@ -18,9 +18,10 @@
               @mouseover="showBackground(website.title)"
               @mouseleave="showBackground('')"
             >
-              <router-link :to="'/websites/' + getSlug(website.title)">{{
-                website.title
-              }}</router-link>
+              <router-link
+                :to="'/websites/' + website.slug"
+                v-html="website.title"
+              ></router-link>
             </li>
           </ul>
           <h3>
@@ -37,7 +38,7 @@
     <div class="home_background_container">
       <div
         v-for="website in websites"
-        v-if="website.featured"
+        v-if="website.homepageFeatured"
         :key="website.title"
         class="home_background_image"
         :class="[activeBackgroundImage == website.title ? 'active' : '']"
@@ -48,9 +49,7 @@
 </template>
 
 <script>
-import { websites } from '../../data/websites';
-import { store } from '../../store/store.js';
-import getSlugMixin from '../../mixins/getSlug';
+import { mapState } from 'vuex';
 
 export default {
   name: 'Home',
@@ -60,17 +59,34 @@ export default {
   data() {
     return {
       activeBackgroundImage: '',
-      websites,
     };
   },
-  mixins: [getSlugMixin],
   methods: {
     showBackground(imageName) {
       this.activeBackgroundImage = imageName;
     },
   },
   mounted: function() {
-    store.setColorScheme('dark');
+    if (this.initialContentLoaded === true) {
+      this.$store.dispatch('settings/setColorScheme', {
+        colorScheme: 'dark',
+      });
+    }
+  },
+  computed: {
+    ...mapState('content', {
+      initialContentLoaded: state => state.initialContentLoaded,
+      websites: state => state.websites,
+    }),
+  },
+  watch: {
+    initialContentLoaded: function(val) {
+      if (val === true) {
+        this.$store.dispatch('settings/setColorScheme', {
+          colorScheme: 'dark',
+        });
+      }
+    },
   },
 };
 </script>

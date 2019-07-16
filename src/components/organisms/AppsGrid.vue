@@ -6,11 +6,11 @@
           :isBlurred="false"
           :isOverlayed="false"
           cardType="medium"
-          :summary="app.summary"
+          :content="app.content"
           :title="app.title"
           :image="app.featuredImageSmall"
           :imageFocus="app.featuredImageSmallFocus"
-          :primaryColor="app.primaryColor"
+          :color="app.color"
           :isExternalLink="true"
           :link="app.link"
         />
@@ -21,19 +21,17 @@
 
 <script>
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { apps } from '../../data/apps';
-import getSlugMixin from '../../mixins/getSlug';
+import { mapState } from 'vuex';
 
 export default {
   name: 'AppsGrid',
-  data() {
-    return {
-      apps,
-    };
-  },
-  mixins: [getSlugMixin],
   components: {
     ThumbnailCard,
+  },
+  computed: {
+    ...mapState('content', {
+      apps: state => state.apps,
+    }),
   },
 };
 </script>

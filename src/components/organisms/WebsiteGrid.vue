@@ -2,7 +2,7 @@
   <div class="website_grid_contaner">
     <ul class="filter_list">
       <li
-        v-for="category in categories"
+        v-for="category in websiteCategories"
         :key="category"
         :class="[activeCategory == category ? 'active' : '']"
         @click="setActiveCategory(category)"
@@ -13,12 +13,12 @@
     <div class="row">
       <div v-for="website in websites" :key="website.title" class="column_1_3">
         <ThumbnailCard
-          :isBlurred="!website.category.includes(activeCategory)"
+          :isBlurred="!website.categories.includes(activeCategory)"
           :isOverlayed="true"
           :title="website.title"
-          :image="website.featuredImageSmall"
-          :imageFocus="website.featuredImageSmallFocus"
-          :link="'/websites/' + getSlug(website.title)"
+          :image="website.featuredImageMedium"
+          :imageFocus="website.featuredImageFocus"
+          :link="'/websites/' + website.slug"
         />
       </div>
     </div>
@@ -26,20 +26,23 @@
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex';
 import ThumbnailCard from '../atoms/ThumbnailCard';
-import { websites } from '../../data/websites';
-import getSlugMixin from '../../mixins/getSlug';
 
 export default {
   name: 'WebsiteGrid',
   data() {
     return {
       activeCategory: 'All',
-      websites,
-      categories: ['All', 'Creative', 'Non-Profit', 'E-Commerce'],
     };
   },
-  mixins: [getSlugMixin],
+  computed: {
+    ...mapState('content', {
+      websites: state => state.websites,
+    }),
+    ...mapGetters('content', ['websiteCategories']),
+  },
+  mounted: function() {},
   components: {
     ThumbnailCard,
   },
