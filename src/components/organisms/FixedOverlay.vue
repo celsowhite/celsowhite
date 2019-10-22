@@ -88,8 +88,8 @@ Logo
 }
 
 /*==================================
-    Contact
-    ==================================*/
+Contact
+==================================*/
 
 .fixed_overlay .contact {
   position: fixed;
@@ -103,9 +103,7 @@ Logo
   @include z-index('overlay');
 
   @include tablet {
-    position: relative;
-    right: 0;
-    width: 100%;
+    display: none;
   }
 }
 

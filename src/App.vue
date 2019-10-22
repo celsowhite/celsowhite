@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <MobileNavigation />
+    <FixedOverlay />
     <transition
       name="router_anim"
       appear
@@ -9,7 +10,7 @@
     >
       <router-view :key="$route.fullPath" />
     </transition>
-    <FixedOverlay />
+    <Footer />
   </div>
 </template>
 
@@ -17,6 +18,7 @@
 import './styles/main.scss';
 import FixedOverlay from './components/organisms/FixedOverlay';
 import MobileNavigation from './components/organisms/MobileNavigation';
+import Footer from './components/organisms/Footer';
 
 export default {
   name: 'App',
@@ -27,6 +29,7 @@ export default {
   components: {
     FixedOverlay,
     MobileNavigation,
+    Footer,
   },
   mounted: function() {},
 };
