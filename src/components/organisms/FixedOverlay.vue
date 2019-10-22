@@ -184,6 +184,7 @@ Logo
   &:after {
     display: block;
     content: '';
+    backface-visibility: hidden;
     height: 1px;
     width: 40px;
     background: $white;
@@ -284,7 +285,7 @@ nav.main_navigation {
 }
 
 .main_navigation ul li {
-  display: inline-block;
+  display: flex;
   color: $white;
   text-transform: uppercase;
   font-weight: 400;
@@ -323,7 +324,7 @@ nav.main_navigation {
 .main_navigation ul li a:after {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 10px;
   width: 100%;
   height: 1px;
   background: $white;
