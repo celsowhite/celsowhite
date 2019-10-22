@@ -45,6 +45,7 @@
         </div>
       </div>
     </div>
+    <Footer :loading="false" />
   </div>
 </template>
 
@@ -53,6 +54,7 @@ import { mapState } from 'vuex';
 import PageHeader from '../organisms/PageHeader';
 import CreditList from '../atoms/CreditList';
 import ThumbnailCard from '../atoms/ThumbnailCard';
+import Footer from '../organisms/Footer';
 
 export default {
   name: 'SingleWebsite',
@@ -60,6 +62,7 @@ export default {
     PageHeader,
     ThumbnailCard,
     CreditList,
+    Footer,
   },
   mounted: function() {
     this.$store.dispatch('settings/setColorScheme', {

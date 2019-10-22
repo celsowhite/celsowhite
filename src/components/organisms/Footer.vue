@@ -18,13 +18,11 @@ import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'Footer',
+  props: {
+    loading: Boolean,
+  },
   methods: {
     ...mapActions('settings', ['toggleNav']),
-  },
-  data() {
-    return {
-      loading: false,
-    };
   },
   computed: {
     ...mapState('settings', {
@@ -35,12 +33,6 @@ export default {
       menus: state => state.menus,
       options: state => state.options,
     }),
-  },
-  mounted: function() {
-    this.loading = true;
-    setTimeout(() => {
-      this.loading = false;
-    }, 5000);
   },
 };
 </script>

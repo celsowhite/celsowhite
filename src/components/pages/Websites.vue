@@ -8,12 +8,14 @@
         </div>
       </div>
     </div>
+    <Footer :loading="loading" />
   </div>
 </template>
 
 <script>
 import PageHeader from '../organisms/PageHeader';
 import WebsiteGrid from '../organisms/WebsiteGrid';
+import Footer from '../organisms/Footer';
 import { getPage } from '../../services/wordpress/rest-api';
 
 export default {
@@ -31,6 +33,7 @@ export default {
   components: {
     PageHeader,
     WebsiteGrid,
+    Footer,
   },
   mounted: function() {
     this.loading = true;

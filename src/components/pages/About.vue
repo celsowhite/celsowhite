@@ -19,6 +19,7 @@
         </div>
       </div>
     </div>
+    <Footer :loading="loading" />
   </div>
 </template>
 
@@ -26,6 +27,7 @@
 import PageHeader from '../organisms/PageHeader';
 import SocialList from '../atoms/SocialList';
 import LogoList from '../atoms/LogoList';
+import Footer from '../organisms/Footer';
 import { getPage } from '../../services/wordpress/rest-api';
 import { mapState } from 'vuex';
 
@@ -53,6 +55,7 @@ export default {
     PageHeader,
     SocialList,
     LogoList,
+    Footer,
   },
   mounted: function() {
     this.loading = true;

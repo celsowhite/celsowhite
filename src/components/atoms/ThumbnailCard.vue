@@ -99,7 +99,7 @@ export default {
 
 .thumbnail_card_image.overlayed:after {
   transition: all 0.3s ease-in-out;
-  @include overlay(rgba($black, 0.3));
+  @include overlay(rgba($black, 0.6));
 }
 
 .thumbnail_card:hover .thumbnail_card_image.overlayed::after {

@@ -63,17 +63,32 @@ ul.filter_list {
 }
 
 ul.filter_list li {
+  position: relative;
   cursor: pointer;
   margin-right: 20px;
   text-transform: uppercase;
-
-  &.active {
-    font-weight: 700;
-  }
 
   @include mobile_landscape {
     margin-right: 10px;
     font-size: 11px;
   }
+}
+
+ul.filter_list li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 1px;
+  background: $black;
+  opacity: 1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.filter_list li:hover:after,
+ul.filter_list li.active:after {
+  transform: scaleX(1);
 }
 </style>
