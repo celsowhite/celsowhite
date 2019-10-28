@@ -5,9 +5,10 @@
         v-for="category in websiteCategories"
         :key="category"
         :class="[activeCategory == category ? 'active' : '']"
-        @click="setActiveCategory(category)"
       >
-        {{ category }}
+        <a @click="setActiveCategory(category)">
+          {{ category }}
+        </a>
       </li>
     </ul>
     <div class="row">
@@ -64,7 +65,6 @@ ul.filter_list {
 
 ul.filter_list li {
   position: relative;
-  cursor: pointer;
   margin-right: 20px;
   text-transform: uppercase;
 

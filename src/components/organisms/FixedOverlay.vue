@@ -151,7 +151,6 @@ Contact
   z-index: 13;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .menu_button button {
@@ -160,7 +159,6 @@ Contact
   padding: 0 10px 0 0;
   font-weight: 400;
   position: relative;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 

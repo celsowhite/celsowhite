@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" @mousemove="updateCursorPosition">
     <MobileNavigation />
     <FixedOverlay />
     <transition
@@ -10,6 +10,10 @@
     >
       <router-view :key="$route.fullPath" />
     </transition>
+    <MovableCursor
+      :cursorPosition="cursorPosition"
+      :hoveringOnLink="hoveringOnLink"
+    />
   </div>
 </template>
 
@@ -17,6 +21,7 @@
 import './styles/main.scss';
 import FixedOverlay from './components/organisms/FixedOverlay';
 import MobileNavigation from './components/organisms/MobileNavigation';
+import MovableCursor from './components/atoms/MovableCursor';
 
 export default {
   name: 'App',
@@ -24,15 +29,41 @@ export default {
     title: 'Celso White',
     titleTemplate: '%s | Celso White',
   },
+  data() {
+    return {
+      cursorPosition: [-100, -100],
+      hoveringOnLink: false,
+    };
+  },
   components: {
     FixedOverlay,
     MobileNavigation,
+    MovableCursor,
   },
-  mounted: function() {},
+  mounted: function() {
+    // Mousemove
+    window.addEventListener('mouseover', e => {
+      // If hovering over a link or button then indicate it so we can let our other components know.
+      if (e.target.closest('a') || e.target.closest('button')) {
+        this.hoveringOnLink = true;
+      } else {
+        this.hoveringOnLink = false;
+      }
+    });
+  },
+  methods: {
+    // Update Cursor Position
+    updateCursorPosition: function(e) {
+      this.cursorPosition = [e.pageX, e.pageY];
+    },
+  },
 };
 </script>
 
 <style lang="scss">
+body {
+  cursor: none !important;
+}
 /*--- 
   Router Animation
   ---*/
