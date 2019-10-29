@@ -54,7 +54,7 @@ export default {
   methods: {
     // Update Cursor Position
     updateCursorPosition: function(e) {
-      this.cursorPosition = [e.pageX, e.pageY];
+      this.cursorPosition = [e.clientX, e.clientY];
     },
   },
 };
