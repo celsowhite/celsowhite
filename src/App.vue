@@ -18,33 +18,33 @@
 </template>
 
 <script>
-import './styles/main.scss';
-import FixedOverlay from './components/organisms/FixedOverlay';
-import MobileNavigation from './components/organisms/MobileNavigation';
-import MovableCursor from './components/atoms/MovableCursor';
+import "./styles/main.scss";
+import FixedOverlay from "./components/organisms/FixedOverlay";
+import MobileNavigation from "./components/organisms/MobileNavigation";
+import MovableCursor from "./components/atoms/MovableCursor";
 
 export default {
-  name: 'App',
+  name: "App",
   metaInfo: {
-    title: 'Celso White',
-    titleTemplate: '%s | Celso White',
+    title: "Celso White",
+    titleTemplate: "%s | Celso White"
   },
   data() {
     return {
       cursorPosition: [-100, -100],
-      hoveringOnLink: false,
+      hoveringOnLink: false
     };
   },
   components: {
     FixedOverlay,
     MobileNavigation,
-    MovableCursor,
+    MovableCursor
   },
   mounted: function() {
     // Mousemove
-    window.addEventListener('mouseover', e => {
+    window.addEventListener("mouseover", e => {
       // If hovering over a link or button then indicate it so we can let our other components know.
-      if (e.target.closest('a') || e.target.closest('button')) {
+      if (e.target.closest("a") || e.target.closest("button")) {
         this.hoveringOnLink = true;
       } else {
         this.hoveringOnLink = false;
@@ -54,15 +54,15 @@ export default {
   methods: {
     // Update Cursor Position
     updateCursorPosition: function(e) {
-      this.cursorPosition = [e.clientX, e.clientY];
-    },
-  },
+      this.cursorPosition = [e.clientX - 10, e.clientY - 12];
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 body {
-  cursor: none !important;
+  // cursor: none !important;
 }
 /*--- 
   Router Animation

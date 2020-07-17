@@ -7,20 +7,20 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState, mapActions } from "vuex";
 
 export default {
-  name: 'MovableCursor',
+  name: "MovableCursor",
   props: {
     cursorPosition: Array,
-    hoveringOnLink: Boolean,
+    hoveringOnLink: Boolean
   },
   computed: {
-    ...mapState('settings', {
+    ...mapState("settings", {
       colorScheme: state => state.colorScheme,
-      navIsOpen: state => state.navIsOpen,
-    }),
-  },
+      navIsOpen: state => state.navIsOpen
+    })
+  }
 };
 </script>
 
@@ -46,7 +46,7 @@ export default {
 
 .cursor:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   border-radius: 50%;

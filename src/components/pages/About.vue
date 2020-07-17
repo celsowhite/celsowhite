@@ -24,47 +24,47 @@
 </template>
 
 <script>
-import PageHeader from '../organisms/PageHeader';
-import SocialList from '../atoms/SocialList';
-import LogoList from '../atoms/LogoList';
-import Footer from '../organisms/Footer';
-import { getPage } from '../../services/wordpress/rest-api';
-import { mapState } from 'vuex';
+import PageHeader from "../organisms/PageHeader";
+import SocialList from "../atoms/SocialList";
+import LogoList from "../atoms/LogoList";
+import Footer from "../organisms/Footer";
+import { getPage } from "../../services/wordpress/rest-api";
+import { mapState } from "vuex";
 
 // Libraries
 
-import imageHoverEffect from 'hover-effect';
+import imageHoverEffect from "hover-effect";
 
 export default {
-  name: 'About',
+  name: "About",
   metaInfo: {
-    title: 'About',
+    title: "About"
   },
   data() {
     return {
       loading: false,
       clientLogos: [],
-      title: '',
-      excerpt: '',
-      content: '',
-      featuredImage: '',
-      displacementImage: '',
+      title: "",
+      excerpt: "",
+      content: "",
+      featuredImage: "",
+      displacementImage: ""
     };
   },
   components: {
     PageHeader,
     SocialList,
     LogoList,
-    Footer,
+    Footer
   },
   mounted: function() {
     this.loading = true;
-    this.$store.dispatch('settings/setColorScheme', {
-      colorScheme: 'light',
+    this.$store.dispatch("settings/setColorScheme", {
+      colorScheme: "light"
     });
 
     // Get the page info.
-    getPage('about').then(pageData => {
+    getPage("about").then(pageData => {
       // Set the page data in state.
       this.title = pageData.title;
       this.excerpt = pageData.excerpt;
@@ -94,30 +94,30 @@ export default {
         image1: this.featuredImage,
         image2: this.featuredImage,
         displacementImage: this.displacementImage,
-        hover: false,
+        hover: false
       });
 
       // Automatically alternate the profile images in the three js scene.
 
-      let currentImage = 'first';
+      let currentImage = "first";
 
       (function transitionImage() {
-        if (currentImage === 'first') {
+        if (currentImage === "first") {
           profileImageAnimation.next();
-          currentImage = 'second';
+          currentImage = "second";
         } else {
           profileImageAnimation.previous();
-          currentImage = 'first';
+          currentImage = "first";
         }
         setTimeout(transitionImage, 3000);
       })();
     }
   },
   computed: {
-    ...mapState('content', {
-      options: state => state.options,
-    }),
-  },
+    ...mapState("content", {
+      options: state => state.options
+    })
+  }
 };
 </script>
 
@@ -133,7 +133,7 @@ export default {
 }
 
 .profile-image:after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 130%;
 }
