@@ -14,7 +14,7 @@
     "flexslider": "^2.7.1",
     "gsap": "^3.4.1",
     "hover-effect": "file:../../npm/hover-effect",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "sass-resources-loader": "^1.3.3",
