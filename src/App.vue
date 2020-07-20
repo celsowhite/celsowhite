@@ -1,5 +1,5 @@
 <template>
-  <div id="app" @mousemove="updateCursorPosition">
+  <div id="app" @mousemove="updateCursorPosition" @mouseleave="hideCursor" @mouseenter="showCursor">
     <MobileNavigation />
     <FixedOverlay />
     <transition
@@ -11,7 +11,6 @@
       <router-view :key="$route.fullPath" />
     </transition>
     <MovableCursor
-      :cursorPosition="cursorPosition"
       :hoveringOnLink="hoveringOnLink"
     />
   </div>
@@ -19,6 +18,7 @@
 
 <script>
 import "./styles/main.scss";
+import { gsap } from "gsap";
 import FixedOverlay from "./components/organisms/FixedOverlay";
 import MobileNavigation from "./components/organisms/MobileNavigation";
 import MovableCursor from "./components/atoms/MovableCursor";
@@ -31,7 +31,6 @@ export default {
   },
   data() {
     return {
-      cursorPosition: [-100, -100],
       hoveringOnLink: false
     };
   },
@@ -54,7 +53,26 @@ export default {
   methods: {
     // Update Cursor Position
     updateCursorPosition: function(e) {
-      this.cursorPosition = [e.clientX - 10, e.clientY - 12];
+      gsap.to(".cursor", {
+        left: e.clientX - 13,
+        top: e.clientY - 13
+      });
+    },
+
+    // Hide cursor
+    hideCursor: function() {
+      gsap.to(".cursor", {
+        opacity: 0,
+        duration: 0.3
+      });
+    },
+
+    // Show cursor
+    showCursor: function() {
+      gsap.to(".cursor", {
+        opacity: 1,
+        duration: 0.3
+      });
     }
   }
 };

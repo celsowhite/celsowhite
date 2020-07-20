@@ -2,7 +2,6 @@
   <div
     class="cursor"
     :class="[colorScheme, { waiting: hoveringOnLink }, { nav_open: navIsOpen }]"
-    :style="{ left: cursorPosition[0] + 'px', top: cursorPosition[1] + 'px' }"
   ></div>
 </template>
 
@@ -12,7 +11,6 @@ import { mapState, mapActions } from "vuex";
 export default {
   name: "MovableCursor",
   props: {
-    cursorPosition: Array,
     hoveringOnLink: Boolean
   },
   computed: {
@@ -30,8 +28,8 @@ export default {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  top: -100px;
-  left: -100px;
+  top: 0;
+  left: 0;
   pointer-events: none;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   display: flex;
