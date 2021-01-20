@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "flexslider": "^2.7.1",
-    "gsap": "^3.4.1",
+    "gsap": "^3.6.0",
     "hover-effect": "file:../../npm/hover-effect",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
